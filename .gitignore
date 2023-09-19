@@ -226,8 +226,10 @@ pyrightconfig.json
 .ionide
 
 
-# Output folder
+# Folders to ignore
 output/
+data/
+
 
 # FlexFringe log file
 flexfringe.log
