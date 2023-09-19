@@ -1,0 +1,17 @@
+_source_@timestamp,_source_source_ip,_source_destination_ip,_source_source_port,symb:_source_destination_port,_source_event_duration,_source_network_bytes,_source_query,symb:_source_url_path,_source_url_port,symb:_source_http_response_status_code,symb:_source_http_request_method,symb:source_host_mapping,symb:destination_host_mapping
+1042810747,192.168.247.6,192.168.84.132,44820.0,8000.0,688432,1429,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042810748,192.168.247.6,192.168.84.132,44820.0,8000.0,687996,1429,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042811558,192.168.247.6,192.168.84.132,49234.0,8000.0,33755,1421,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042811559,192.168.247.6,192.168.84.132,49234.0,8000.0,33340,1421,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042814703,192.168.247.6,192.168.84.132,59126.0,8000.0,20209,1434,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042814703,192.168.247.6,192.168.84.132,59126.0,8000.0,19855,1434,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042817316,192.168.247.6,192.168.84.132,45134.0,8000.0,28279,1409,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042817316,192.168.247.6,192.168.84.132,45134.0,8000.0,28775,1409,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042817498,192.168.247.6,192.168.84.132,42006.0,8000.0,70894,1417,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042817498,192.168.247.6,192.168.84.132,42006.0,8000.0,71975,1417,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042817567,192.168.247.6,192.168.84.132,60508.0,8000.0,91746,1329,GET /notifications/settings/current,>notifications>settings>current,8000.0,401.0,get,gateway,notification-service
+1042817567,192.168.247.6,192.168.84.132,60508.0,8000.0,90833,1329,GET /notifications/settings/current,>notifications>settings>current,8000.0,401.0,get,gateway,notification-service
+1042818335,192.168.247.6,192.168.84.132,34168.0,8000.0,17610,1412,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042818335,192.168.247.6,192.168.84.132,34168.0,8000.0,17245,1412,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042820697,192.168.247.6,192.168.84.132,34474.0,8000.0,73053,1432,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service
+1042820697,192.168.247.6,192.168.84.132,34474.0,8000.0,74068,1432,PUT /notifications/recipients/current,>notifications>recipients>current,8000.0,200.0,put,gateway,notification-service

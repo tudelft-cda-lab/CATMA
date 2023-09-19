@@ -1,0 +1,39 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"out__8888.0__>auth-service>default__200.0__get__auth-service__config-server",
+"out__8761.0__>eureka>apps>__200.0__get__auth-service__registry",
+"out__8761.0__>eureka>apps>AUTH-SERVICE__204.0__post__auth-service__registry",
+"out__8761.0__>eureka>apps>delta__200.0__get__auth-service__registry",
+"out__8761.0__>eureka>apps>AUTH-SERVICE>auth-service-65b964b6c-84h87-auth-service-5000__200.0__put__auth-service__registry",
+"in__5000.0__>uaa>users>current__401.0__get__account-service__auth-service",
+"in__5000.0__>uaa>oauth>token__200.0__post__account-service__auth-service",
+"in__5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+"in__5000.0__>uaa>users__200.0__post__account-service__auth-service",
+"in__5000.0__>uaa>users>current__200.0__get__account-service__auth-service",
+"in__5000.0__>uaa>users>current__200.0__get__notification-service__auth-service",
+"in__5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service",
+"in__5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:4477 , ",
+			"size" : 4477,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":4477},"symbol_counts":null,"total_final":0,"total_paths":4477,"trans_counts":{"in__5000.0__>uaa>oauth>token__200.0__post__account-service__auth-service":"2","in__5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service":"98","in__5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service":"2","in__5000.0__>uaa>users>current__200.0__get__account-service__auth-service":"480","in__5000.0__>uaa>users>current__200.0__get__notification-service__auth-service":"21","in__5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service":"858","in__5000.0__>uaa>users>current__401.0__get__account-service__auth-service":"2","in__5000.0__>uaa>users__200.0__post__account-service__auth-service":"8","out__8761.0__>eureka>apps>AUTH-SERVICE>auth-service-65b964b6c-84h87-auth-service-5000__200.0__put__auth-service__registry":"1496","out__8761.0__>eureka>apps>AUTH-SERVICE__204.0__post__auth-service__registry":"2","out__8761.0__>eureka>apps>__200.0__get__auth-service__registry":"2","out__8761.0__>eureka>apps>delta__200.0__get__auth-service__registry":"1495","out__8888.0__>auth-service>default__200.0__get__auth-service__config-server":"11"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

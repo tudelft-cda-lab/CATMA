@@ -1,0 +1,47 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #100
+fin: 
+ path: 0:100 , 
+100 0
+[100,]" , style=filled, fillcolor="firebrick1", width=1.72546, height=1.72546, penwidth=4.61512];
+		0 -> 1 [label="5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service
+100 " , penwidth=4.61512 ];
+	1 [ label="1 #945
+fin: 0:96 , 
+ path: 0:849 , 
+849 96
+[845,4,]" , style=filled, fillcolor="firebrick1", width=2.0608, height=2.0608, penwidth=6.85224];
+		1 -> 1 [label="5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service
+845 " , penwidth=6.85224 ];
+		1 -> 2 [label="5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service
+4 " , penwidth=6.85224 ];
+	2 [ label="2 #4
+fin: 0:1 , 
+ path: 0:3 , 
+3 1
+[0,3,]" , style=filled, fillcolor="firebrick1", width=0.959135, height=0.959135, penwidth=1.60944];
+		2 -> 3 [label="5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service
+3 " , penwidth=1.60944 ];
+	3 [ label="3 #3
+fin: 0:1 , 
+ path: 0:2 , 
+2 1
+[2,]" , style=filled, fillcolor="firebrick1", width=0.869742, height=0.869742, penwidth=1.38629];
+		3 -> 4 [label="5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service
+2 " , penwidth=1.38629 ];
+	4 [ label="4 #2
+fin: 0:1 , 
+ path: 0:1 , 
+1 1
+[1,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		4 -> 5 [label="5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service
+1 " , penwidth=1.09861 ];
+	5 [ label="5 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+}

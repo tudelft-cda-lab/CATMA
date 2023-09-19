@@ -1,0 +1,182 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"in__8080.0__>__200.0__get__user__admin-server",
+"in__8080.0__>applications__200.0__get__user__admin-server",
+"in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server",
+"in__8080.0__>assets>css>chunk-common.a3a93490.css__304.0__get__user__admin-server",
+"in__8080.0__>assets>css>sba-core.87bc3301.css__304.0__get__user__admin-server",
+"in__8080.0__>assets>js>sba-core.18e2842c.js__304.0__get__user__admin-server",
+"in__8080.0__>assets>js>chunk-vendors.a6feb878.js__304.0__get__user__admin-server",
+"in__8080.0__>sba-settings.js__200.0__get__user__admin-server",
+"in__8080.0__>assets>img>icon-spring-boot-admin.svg__304.0__get__user__admin-server",
+"in__8080.0__>instances>events__200.0__get__user__admin-server"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:24 , ",
+			"size" : 24,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":24},"symbol_counts":null,"total_final":0,"total_paths":24,"trans_counts":{"in__8080.0__>__200.0__get__user__admin-server":"12","in__8080.0__>applications__200.0__get__user__admin-server":"4","in__8080.0__>assets>css>chunk-common.a3a93490.css__304.0__get__user__admin-server":"1","in__8080.0__>assets>css>sba-core.87bc3301.css__304.0__get__user__admin-server":"1","in__8080.0__>assets>img>icon-spring-boot-admin.svg__304.0__get__user__admin-server":"1","in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server":"1","in__8080.0__>assets>js>chunk-vendors.a6feb878.js__304.0__get__user__admin-server":"1","in__8080.0__>assets>js>sba-core.18e2842c.js__304.0__get__user__admin-server":"1","in__8080.0__>sba-settings.js__200.0__get__user__admin-server":"2"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:1 ,  path: 0:11 , ",
+			"size" : 12,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 in__8080.0__>__200.0__get__user__admin-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":11},"symbol_counts":null,"total_final":1,"total_paths":11,"trans_counts":{"in__8080.0__>applications__200.0__get__user__admin-server":"9","in__8080.0__>sba-settings.js__200.0__get__user__admin-server":"2"}}
+		},
+		{
+			"id" : 10,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: 0:8 , ",
+			"size" : 9,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 in__8080.0__>__200.0__get__user__admin-server in__8080.0__>applications__200.0__get__user__admin-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":8},"symbol_counts":null,"total_final":1,"total_paths":8,"trans_counts":{"in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server":"8"}}
+		},
+		{
+			"id" : 23,
+			"source" :  10,
+			"label" : "fin: 0:1 ,  path: 0:7 , ",
+			"size" : 8,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 in__8080.0__>__200.0__get__user__admin-server in__8080.0__>applications__200.0__get__user__admin-server in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":7},"symbol_counts":null,"total_final":1,"total_paths":7,"trans_counts":{"in__8080.0__>assets>css>chunk-common.a3a93490.css__304.0__get__user__admin-server":"7"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "in__8080.0__>__200.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "in__8080.0__>applications__200.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_3",
+			"source" : "0",
+			"target" : "3",
+			"name": "in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_4",
+			"source" : "0",
+			"target" : "4",
+			"name": "in__8080.0__>assets>css>chunk-common.a3a93490.css__304.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_5",
+			"source" : "0",
+			"target" : "5",
+			"name": "in__8080.0__>assets>css>sba-core.87bc3301.css__304.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_6",
+			"source" : "0",
+			"target" : "6",
+			"name": "in__8080.0__>assets>js>sba-core.18e2842c.js__304.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_7",
+			"source" : "0",
+			"target" : "7",
+			"name": "in__8080.0__>assets>js>chunk-vendors.a6feb878.js__304.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_8",
+			"source" : "0",
+			"target" : "8",
+			"name": "in__8080.0__>sba-settings.js__200.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_9",
+			"source" : "0",
+			"target" : "9",
+			"name": "in__8080.0__>assets>img>icon-spring-boot-admin.svg__304.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_10",
+			"source" : "1",
+			"target" : "10",
+			"name": "in__8080.0__>applications__200.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_11",
+			"source" : "1",
+			"target" : "11",
+			"name": "in__8080.0__>sba-settings.js__200.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "10_23",
+			"source" : "10",
+			"target" : "23",
+			"name": "in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

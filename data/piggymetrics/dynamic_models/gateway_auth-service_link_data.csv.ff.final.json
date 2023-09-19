@@ -1,0 +1,146 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+"5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:100 , ",
+			"size" : 100,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":100},"symbol_counts":null,"total_final":0,"total_paths":100,"trans_counts":{"5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service":"100"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:96 ,  path: 0:849 , ",
+			"size" : 945,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+			"data" :  {"final_counts":{"0":96},"path_counts":{"0":849},"symbol_counts":null,"total_final":96,"total_paths":849,"trans_counts":{"5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service":"845","5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service":"4"}}
+		},
+		{
+			"id" : 2,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: 0:3 , ",
+			"size" : 4,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 10 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":3},"symbol_counts":null,"total_final":1,"total_paths":3,"trans_counts":{"5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service":"0","5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service":"3"}}
+		},
+		{
+			"id" : 3,
+			"source" :  2,
+			"label" : "fin: 0:1 ,  path: 0:2 , ",
+			"size" : 3,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 10 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":2},"symbol_counts":null,"total_final":1,"total_paths":2,"trans_counts":{"5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service":"2"}}
+		},
+		{
+			"id" : 4,
+			"source" :  3,
+			"label" : "fin: 0:1 ,  path: 0:1 , ",
+			"size" : 2,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 10 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"symbol_counts":null,"total_final":1,"total_paths":1,"trans_counts":{"5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service":"1"}}
+		},
+		{
+			"id" : 5,
+			"source" :  4,
+			"label" : "fin: 0:1 ,  path: ",
+			"size" : 1,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 10 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service 5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+			"data" :  {"final_counts":{"0":1},"symbol_counts":null,"total_final":1,"total_paths":0}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_1",
+			"source" : "1",
+			"target" : "1",
+			"name": "5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_2",
+			"source" : "1",
+			"target" : "2",
+			"name": "5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_3",
+			"source" : "2",
+			"target" : "3",
+			"name": "5000.0__>uaa>oauth>token__400.0__post__gateway__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_4",
+			"source" : "3",
+			"target" : "4",
+			"name": "5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "4_5",
+			"source" : "4",
+			"target" : "5",
+			"name": "5000.0__>uaa>oauth>token__200.0__post__gateway__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

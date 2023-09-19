@@ -1,0 +1,19 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #24
+fin: 
+ path: 0:24 , 
+24 0
+[24,]" , style=filled, fillcolor="firebrick1", width=1.43957, height=1.43957, penwidth=3.21888];
+		0 -> 1 [label="8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream
+24 " , penwidth=3.21888 ];
+	1 [ label="1 #195
+fin: 0:24 , 
+ path: 0:171 , 
+171 24
+[171,]" , style=filled, fillcolor="firebrick1", width=1.83707, height=1.83707, penwidth=5.27811];
+		1 -> 1 [label="8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream
+171 " , penwidth=5.27811 ];
+}

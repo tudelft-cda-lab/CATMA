@@ -1,0 +1,10 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #240
+fin: 
+ path: 0:240 , 
+240 0
+[18,3,15,9,14,6,5,3,9,11,6,9,6,12,9,3,3,5,3,3,3,6,6,3,3,13,5,5,6,5,5,6,2,3,3,8,6,]" , style=filled, fillcolor="firebrick1", width=1.86946, height=1.86946, penwidth=5.4848];
+}

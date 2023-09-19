@@ -1,0 +1,235 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+"8761.0__>eureka>apps>delta__200.0__get__turbine__eureka"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:124 , ",
+			"size" : 124,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":124},"symbol_counts":null,"total_final":0,"total_paths":124,"trans_counts":{"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka":"67","8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"57"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:22 ,  path: 0:291 , ",
+			"size" : 313,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"data" :  {"final_counts":{"0":22},"path_counts":{"0":291},"symbol_counts":null,"total_final":22,"total_paths":291,"trans_counts":{"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka":"53","8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"238"}}
+		},
+		{
+			"id" : 2,
+			"source" :  0,
+			"label" : "fin: 0:23 ,  path: 0:324 , ",
+			"size" : 347,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"data" :  {"final_counts":{"0":23},"path_counts":{"0":324},"symbol_counts":null,"total_final":23,"total_paths":324,"trans_counts":{"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka":"232","8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"92"}}
+		},
+		{
+			"id" : 3,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: 0:52 , ",
+			"size" : 53,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":52},"symbol_counts":null,"total_final":1,"total_paths":52,"trans_counts":{"8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"52"}}
+		},
+		{
+			"id" : 4,
+			"source" :  2,
+			"label" : "fin: 0:28 ,  path: 0:169 , ",
+			"size" : 197,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"data" :  {"final_counts":{"0":28},"path_counts":{"0":169},"symbol_counts":null,"total_final":28,"total_paths":169,"trans_counts":{"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka":"169","8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"0"}}
+		},
+		{
+			"id" : 5,
+			"source" :  4,
+			"label" : "fin: 0:27 ,  path: 0:142 , ",
+			"size" : 169,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"data" :  {"final_counts":{"0":27},"path_counts":{"0":142},"symbol_counts":null,"total_final":27,"total_paths":142,"trans_counts":{"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka":"64","8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"78"}}
+		},
+		{
+			"id" : 6,
+			"source" :  5,
+			"label" : "fin: 0:12 ,  path: 0:52 , ",
+			"size" : 64,
+			"level" : 6,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"data" :  {"final_counts":{"0":12},"path_counts":{"0":52},"symbol_counts":null,"total_final":12,"total_paths":52,"trans_counts":{"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka":"0","8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"52"}}
+		},
+		{
+			"id" : 7,
+			"source" :  6,
+			"label" : "fin: 0:11 ,  path: 0:41 , ",
+			"size" : 52,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 5 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka 8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka 8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"data" :  {"final_counts":{"0":11},"path_counts":{"0":41},"symbol_counts":null,"total_final":11,"total_paths":41,"trans_counts":{"8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka":"14","8761.0__>eureka>apps>delta__200.0__get__turbine__eureka":"27"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_3",
+			"source" : "1",
+			"target" : "3",
+			"name": "8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_2",
+			"source" : "1",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_1",
+			"source" : "2",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_4",
+			"source" : "2",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_2",
+			"source" : "3",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "4_5",
+			"source" : "4",
+			"target" : "5",
+			"name": "8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_6",
+			"source" : "5",
+			"target" : "6",
+			"name": "8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_4",
+			"source" : "5",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_7",
+			"source" : "6",
+			"target" : "7",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "7_1",
+			"source" : "7",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "7_4",
+			"source" : "7",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__turbine__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

@@ -1,0 +1,570 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #17
+fin: 
+ path: 0:17 , 
+17 0
+[10,1,1,1,1,1,1,1,]" , style=filled, fillcolor="firebrick1", width=1.3585, height=1.3585, penwidth=2.89037];
+		0 -> 1 [label="8989.0__>hystrix__200.0__get__user__turbine
+10 " , penwidth=2.89037 ];
+		0 -> 2 [label="8989.0__>favicon.ico__404.0__get__user__turbine
+1 " , penwidth=2.89037 ];
+		0 -> 3 [label="8989.0__>hystrix>images>hystrix-logo.png__304.0__get__user__turbine
+1 " , penwidth=2.89037 ];
+		0 -> 4 [label="8989.0__>webjars>jquery>3.4.1>jquery.min.js__200.0__get__user__turbine
+1 " , penwidth=2.89037 ];
+		0 -> 5 [label="8989.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__turbine
+1 " , penwidth=2.89037 ];
+		0 -> 6 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine
+1 " , penwidth=2.89037 ];
+		0 -> 7 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=2.89037 ];
+		0 -> 8 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+1 " , penwidth=2.89037 ];
+	1 [ label="1 #10
+fin: 0:1 , 
+ path: 0:9 , 
+9 1
+[9,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		1 -> 9 [label="8989.0__>favicon.ico__404.0__get__user__turbine
+9 " , penwidth=2.3979 ];
+	2 [ label="2 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		2 -> 10 [label="8989.0__>hystrix>images>hystrix-logo.png__304.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	3 [ label="3 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		3 -> 11 [label="8989.0__>webjars>jquery>3.4.1>jquery.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	4 [ label="4 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		4 -> 12 [label="8989.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	5 [ label="5 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		5 -> 13 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	6 [ label="6 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		6 -> 14 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	7 [ label="7 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		7 -> 15 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	8 [ label="8 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		8 -> 16 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	9 [ label="9 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[8,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+		9 -> 17 [label="8989.0__>hystrix>images>hystrix-logo.png__304.0__get__user__turbine
+8 " , penwidth=2.30259 ];
+	10 [ label="10 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		10 -> 18 [label="8989.0__>webjars>jquery>3.4.1>jquery.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	11 [ label="11 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		11 -> 19 [label="8989.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	12 [ label="12 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		12 -> 20 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	13 [ label="13 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		13 -> 21 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	14 [ label="14 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		14 -> 22 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	15 [ label="15 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		15 -> 23 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	16 [ label="16 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		16 -> 24 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	17 [ label="17 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+		17 -> 25 [label="8989.0__>webjars>jquery>3.4.1>jquery.min.js__200.0__get__user__turbine
+7 " , penwidth=2.19722 ];
+	18 [ label="18 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		18 -> 26 [label="8989.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	19 [ label="19 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		19 -> 27 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	20 [ label="20 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		20 -> 28 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	21 [ label="21 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		21 -> 29 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	22 [ label="22 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		22 -> 30 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	23 [ label="23 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		23 -> 31 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	24 [ label="24 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		24 -> 32 [label="8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	25 [ label="25 #7
+fin: 0:1 , 
+ path: 0:6 , 
+6 1
+[6,]" , style=filled, fillcolor="firebrick1", width=1.12475, height=1.12475, penwidth=2.07944];
+		25 -> 33 [label="8989.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__turbine
+6 " , penwidth=2.07944 ];
+	26 [ label="26 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		26 -> 34 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	27 [ label="27 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		27 -> 35 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	28 [ label="28 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		28 -> 36 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	29 [ label="29 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		29 -> 37 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	30 [ label="30 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		30 -> 38 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	31 [ label="31 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		31 -> 39 [label="8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	32 [ label="32 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		32 -> 40 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	33 [ label="33 #6
+fin: 0:1 , 
+ path: 0:5 , 
+5 1
+[5,]" , style=filled, fillcolor="firebrick1", width=1.08042, height=1.08042, penwidth=1.94591];
+		33 -> 41 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine
+5 " , penwidth=1.94591 ];
+	34 [ label="34 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		34 -> 42 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	35 [ label="35 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		35 -> 43 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	36 [ label="36 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		36 -> 44 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	37 [ label="37 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		37 -> 45 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	38 [ label="38 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		38 -> 46 [label="8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	39 [ label="39 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		39 -> 47 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	40 [ label="40 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		40 -> 48 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	41 [ label="41 #5
+fin: 0:1 , 
+ path: 0:4 , 
+4 1
+[4,]" , style=filled, fillcolor="firebrick1", width=1.02667, height=1.02667, penwidth=1.79176];
+		41 -> 49 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+4 " , penwidth=1.79176 ];
+	42 [ label="42 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		42 -> 50 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	43 [ label="43 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		43 -> 51 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	44 [ label="44 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		44 -> 52 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	45 [ label="45 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		45 -> 53 [label="8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	46 [ label="46 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		46 -> 54 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	47 [ label="47 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		47 -> 55 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	48 [ label="48 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		48 -> 56 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	49 [ label="49 #4
+fin: 0:1 , 
+ path: 0:3 , 
+3 1
+[3,0,]" , style=filled, fillcolor="firebrick1", width=0.959135, height=0.959135, penwidth=1.60944];
+		49 -> 57 [label="8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine
+3 " , penwidth=1.60944 ];
+	50 [ label="50 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		50 -> 58 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	51 [ label="51 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		51 -> 59 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	52 [ label="52 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		52 -> 60 [label="8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	53 [ label="53 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		53 -> 61 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	54 [ label="54 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		54 -> 62 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	55 [ label="55 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		55 -> 63 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	56 [ label="56 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		56 -> 64 [label="8989.0__>hystrix__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	57 [ label="57 #3
+fin: 0:1 , 
+ path: 0:2 , 
+2 1
+[2,]" , style=filled, fillcolor="firebrick1", width=0.869742, height=0.869742, penwidth=1.38629];
+		57 -> 65 [label="8989.0__>proxy.stream__200.0__get__user__turbine
+2 " , penwidth=1.38629 ];
+	58 [ label="58 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		58 -> 66 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	59 [ label="59 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		59 -> 67 [label="8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	60 [ label="60 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		60 -> 68 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	61 [ label="61 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		61 -> 69 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	62 [ label="62 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		62 -> 70 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	63 [ label="63 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		63 -> 71 [label="8989.0__>hystrix__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	64 [ label="64 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		64 -> 72 [label="8989.0__>hystrix__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	65 [ label="65 #2
+fin: 0:1 , 
+ path: 0:1 , 
+1 1
+[1,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		65 -> 73 [label="8989.0__>hystrix>monitor__200.0__get__user__turbine
+1 " , penwidth=1.09861 ];
+	66 [ label="66 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		66 -> 74 [label="8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	67 [ label="67 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		67 -> 75 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	68 [ label="68 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		68 -> 76 [label="8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	69 [ label="69 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		69 -> 77 [label="8989.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	70 [ label="70 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		70 -> 78 [label="8989.0__>hystrix__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	71 [ label="71 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		71 -> 79 [label="8989.0__>hystrix__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	72 [ label="72 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		72 -> 80 [label="8989.0__>hystrix__200.0__get__user__turbine
+1 " , penwidth=0.693147 ];
+	73 [ label="73 #1
+fin: 0:1 , 
+ path: 
+0 1
+[0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	74 [ label="74 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	75 [ label="75 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	76 [ label="76 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	77 [ label="77 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	78 [ label="78 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	79 [ label="79 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	80 [ label="80 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+}

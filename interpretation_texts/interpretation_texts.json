@@ -1,0 +1,36 @@
+{
+    "dynamic_interpretations": [
+        {
+            "title" : "Unused / Unreachable Code",
+            "description" : "The line of code that is responsible for triggering a flow of communication between the two component is not reachable or the line is not used at all in the implementation. It could be the case that the function that should call this line is not implemented, commented out or wrapped in a code-block (e.g. if-else statement or switch statement) that is never executed."
+        },
+
+        {
+            "title": "Misconfiguration of Service",
+            "description": "One of the most common causes for failures in microservice systems is misconfiguration of services; usually different third-party services (or libraries) are used in project and each needs to be configured independently. If a service is not configured properly, it might not be reachable for other services that are trying to communicate with it."
+        },
+
+        {
+            "title" : "Service Registration Issue",
+            "description" : "The service might not have been (correctly) registered at the service registry component. If it isn't registered at the service registry component, then other services do not which address and port they should use to initiate communication with this service."
+        }
+    
+    ],
+
+    "static_interpretations" : [
+        {
+            "title" : "Implicit Call via Third-Party Services ",
+            "description" : "Communication flow has been detected between the two services but the responsible line of code is not detected in the source code. It could be that the call is implicitly triggered by a third-party service that is used in the implementation (e.g. via an annotation that is used by a framework or that code is injected during run-time)."
+        },
+
+        {
+            "title": "Unintentional Endpoint Exposure",
+            "description": "The communication flow detected between the two services could be caused by an endpoint that is exposed unintentionally by the developer. It could be the case that code has been refactored and the endpoint was not removed during refactoring,  or that the endpoint was used for testing purposes and was not removed afterwards."
+        },
+
+        {
+            "title" : "Code Located Outside of Default Source Location",
+            "description" : "The line of code that is responsible for triggering the flow of communication between the two services is not located in the default source-code folder of the project. It could be the case that the line of code was unintentionaly introduced in a different folder (e.g. resources folder)."
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8080.0__>list.html__200.0__get__zuul__customer",
+"8080.0__>form.html__200.0__get__zuul__customer",
+"8080.0__>form.html__200.0__post__zuul__customer",
+"8080.0__>7.html__200.0__get__zuul__customer",
+"8080.0__>6.html__200.0__get__zuul__customer",
+"8080.0__>7.html__405.0__post__zuul__customer",
+"8080.0__>1.html__200.0__get__zuul__customer"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:21 , ",
+			"size" : 21,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":21},"symbol_counts":null,"total_final":0,"total_paths":21,"trans_counts":{"8080.0__>7.html__200.0__get__zuul__customer":"1","8080.0__>form.html__200.0__get__zuul__customer":"2","8080.0__>form.html__200.0__post__zuul__customer":"2","8080.0__>list.html__200.0__get__zuul__customer":"16"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

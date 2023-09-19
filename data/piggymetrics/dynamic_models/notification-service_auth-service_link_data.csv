@@ -1,0 +1,22 @@
+_source_@timestamp,_source_source_ip,_source_destination_ip,_source_source_port,symb:_source_destination_port,_source_event_duration,_source_network_bytes,_source_query,symb:_source_url_path,_source_url_port,symb:_source_http_response_status_code,symb:_source_http_request_method,symb:source_host_mapping,symb:destination_host_mapping
+1042810748,192.168.84.132,10.111.44.58,55522.0,5000.0,11981,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042810748,192.168.84.132,192.168.247.8,55522.0,5000.0,11617,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042810748,192.168.84.132,192.168.247.8,55522.0,5000.0,11949,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042811558,192.168.84.132,192.168.247.8,59644.0,5000.0,3741,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042811559,192.168.84.132,10.111.44.58,59644.0,5000.0,4301,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042811559,192.168.84.132,192.168.247.8,59644.0,5000.0,4264,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042814703,192.168.84.132,192.168.247.8,53816.0,5000.0,2341,1814,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042814703,192.168.84.132,192.168.247.8,53816.0,5000.0,2699,1814,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042814703,192.168.84.132,10.111.44.58,53816.0,5000.0,2727,1814,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042817316,192.168.84.132,10.111.44.58,41138.0,5000.0,4297,1790,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042817316,192.168.84.132,192.168.247.8,41138.0,5000.0,4258,1790,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042817316,192.168.84.132,192.168.247.8,41138.0,5000.0,3705,1790,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042817498,192.168.84.132,192.168.247.8,40830.0,5000.0,5833,1820,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042817498,192.168.84.132,192.168.247.8,40830.0,5000.0,7024,1820,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042817498,192.168.84.132,10.111.44.58,40830.0,5000.0,7120,1820,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042818335,192.168.84.132,192.168.247.8,40074.0,5000.0,1603,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042818335,192.168.84.132,192.168.247.8,40074.0,5000.0,1919,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042818335,192.168.84.132,10.111.44.58,40074.0,5000.0,1943,1808,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042820697,192.168.84.132,192.168.247.8,45018.0,5000.0,7079,1802,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042820697,192.168.84.132,10.111.44.58,45018.0,5000.0,9189,1802,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service
+1042820697,192.168.84.132,192.168.247.8,45018.0,5000.0,9106,1802,GET /uaa/users/current,>uaa>users>current,5000.0,200.0,get,notification-service,auth-service

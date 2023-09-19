@@ -1,0 +1,235 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:124 , ",
+			"size" : 124,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":124},"symbol_counts":null,"total_final":0,"total_paths":124,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"57","8761.0__>eureka>apps>delta__200.0__get__catalog__eureka":"67"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:17 ,  path: 0:262 , ",
+			"size" : 279,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"data" :  {"final_counts":{"0":17},"path_counts":{"0":262},"symbol_counts":null,"total_final":17,"total_paths":262,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"210","8761.0__>eureka>apps>delta__200.0__get__catalog__eureka":"52"}}
+		},
+		{
+			"id" : 2,
+			"source" :  0,
+			"label" : "fin: 0:24 ,  path: 0:279 , ",
+			"size" : 303,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"data" :  {"final_counts":{"0":24},"path_counts":{"0":279},"symbol_counts":null,"total_final":24,"total_paths":279,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"67","8761.0__>eureka>apps>delta__200.0__get__catalog__eureka":"212"}}
+		},
+		{
+			"id" : 3,
+			"source" :  1,
+			"label" : "fin: 0:6 ,  path: 0:102 , ",
+			"size" : 108,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"data" :  {"final_counts":{"0":6},"path_counts":{"0":102},"symbol_counts":null,"total_final":6,"total_paths":102,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"102","8761.0__>eureka>apps>delta__200.0__get__catalog__eureka":"0"}}
+		},
+		{
+			"id" : 4,
+			"source" :  2,
+			"label" : "fin: 0:28 ,  path: 0:164 , ",
+			"size" : 192,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"data" :  {"final_counts":{"0":28},"path_counts":{"0":164},"symbol_counts":null,"total_final":28,"total_paths":164,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"0","8761.0__>eureka>apps>delta__200.0__get__catalog__eureka":"164"}}
+		},
+		{
+			"id" : 5,
+			"source" :  3,
+			"label" : "fin: 0:10 ,  path: 0:92 , ",
+			"size" : 102,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"data" :  {"final_counts":{"0":10},"path_counts":{"0":92},"symbol_counts":null,"total_final":10,"total_paths":92,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"36","8761.0__>eureka>apps>delta__200.0__get__catalog__eureka":"56"}}
+		},
+		{
+			"id" : 6,
+			"source" :  4,
+			"label" : "fin: 0:28 ,  path: 0:136 , ",
+			"size" : 164,
+			"level" : 6,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"data" :  {"final_counts":{"0":28},"path_counts":{"0":136},"symbol_counts":null,"total_final":28,"total_paths":136,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"89","8761.0__>eureka>apps>delta__200.0__get__catalog__eureka":"47"}}
+		},
+		{
+			"id" : 7,
+			"source" :  6,
+			"label" : "fin: 0:11 ,  path: 0:36 , ",
+			"size" : 47,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka 8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka 8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"data" :  {"final_counts":{"0":11},"path_counts":{"0":36},"symbol_counts":null,"total_final":11,"total_paths":36,"trans_counts":{"8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka":"36"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_3",
+			"source" : "1",
+			"target" : "3",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_2",
+			"source" : "1",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_1",
+			"source" : "2",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_4",
+			"source" : "2",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_5",
+			"source" : "3",
+			"target" : "5",
+			"name": "8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "4_6",
+			"source" : "4",
+			"target" : "6",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_3",
+			"source" : "5",
+			"target" : "3",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_4",
+			"source" : "5",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_7",
+			"source" : "6",
+			"target" : "7",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_4",
+			"source" : "6",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "7_2",
+			"source" : "7",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>CATALOG>catalog-7764455c7b-gcmrr-catalog-8080__200.0__put__catalog__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

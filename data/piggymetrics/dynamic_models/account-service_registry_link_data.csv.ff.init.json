@@ -1,0 +1,30 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>apps>ACCOUNT-SERVICE__204.0__post__account-service__registry",
+"8761.0__>eureka>apps>__200.0__get__account-service__registry",
+"8761.0__>eureka>apps>delta__200.0__get__account-service__registry",
+"8761.0__>eureka>apps>ACCOUNT-SERVICE>account-service-7786958fd5-2mcf5-account-service-6000__200.0__put__account-service__registry"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:2994 , ",
+			"size" : 2994,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":2994},"symbol_counts":null,"total_final":0,"total_paths":2994,"trans_counts":{"8761.0__>eureka>apps>ACCOUNT-SERVICE>account-service-7786958fd5-2mcf5-account-service-6000__200.0__put__account-service__registry":"1491","8761.0__>eureka>apps>ACCOUNT-SERVICE__204.0__post__account-service__registry":"11","8761.0__>eureka>apps>__200.0__get__account-service__registry":"2","8761.0__>eureka>apps>delta__200.0__get__account-service__registry":"1490"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

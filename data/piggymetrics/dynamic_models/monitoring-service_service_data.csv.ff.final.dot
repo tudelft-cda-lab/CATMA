@@ -1,0 +1,70 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #89
+fin: 
+ path: 0:89 , 
+89 0
+[11,2,2,2,1,2,3,2,1,5,2,2,2,2,2,2,2,2,2,2,2,2,20,2,8,2,2,]" , style=filled, fillcolor="firebrick1", width=1.70471, height=1.70471, penwidth=4.49981];
+		0 -> 1 [label="out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server
+11 " , penwidth=4.49981 ];
+		0 -> 23 [label="out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream
+20 " , penwidth=4.49981 ];
+		0 -> 73 [label="in__8080.0__>proxy.stream__200.0__get__user__monitoring-service
+8 " , penwidth=4.49981 ];
+	1 [ label="1 #11
+fin: 0:1 , 
+ path: 0:10 , 
+10 1
+[9,1,]" , style=filled, fillcolor="firebrick1", width=1.24844, height=1.24844, penwidth=2.48491];
+		1 -> 27 [label="out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server
+9 " , penwidth=2.48491 ];
+	23 [ label="23 #46
+fin: 
+ path: 0:46 , 
+46 0
+[1,26,5,14,]" , style=filled, fillcolor="firebrick1", width=1.57901, height=1.57901, penwidth=3.85015];
+		23 -> 23 [label="out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream
+26 " , penwidth=3.85015 ];
+		23 -> 73 [label="in__8080.0__>proxy.stream__200.0__get__user__monitoring-service
+14 " , penwidth=3.85015 ];
+	27 [ label="27 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[8,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+		27 -> 79 [label="in__8080.0__>__404.0__get__user__monitoring-service
+8 " , penwidth=2.30259 ];
+	73 [ label="73 #22
+fin: 
+ path: 0:22 , 
+22 0
+[3,12,6,1,]" , style=filled, fillcolor="firebrick1", width=1.41961, height=1.41961, penwidth=3.13549];
+		73 -> 129 [label="out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream
+12 " , penwidth=3.13549 ];
+	79 [ label="79 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+	129 [ label="129 #12
+fin: 
+ path: 0:12 , 
+12 0
+[2,10,]" , style=filled, fillcolor="firebrick1", width=1.27115, height=1.27115, penwidth=2.56495];
+		129 -> 190 [label="in__8080.0__>proxy.stream__200.0__get__user__monitoring-service
+10 " , penwidth=2.56495 ];
+	190 [ label="190 #10
+fin: 
+ path: 0:10 , 
+10 0
+[2,8,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		190 -> 252 [label="out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream
+8 " , penwidth=2.3979 ];
+	252 [ label="252 #8
+fin: 
+ path: 0:8 , 
+8 0
+[2,6,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+}

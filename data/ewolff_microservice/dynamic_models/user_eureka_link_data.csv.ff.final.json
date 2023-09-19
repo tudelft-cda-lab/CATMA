@@ -1,0 +1,368 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>css>wro.css__200.0__get__user__eureka",
+"8761.0__>__200.0__get__user__eureka",
+"8761.0__>favicon.ico__404.0__get__user__eureka",
+"8761.0__>lastn__200.0__get__user__eureka"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:11 , ",
+			"size" : 11,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":11},"symbol_counts":null,"total_final":0,"total_paths":11,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1","8761.0__>eureka>css>wro.css__200.0__get__user__eureka":"10"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:1 ,  path: 0:9 , ",
+			"size" : 10,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>css>wro.css__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":9},"symbol_counts":null,"total_final":1,"total_paths":9,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"9"}}
+		},
+		{
+			"id" : 2,
+			"source" :  0,
+			"label" : "fin:  path: 0:1 , ",
+			"size" : 1,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"0","8761.0__>favicon.ico__404.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 3,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: 0:8 , ",
+			"size" : 9,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>css>wro.css__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":8},"symbol_counts":null,"total_final":1,"total_paths":8,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"0","8761.0__>favicon.ico__404.0__get__user__eureka":"8"}}
+		},
+		{
+			"id" : 4,
+			"source" :  2,
+			"label" : "fin:  path: 0:1 , ",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka",
+			"data" :  {"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>lastn__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 5,
+			"source" :  3,
+			"label" : "fin: 0:1 ,  path: 0:7 , ",
+			"size" : 8,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>css>wro.css__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":7},"symbol_counts":null,"total_final":1,"total_paths":7,"trans_counts":{"8761.0__>lastn__200.0__get__user__eureka":"7"}}
+		},
+		{
+			"id" : 6,
+			"source" :  4,
+			"label" : "fin:  path: 0:1 , ",
+			"size" : 1,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka",
+			"data" :  {"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 7,
+			"source" :  5,
+			"label" : "fin: 0:1 ,  path: 0:6 , ",
+			"size" : 7,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 8761.0__>eureka>css>wro.css__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":6},"symbol_counts":null,"total_final":1,"total_paths":6,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"6"}}
+		},
+		{
+			"id" : 8,
+			"source" :  6,
+			"label" : "fin: 0:0 ,  path: 0:1 , ",
+			"size" : 1,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 9,
+			"source" :  7,
+			"label" : "fin: 0:6 ,  path: 0:15 , ",
+			"size" : 21,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 5 8761.0__>eureka>css>wro.css__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":6},"path_counts":{"0":15},"symbol_counts":null,"total_final":6,"total_paths":15,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"15"}}
+		},
+		{
+			"id" : 10,
+			"source" :  8,
+			"label" : "fin: 0:0 ,  path: 0:1 , ",
+			"size" : 1,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 5 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 11,
+			"source" :  10,
+			"label" : "fin: 0:0 ,  path: 0:1 , ",
+			"size" : 1,
+			"level" : 6,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 6 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 12,
+			"source" :  11,
+			"label" : "fin: 0:0 ,  path: 0:1 , ",
+			"size" : 1,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 7 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 13,
+			"source" :  12,
+			"label" : "fin: 0:0 ,  path: 0:1 , ",
+			"size" : 1,
+			"level" : 8,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 8 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 14,
+			"source" :  13,
+			"label" : "fin: 0:0 ,  path: 0:1 , ",
+			"size" : 1,
+			"level" : 9,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 9 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":1},"symbol_counts":null,"total_final":0,"total_paths":1,"trans_counts":{"8761.0__>__200.0__get__user__eureka":"1"}}
+		},
+		{
+			"id" : 15,
+			"source" :  14,
+			"label" : "fin: 0:1 ,  path: ",
+			"size" : 1,
+			"level" : 10,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 10 8761.0__>__200.0__get__user__eureka 8761.0__>favicon.ico__404.0__get__user__eureka 8761.0__>lastn__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka 8761.0__>__200.0__get__user__eureka",
+			"data" :  {"final_counts":{"0":1},"symbol_counts":null,"total_final":1,"total_paths":0}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8761.0__>eureka>css>wro.css__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_3",
+			"source" : "1",
+			"target" : "3",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_4",
+			"source" : "2",
+			"target" : "4",
+			"name": "8761.0__>favicon.ico__404.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_5",
+			"source" : "3",
+			"target" : "5",
+			"name": "8761.0__>favicon.ico__404.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "4_6",
+			"source" : "4",
+			"target" : "6",
+			"name": "8761.0__>lastn__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_7",
+			"source" : "5",
+			"target" : "7",
+			"name": "8761.0__>lastn__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_8",
+			"source" : "6",
+			"target" : "8",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "7_9",
+			"source" : "7",
+			"target" : "9",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "8_10",
+			"source" : "8",
+			"target" : "10",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "9_9",
+			"source" : "9",
+			"target" : "9",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "10_11",
+			"source" : "10",
+			"target" : "11",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "11_12",
+			"source" : "11",
+			"target" : "12",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "12_13",
+			"source" : "12",
+			"target" : "13",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "13_14",
+			"source" : "13",
+			"target" : "14",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "14_15",
+			"source" : "14",
+			"target" : "15",
+			"name": "8761.0__>__200.0__get__user__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

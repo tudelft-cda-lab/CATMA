@@ -1,0 +1,39 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8989.0__>hystrix__200.0__get__user__turbine",
+"8989.0__>favicon.ico__404.0__get__user__turbine",
+"8989.0__>hystrix>images>hystrix-logo.png__304.0__get__user__turbine",
+"8989.0__>webjars>jquery>3.4.1>jquery.min.js__200.0__get__user__turbine",
+"8989.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__turbine",
+"8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine",
+"8989.0__>proxy.stream__200.0__get__user__turbine",
+"8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine",
+"8989.0__>hystrix>monitor__200.0__get__user__turbine",
+"8989.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__turbine",
+"8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__turbine",
+"8989.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__turbine",
+"8989.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__turbine"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:17 , ",
+			"size" : 17,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":17},"symbol_counts":null,"total_final":0,"total_paths":17,"trans_counts":{"8989.0__>favicon.ico__404.0__get__user__turbine":"1","8989.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__turbine":"1","8989.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__turbine":"1","8989.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__turbine":"1","8989.0__>hystrix>images>hystrix-logo.png__304.0__get__user__turbine":"1","8989.0__>hystrix__200.0__get__user__turbine":"10","8989.0__>proxy.stream__200.0__get__user__turbine":"1","8989.0__>webjars>jquery>3.4.1>jquery.min.js__200.0__get__user__turbine":"1"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

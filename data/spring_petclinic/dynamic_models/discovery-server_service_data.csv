@@ -1,0 +1,7 @@
+symb:flow_direction,_source_@timestamp,_source_source_ip,_source_destination_ip,_source_source_port,symb:_source_destination_port,_source_event_duration,_source_network_bytes,_source_query,symb:_source_url_path,_source_url_port,symb:_source_http_response_status_code,symb:_source_http_request_method,symb:source_host_mapping,symb:destination_host_mapping
+in,1055272600,192.168.235.192,192.168.247.63,42821.0,8761.0,2023101,5171,GET /,>,31201.0,200.0,get,user,discovery-server
+in,1055273038,192.168.235.192,192.168.247.63,53007.0,8761.0,110323,5630,GET /,>,31201.0,200.0,get,user,discovery-server
+in,1055273049,192.168.235.192,192.168.247.63,53007.0,8761.0,44982,5604,GET /,>,31201.0,200.0,get,user,discovery-server
+in,1055273434,192.168.235.192,192.168.247.63,36186.0,8761.0,23065,5630,GET /,>,31201.0,200.0,get,user,discovery-server
+in,1055274933,192.168.235.192,192.168.247.63,27982.0,8761.0,78004,5630,GET /,>,31201.0,200.0,get,user,discovery-server
+in,1055276497,192.168.235.192,192.168.247.63,1384.0,8761.0,118523,5630,GET /,>,31201.0,200.0,get,user,discovery-server

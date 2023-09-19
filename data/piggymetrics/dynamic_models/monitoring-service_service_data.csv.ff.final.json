@@ -1,0 +1,534 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server",
+"in__8080.0__>__404.0__get__user__monitoring-service",
+"in__8080.0__>favicon.ico__200.0__get__user__monitoring-service",
+"in__8080.0__>clusters__404.0__get__user__monitoring-service",
+"in__8080.0__>proxy>hystrix>monitor__404.0__get__user__monitoring-service",
+"in__8080.0__>webjars>jquery>2.1.1>jquery.min.js__200.0__get__user__monitoring-service",
+"in__8080.0__>webjars>jquery>2.1.1>jquery.min.map__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>images>hystrix-logo.png__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>css>global.css__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>css>monitor.css__200.0__get__user__monitoring-service",
+"in__8080.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>js>tmpl.js__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>js>jquery.tinysort.min.js__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPoolContainer.html__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__monitoring-service",
+"out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+"in__8080.0__>hystrix>css>resets.css__200.0__get__user__monitoring-service",
+"in__8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuitContainer.html__200.0__get__user__monitoring-service",
+"in__8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPool.html__200.0__get__user__monitoring-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:89 , ",
+			"size" : 89,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":89},"symbol_counts":null,"total_final":0,"total_paths":89,"trans_counts":{"in__8080.0__>__404.0__get__user__monitoring-service":"2","in__8080.0__>clusters__404.0__get__user__monitoring-service":"2","in__8080.0__>favicon.ico__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuitContainer.html__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPool.html__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPoolContainer.html__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>css>global.css__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>css>monitor.css__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>css>resets.css__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>images>hystrix-logo.png__200.0__get__user__monitoring-service":"1","in__8080.0__>hystrix>js>jquery.tinysort.min.js__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>js>tmpl.js__200.0__get__user__monitoring-service":"2","in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service":"5","in__8080.0__>hystrix__200.0__get__user__monitoring-service":"2","in__8080.0__>proxy.stream__200.0__get__user__monitoring-service":"8","in__8080.0__>proxy>hystrix>monitor__404.0__get__user__monitoring-service":"1","in__8080.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__monitoring-service":"2","in__8080.0__>webjars>jquery>2.1.1>jquery.min.js__200.0__get__user__monitoring-service":"2","in__8080.0__>webjars>jquery>2.1.1>jquery.min.map__200.0__get__user__monitoring-service":"3","out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream":"20","out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server":"11"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:1 ,  path: 0:10 , ",
+			"size" : 11,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":10},"symbol_counts":null,"total_final":1,"total_paths":10,"trans_counts":{"in__8080.0__>__404.0__get__user__monitoring-service":"1","out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server":"9"}}
+		},
+		{
+			"id" : 23,
+			"source" :  0,
+			"label" : "fin:  path: 0:46 , ",
+			"size" : 46,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"data" :  {"path_counts":{"0":46},"symbol_counts":null,"total_final":0,"total_paths":46,"trans_counts":{"in__8080.0__>hystrix>css>resets.css__200.0__get__user__monitoring-service":"5","in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service":"1","in__8080.0__>proxy.stream__200.0__get__user__monitoring-service":"14","out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream":"26"}}
+		},
+		{
+			"id" : 27,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: 0:8 , ",
+			"size" : 9,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":8},"symbol_counts":null,"total_final":1,"total_paths":8,"trans_counts":{"in__8080.0__>__404.0__get__user__monitoring-service":"8"}}
+		},
+		{
+			"id" : 73,
+			"source" :  23,
+			"label" : "fin: 0:0 ,  path: 0:22 , ",
+			"size" : 22,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream in__8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":22},"symbol_counts":null,"total_final":0,"total_paths":22,"trans_counts":{"in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuitContainer.html__200.0__get__user__monitoring-service":"1","in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service":"3","in__8080.0__>proxy.stream__200.0__get__user__monitoring-service":"6","out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream":"12"}}
+		},
+		{
+			"id" : 79,
+			"source" :  27,
+			"label" : "fin: 0:1 ,  path: 0:7 , ",
+			"size" : 8,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server in__8080.0__>__404.0__get__user__monitoring-service",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":7},"symbol_counts":null,"total_final":1,"total_paths":7,"trans_counts":{"in__8080.0__>favicon.ico__200.0__get__user__monitoring-service":"7"}}
+		},
+		{
+			"id" : 129,
+			"source" :  73,
+			"label" : "fin:  path: 0:12 , ",
+			"size" : 12,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream in__8080.0__>proxy.stream__200.0__get__user__monitoring-service out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"data" :  {"path_counts":{"0":12},"symbol_counts":null,"total_final":0,"total_paths":12,"trans_counts":{"in__8080.0__>proxy.stream__200.0__get__user__monitoring-service":"10","out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream":"2"}}
+		},
+		{
+			"id" : 190,
+			"source" :  129,
+			"label" : "fin: 0:0 ,  path: 0:10 , ",
+			"size" : 10,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream in__8080.0__>proxy.stream__200.0__get__user__monitoring-service out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream in__8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":10},"symbol_counts":null,"total_final":0,"total_paths":10,"trans_counts":{"in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service":"2","out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream":"8"}}
+		},
+		{
+			"id" : 252,
+			"source" :  190,
+			"label" : "fin:  path: 0:8 , ",
+			"size" : 8,
+			"level" : 9,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 5 out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream in__8080.0__>proxy.stream__200.0__get__user__monitoring-service out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream in__8080.0__>proxy.stream__200.0__get__user__monitoring-service out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"data" :  {"path_counts":{"0":8},"symbol_counts":null,"total_final":0,"total_paths":8,"trans_counts":{"in__8080.0__>proxy.stream__200.0__get__user__monitoring-service":"6","out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream":"2"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "in__8080.0__>__404.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_3",
+			"source" : "0",
+			"target" : "3",
+			"name": "in__8080.0__>favicon.ico__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_4",
+			"source" : "0",
+			"target" : "4",
+			"name": "in__8080.0__>clusters__404.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_5",
+			"source" : "0",
+			"target" : "5",
+			"name": "in__8080.0__>proxy>hystrix>monitor__404.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_6",
+			"source" : "0",
+			"target" : "6",
+			"name": "in__8080.0__>webjars>jquery>2.1.1>jquery.min.js__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_7",
+			"source" : "0",
+			"target" : "7",
+			"name": "in__8080.0__>webjars>jquery>2.1.1>jquery.min.map__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_8",
+			"source" : "0",
+			"target" : "8",
+			"name": "in__8080.0__>hystrix__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_9",
+			"source" : "0",
+			"target" : "9",
+			"name": "in__8080.0__>hystrix>images>hystrix-logo.png__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_10",
+			"source" : "0",
+			"target" : "10",
+			"name": "in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_11",
+			"source" : "0",
+			"target" : "11",
+			"name": "in__8080.0__>hystrix>css>global.css__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_12",
+			"source" : "0",
+			"target" : "12",
+			"name": "in__8080.0__>hystrix>css>monitor.css__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_13",
+			"source" : "0",
+			"target" : "13",
+			"name": "in__8080.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_14",
+			"source" : "0",
+			"target" : "14",
+			"name": "in__8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_15",
+			"source" : "0",
+			"target" : "15",
+			"name": "in__8080.0__>hystrix>js>tmpl.js__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_16",
+			"source" : "0",
+			"target" : "16",
+			"name": "in__8080.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_17",
+			"source" : "0",
+			"target" : "17",
+			"name": "in__8080.0__>hystrix>js>jquery.tinysort.min.js__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_18",
+			"source" : "0",
+			"target" : "18",
+			"name": "in__8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_19",
+			"source" : "0",
+			"target" : "19",
+			"name": "in__8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPoolContainer.html__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_20",
+			"source" : "0",
+			"target" : "20",
+			"name": "in__8080.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_21",
+			"source" : "0",
+			"target" : "21",
+			"name": "in__8080.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_22",
+			"source" : "0",
+			"target" : "22",
+			"name": "in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_23",
+			"source" : "0",
+			"target" : "23",
+			"name": "out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_24",
+			"source" : "0",
+			"target" : "24",
+			"name": "in__8080.0__>hystrix>css>resets.css__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_73",
+			"source" : "0",
+			"target" : "73",
+			"name": "in__8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_25",
+			"source" : "0",
+			"target" : "25",
+			"name": "in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuitContainer.html__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_26",
+			"source" : "0",
+			"target" : "26",
+			"name": "in__8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPool.html__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_27",
+			"source" : "1",
+			"target" : "27",
+			"name": "out__8888.0__>monitoring>default__200.0__get__monitoring-service__config-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_28",
+			"source" : "1",
+			"target" : "28",
+			"name": "in__8080.0__>__404.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "23_71",
+			"source" : "23",
+			"target" : "71",
+			"name": "in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "23_23",
+			"source" : "23",
+			"target" : "23",
+			"name": "out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "23_72",
+			"source" : "23",
+			"target" : "72",
+			"name": "in__8080.0__>hystrix>css>resets.css__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "23_73",
+			"source" : "23",
+			"target" : "73",
+			"name": "in__8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "27_79",
+			"source" : "27",
+			"target" : "79",
+			"name": "in__8080.0__>__404.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "73_128",
+			"source" : "73",
+			"target" : "128",
+			"name": "in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "73_129",
+			"source" : "73",
+			"target" : "129",
+			"name": "out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "73_130",
+			"source" : "73",
+			"target" : "130",
+			"name": "in__8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "73_131",
+			"source" : "73",
+			"target" : "131",
+			"name": "in__8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuitContainer.html__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "129_189",
+			"source" : "129",
+			"target" : "189",
+			"name": "out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "129_190",
+			"source" : "129",
+			"target" : "190",
+			"name": "in__8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "190_251",
+			"source" : "190",
+			"target" : "251",
+			"name": "in__8080.0__>hystrix>monitor__200.0__get__user__monitoring-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "190_252",
+			"source" : "190",
+			"target" : "252",
+			"name": "out__8080.0__>turbine>turbine.stream__200.0__get__monitoring-service__turbine-stream",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

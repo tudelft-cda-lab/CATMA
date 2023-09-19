@@ -1,0 +1,5 @@
+_source_@timestamp,_source_source_ip,_source_destination_ip,_source_source_port,symb:_source_destination_port,_source_event_duration,_source_network_bytes,_source_query,symb:_source_url_path,_source_url_port,symb:_source_http_response_status_code,symb:_source_http_request_method,symb:source_host_mapping,symb:destination_host_mapping
+1042810320,192.168.247.10,10.98.245.48,46998.0,8888.0,120189,1822,GET /account-service/default,>account-service>default,8888.0,200.0,get,account-service,config-server
+1042810320,192.168.247.10,192.168.247.4,46998.0,8888.0,120148,1822,GET /account-service/default,>account-service>default,8888.0,200.0,get,account-service,config-server
+1042810335,192.168.247.10,192.168.247.4,35422.0,8888.0,78638,1822,GET /account-service/default,>account-service>default,8888.0,200.0,get,account-service,config-server
+1042810335,192.168.247.10,10.98.245.48,35422.0,8888.0,78670,1822,GET /account-service/default,>account-service>default,8888.0,200.0,get,account-service,config-server

@@ -1,0 +1,61 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #148
+fin: 
+ path: 0:148 , 
+148 0
+[18,1,1,2,1,2,2,6,2,1,1,1,11,9,9,3,3,3,6,11,6,3,1,1,1,1,1,2,1,1,1,1,1,1,1,6,1,1,3,1,1,1,2,1,4,3,1,1,2,2,1,1,]" , style=filled, fillcolor="firebrick1", width=1.79242, height=1.79242, penwidth=5.00395];
+		0 -> 1 [label="out__8080.0__>customer>list.html__200.0__get__user__zuul
+18 " , penwidth=5.00395 ];
+		0 -> 13 [label="out__8080.0__>catalog>searchForm.html__200.0__get__user__zuul
+11 " , penwidth=5.00395 ];
+		0 -> 14 [label="out__8080.0__>catalog>searchByName.html__200.0__get__user__zuul
+9 " , penwidth=5.00395 ];
+		0 -> 15 [label="out__8080.0__>order>__200.0__get__user__zuul
+9 " , penwidth=5.00395 ];
+		0 -> 20 [label="out__8080.0__>order>line__200.0__post__user__zuul
+11 " , penwidth=5.00395 ];
+	1 [ label="1 #18
+fin: 0:1 , 
+ path: 0:17 , 
+17 1
+[9,1,1,1,1,2,1,1,]" , style=filled, fillcolor="firebrick1", width=1.37231, height=1.37231, penwidth=2.94444];
+		1 -> 53 [label="out__8080.0__>webjars>bootstrap>3.3.6>css>bootstrap-theme.min.css__304.0__get__user__zuul
+9 " , penwidth=2.94444 ];
+	13 [ label="13 #11
+fin: 
+ path: 0:11 , 
+11 0
+[1,8,2,]" , style=filled, fillcolor="firebrick1", width=1.24844, height=1.24844, penwidth=2.48491];
+		13 -> 14 [label="out__8080.0__>catalog>searchByName.html__200.0__get__user__zuul
+8 " , penwidth=2.48491 ];
+	14 [ label="14 #17
+fin: 
+ path: 0:17 , 
+17 0
+[4,2,1,2,2,4,2,]" , style=filled, fillcolor="firebrick1", width=1.3585, height=1.3585, penwidth=2.89037];
+	15 [ label="15 #9
+fin: 
+ path: 0:9 , 
+9 0
+[1,2,1,1,1,2,1,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+	20 [ label="20 #11
+fin: 
+ path: 0:11 , 
+11 0
+[5,6,]" , style=filled, fillcolor="firebrick1", width=1.24844, height=1.24844, penwidth=2.48491];
+	53 [ label="53 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[8,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+		53 -> 150 [label="out__8080.0__>webjars>bootstrap>3.3.6>js>bootstrap.min.js__304.0__get__user__zuul
+8 " , penwidth=2.30259 ];
+	150 [ label="150 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+}

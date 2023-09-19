@@ -1,0 +1,7 @@
+_source_@timestamp,_source_source_ip,_source_destination_ip,_source_source_port,symb:_source_destination_port,_source_event_duration,_source_network_bytes,_source_query,symb:_source_url_path,_source_url_port,symb:_source_http_response_status_code,symb:_source_http_request_method,symb:source_host_mapping,symb:destination_host_mapping
+1042810492,192.168.84.132,192.168.247.4,48784.0,8888.0,42052,2808,GET /notification-service/default,>notification-service>default,8888.0,200.0,get,notification-service,config-server
+1042810493,192.168.84.132,192.168.247.4,48784.0,8888.0,42405,2808,GET /notification-service/default,>notification-service>default,8888.0,200.0,get,notification-service,config-server
+1042810493,192.168.84.132,10.98.245.48,48784.0,8888.0,42441,2808,GET /notification-service/default,>notification-service>default,8888.0,200.0,get,notification-service,config-server
+1042810507,192.168.84.132,192.168.247.4,42914.0,8888.0,68546,2808,GET /notification-service/default,>notification-service>default,8888.0,200.0,get,notification-service,config-server
+1042810508,192.168.84.132,10.98.245.48,42914.0,8888.0,68950,2808,GET /notification-service/default,>notification-service>default,8888.0,200.0,get,notification-service,config-server
+1042810508,192.168.84.132,192.168.247.4,42914.0,8888.0,68928,2808,GET /notification-service/default,>notification-service>default,8888.0,200.0,get,notification-service,config-server

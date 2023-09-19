@@ -1,0 +1,38 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #4
+fin: 
+ path: 0:4 , 
+4 0
+[4,]" , style=filled, fillcolor="firebrick1", width=0.959135, height=0.959135, penwidth=1.60944];
+		0 -> 1 [label="8888.0__>account-service>default__200.0__get__account-service__config-server
+4 " , penwidth=1.60944 ];
+	1 [ label="1 #4
+fin: 0:1 , 
+ path: 0:3 , 
+3 1
+[3,]" , style=filled, fillcolor="firebrick1", width=0.959135, height=0.959135, penwidth=1.60944];
+		1 -> 2 [label="8888.0__>account-service>default__200.0__get__account-service__config-server
+3 " , penwidth=1.60944 ];
+	2 [ label="2 #3
+fin: 0:1 , 
+ path: 0:2 , 
+2 1
+[2,]" , style=filled, fillcolor="firebrick1", width=0.869742, height=0.869742, penwidth=1.38629];
+		2 -> 3 [label="8888.0__>account-service>default__200.0__get__account-service__config-server
+2 " , penwidth=1.38629 ];
+	3 [ label="3 #2
+fin: 0:1 , 
+ path: 0:1 , 
+1 1
+[1,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		3 -> 4 [label="8888.0__>account-service>default__200.0__get__account-service__config-server
+1 " , penwidth=1.09861 ];
+	4 [ label="4 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+}

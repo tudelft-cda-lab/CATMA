@@ -1,0 +1,117 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #11
+fin: 
+ path: 0:11 , 
+11 0
+[10,1,]" , style=filled, fillcolor="firebrick1", width=1.24844, height=1.24844, penwidth=2.48491];
+		0 -> 1 [label="8761.0__>eureka>css>wro.css__200.0__get__user__eureka
+10 " , penwidth=2.48491 ];
+		0 -> 2 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=2.48491 ];
+	1 [ label="1 #10
+fin: 0:1 , 
+ path: 0:9 , 
+9 1
+[9,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		1 -> 3 [label="8761.0__>__200.0__get__user__eureka
+9 " , penwidth=2.3979 ];
+	2 [ label="2 #1
+fin: 
+ path: 0:1 , 
+1 0
+[0,1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		2 -> 4 [label="8761.0__>favicon.ico__404.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	3 [ label="3 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[0,8,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+		3 -> 5 [label="8761.0__>favicon.ico__404.0__get__user__eureka
+8 " , penwidth=2.30259 ];
+	4 [ label="4 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		4 -> 6 [label="8761.0__>lastn__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	5 [ label="5 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+		5 -> 7 [label="8761.0__>lastn__200.0__get__user__eureka
+7 " , penwidth=2.19722 ];
+	6 [ label="6 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		6 -> 8 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	7 [ label="7 #7
+fin: 0:1 , 
+ path: 0:6 , 
+6 1
+[6,]" , style=filled, fillcolor="firebrick1", width=1.12475, height=1.12475, penwidth=2.07944];
+		7 -> 9 [label="8761.0__>__200.0__get__user__eureka
+6 " , penwidth=2.07944 ];
+	8 [ label="8 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		8 -> 10 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	9 [ label="9 #21
+fin: 0:6 , 
+ path: 0:15 , 
+15 6
+[15,]" , style=filled, fillcolor="firebrick1", width=1.4088, height=1.4088, penwidth=3.09104];
+		9 -> 9 [label="8761.0__>__200.0__get__user__eureka
+15 " , penwidth=3.09104 ];
+	10 [ label="10 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		10 -> 11 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	11 [ label="11 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		11 -> 12 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	12 [ label="12 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		12 -> 13 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	13 [ label="13 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		13 -> 14 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	14 [ label="14 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		14 -> 15 [label="8761.0__>__200.0__get__user__eureka
+1 " , penwidth=0.693147 ];
+	15 [ label="15 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+}

@@ -1,0 +1,57 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"5000.0__>uaa>users>current__200.0__get__notification-service__auth-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:21 , ",
+			"size" : 21,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":21},"symbol_counts":null,"total_final":0,"total_paths":21,"trans_counts":{"5000.0__>uaa>users>current__200.0__get__notification-service__auth-service":"21"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:21 ,  path: 0:144 , ",
+			"size" : 165,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 5000.0__>uaa>users>current__200.0__get__notification-service__auth-service",
+			"data" :  {"final_counts":{"0":21},"path_counts":{"0":144},"symbol_counts":null,"total_final":21,"total_paths":144,"trans_counts":{"5000.0__>uaa>users>current__200.0__get__notification-service__auth-service":"144"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "5000.0__>uaa>users>current__200.0__get__notification-service__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_1",
+			"source" : "1",
+			"target" : "1",
+			"name": "5000.0__>uaa>users>current__200.0__get__notification-service__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

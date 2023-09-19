@@ -1,0 +1,57 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:858 , ",
+			"size" : 858,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":858},"symbol_counts":null,"total_final":0,"total_paths":858,"trans_counts":{"5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service":"858"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:858 ,  path: 0:7677 , ",
+			"size" : 8535,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service",
+			"data" :  {"final_counts":{"0":858},"path_counts":{"0":7677},"symbol_counts":null,"total_final":858,"total_paths":7677,"trans_counts":{"5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service":"7677"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_1",
+			"source" : "1",
+			"target" : "1",
+			"name": "5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

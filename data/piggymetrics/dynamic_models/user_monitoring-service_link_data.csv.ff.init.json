@@ -1,0 +1,51 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8080.0__>__404.0__get__user__monitoring-service",
+"8080.0__>favicon.ico__200.0__get__user__monitoring-service",
+"8080.0__>clusters__404.0__get__user__monitoring-service",
+"8080.0__>proxy>hystrix>monitor__404.0__get__user__monitoring-service",
+"8080.0__>webjars>jquery>2.1.1>jquery.min.js__200.0__get__user__monitoring-service",
+"8080.0__>webjars>jquery>2.1.1>jquery.min.map__200.0__get__user__monitoring-service",
+"8080.0__>hystrix__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>images>hystrix-logo.png__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>monitor__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>css>global.css__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>css>monitor.css__200.0__get__user__monitoring-service",
+"8080.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>js>tmpl.js__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>js>jquery.tinysort.min.js__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPoolContainer.html__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>css>resets.css__200.0__get__user__monitoring-service",
+"8080.0__>proxy.stream__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuitContainer.html__200.0__get__user__monitoring-service",
+"8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPool.html__200.0__get__user__monitoring-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:63 , ",
+			"size" : 63,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":63},"symbol_counts":null,"total_final":0,"total_paths":63,"trans_counts":{"8080.0__>__404.0__get__user__monitoring-service":"11","8080.0__>clusters__404.0__get__user__monitoring-service":"2","8080.0__>favicon.ico__200.0__get__user__monitoring-service":"1","8080.0__>hystrix>components>hystrixCommand>hystrixCommand.css__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>components>hystrixCommand>hystrixCommand.js__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuit.html__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>components>hystrixCommand>templates>hystrixCircuitContainer.html__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.css__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>components>hystrixThreadPool>hystrixThreadPool.js__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPool.html__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>components>hystrixThreadPool>templates>hystrixThreadPoolContainer.html__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>css>global.css__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>css>monitor.css__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>css>resets.css__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>images>hystrix-logo-tagline-tiny.png__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>images>hystrix-logo.png__200.0__get__user__monitoring-service":"1","8080.0__>hystrix>js>jquery.tinysort.min.js__200.0__get__user__monitoring-service":"2","8080.0__>hystrix>js>tmpl.js__200.0__get__user__monitoring-service":"1","8080.0__>hystrix>monitor__200.0__get__user__monitoring-service":"5","8080.0__>hystrix__200.0__get__user__monitoring-service":"2","8080.0__>proxy.stream__200.0__get__user__monitoring-service":"7","8080.0__>proxy>hystrix>monitor__404.0__get__user__monitoring-service":"1","8080.0__>webjars>d3js>3.4.11>d3.min.js__200.0__get__user__monitoring-service":"1","8080.0__>webjars>jquery>2.1.1>jquery.min.js__200.0__get__user__monitoring-service":"2","8080.0__>webjars>jquery>2.1.1>jquery.min.map__200.0__get__user__monitoring-service":"3"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

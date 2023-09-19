@@ -1,0 +1,134 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #141
+fin: 
+ path: 0:141 , 
+141 0
+[67,58,3,1,1,1,1,1,2,1,1,1,1,1,1,]" , style=filled, fillcolor="firebrick1", width=1.78437, height=1.78437, penwidth=4.95583];
+		0 -> 1 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+67 " , penwidth=4.95583 ];
+		0 -> 2 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+58 " , penwidth=4.95583 ];
+	1 [ label="1 #267
+fin: 0:12 , 
+ path: 0:255 , 
+255 12
+[71,177,7,]" , style=filled, fillcolor="firebrick1", width=1.8857, height=1.8857, penwidth=5.59099];
+		1 -> 16 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+71 " , penwidth=5.59099 ];
+		1 -> 2 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+177 " , penwidth=5.59099 ];
+	2 [ label="2 #235
+fin: 0:7 , 
+ path: 0:228 , 
+228 7
+[174,42,10,2,]" , style=filled, fillcolor="firebrick1", width=1.86622, height=1.86622, penwidth=5.46383];
+		2 -> 1 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+174 " , penwidth=5.46383 ];
+		2 -> 18 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+42 " , penwidth=5.46383 ];
+		2 -> 19 [label="in__8989.0__>hystrix__200.0__get__user__turbine
+10 " , penwidth=5.46383 ];
+	16 [ label="16 #71
+fin: 0:5 , 
+ path: 0:66 , 
+66 5
+[0,66,0,]" , style=filled, fillcolor="firebrick1", width=1.66329, height=1.66329, penwidth=4.27667];
+		16 -> 36 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+66 " , penwidth=4.27667 ];
+	18 [ label="18 #42
+fin: 0:2 , 
+ path: 0:40 , 
+40 2
+[40,0,0,]" , style=filled, fillcolor="firebrick1", width=1.5605, height=1.5605, penwidth=3.7612];
+		18 -> 38 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+40 " , penwidth=3.7612 ];
+	19 [ label="19 #10
+fin: 
+ path: 0:10 , 
+10 0
+[4,2,4,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+	36 [ label="36 #66
+fin: 0:7 , 
+ path: 0:59 , 
+59 7
+[25,29,5,]" , style=filled, fillcolor="firebrick1", width=1.64956, height=1.64956, penwidth=4.20469];
+		36 -> 58 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+25 " , penwidth=4.20469 ];
+		36 -> 59 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+29 " , penwidth=4.20469 ];
+	38 [ label="38 #40
+fin: 0:2 , 
+ path: 0:38 , 
+38 2
+[10,28,0,]" , style=filled, fillcolor="firebrick1", width=1.55045, height=1.55045, penwidth=3.71357];
+		38 -> 62 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+10 " , penwidth=3.71357 ];
+		38 -> 63 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+28 " , penwidth=3.71357 ];
+	58 [ label="58 #39
+fin: 0:7 , 
+ path: 0:32 , 
+32 7
+[0,32,0,]" , style=filled, fillcolor="firebrick1", width=1.54519, height=1.54519, penwidth=3.68888];
+		58 -> 84 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+32 " , penwidth=3.68888 ];
+	59 [ label="59 #29
+fin: 0:3 , 
+ path: 0:26 , 
+26 3
+[26,0,0,]" , style=filled, fillcolor="firebrick1", width=1.48188, height=1.48188, penwidth=3.4012];
+		59 -> 1 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+26 " , penwidth=3.4012 ];
+	62 [ label="62 #10
+fin: 
+ path: 0:10 , 
+10 0
+[10,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		62 -> 87 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+10 " , penwidth=2.3979 ];
+	63 [ label="63 #50
+fin: 0:8 , 
+ path: 0:42 , 
+42 8
+[42,0,0,]" , style=filled, fillcolor="firebrick1", width=1.59571, height=1.59571, penwidth=3.93183];
+		63 -> 88 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+42 " , penwidth=3.93183 ];
+	84 [ label="84 #32
+fin: 0:5 , 
+ path: 0:27 , 
+27 5
+[14,6,7,]" , style=filled, fillcolor="firebrick1", width=1.5033, height=1.5033, penwidth=3.49651];
+		84 -> 58 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+14 " , penwidth=3.49651 ];
+	87 [ label="87 #10
+fin: 0:1 , 
+ path: 0:9 , 
+9 1
+[7,2,0,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+	88 [ label="88 #42
+fin: 0:7 , 
+ path: 0:35 , 
+35 7
+[19,14,2,]" , style=filled, fillcolor="firebrick1", width=1.5605, height=1.5605, penwidth=3.7612];
+		88 -> 115 [label="out__8761.0__>eureka>apps>TURBINE>hystrix-67dbcb6656-xk6zm-turbine-8989__200.0__put__turbine__eureka
+19 " , penwidth=3.7612 ];
+		88 -> 63 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+14 " , penwidth=3.7612 ];
+	115 [ label="115 #19
+fin: 0:3 , 
+ path: 0:16 , 
+16 3
+[16,]" , style=filled, fillcolor="firebrick1", width=1.38523, height=1.38523, penwidth=2.99573];
+		115 -> 144 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+16 " , penwidth=2.99573 ];
+	144 [ label="144 #16
+fin: 0:3 , 
+ path: 0:13 , 
+13 3
+[3,8,2,]" , style=filled, fillcolor="firebrick1", width=1.3437, height=1.3437, penwidth=2.83321];
+		144 -> 63 [label="out__8761.0__>eureka>apps>delta__200.0__get__turbine__eureka
+8 " , penwidth=2.83321 ];
+}

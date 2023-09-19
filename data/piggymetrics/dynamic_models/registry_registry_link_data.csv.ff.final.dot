@@ -1,0 +1,19 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #4487
+fin: 
+ path: 0:4487 , 
+4487 0
+[4487,]" , style=filled, fillcolor="firebrick1", width=2.24168, height=2.24168, penwidth=8.40916];
+		0 -> 1 [label="8761.0__>eureka>peerreplication>batch>__200.0__post__registry__registry
+4487 " , penwidth=8.40916 ];
+	1 [ label="1 #44825
+fin: 0:4487 , 
+ path: 0:40338 , 
+40338 4487
+[40338,]" , style=filled, fillcolor="firebrick1", width=2.46049, height=2.46049, penwidth=10.7105];
+		1 -> 1 [label="8761.0__>eureka>peerreplication>batch>__200.0__post__registry__registry
+40338 " , penwidth=10.7105 ];
+}

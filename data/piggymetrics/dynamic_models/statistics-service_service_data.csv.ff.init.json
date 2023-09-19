@@ -1,0 +1,44 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"out__8888.0__>statistics-service>default__200.0__get__statistics-service__config-server",
+"out__8761.0__>eureka>apps>__200.0__get__statistics-service__registry",
+"out__8761.0__>eureka>apps>STATISTICS-SERVICE__204.0__post__statistics-service__registry",
+"out__8761.0__>eureka>apps>STATISTICS-SERVICE>statistics-service-c7f5b5b8-lhwd2-statistics-service-7000__200.0__put__statistics-service__registry",
+"out__8761.0__>eureka>apps>delta__200.0__get__statistics-service__registry",
+"out__5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service",
+"in__7000.0__>statistics>JohnDoe__500.0__put__account-service__statistics-service",
+"in__7000.0__>statistics>JaneDoe__500.0__put__account-service__statistics-service",
+"in__7000.0__>statistics>ChrisDoe__500.0__put__account-service__statistics-service",
+"in__7000.0__>statistics>JamieDoe__500.0__put__account-service__statistics-service",
+"in__7000.0__>statistics>Test__500.0__put__account-service__statistics-service",
+"in__7000.0__>statistics>TestUser1__500.0__put__account-service__statistics-service",
+"in__7000.0__>statistics>current__401.0__get__gateway__statistics-service",
+"in__7000.0__>statistics__302.0__get__gateway__statistics-service",
+"in__7000.0__>statistics>__401.0__get__gateway__statistics-service",
+"in__7000.0__>statistics>JohnDoe__401.0__get__gateway__statistics-service",
+"in__7000.0__>statistics>LolUser__500.0__put__account-service__statistics-service",
+"in__7000.0__>statistics>JimDoe__500.0__put__account-service__statistics-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:5636 , ",
+			"size" : 5636,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":5636},"symbol_counts":null,"total_final":0,"total_paths":5636,"trans_counts":{"in__7000.0__>statistics>ChrisDoe__500.0__put__account-service__statistics-service":"22","in__7000.0__>statistics>JamieDoe__500.0__put__account-service__statistics-service":"26","in__7000.0__>statistics>JaneDoe__500.0__put__account-service__statistics-service":"118","in__7000.0__>statistics>JimDoe__500.0__put__account-service__statistics-service":"14","in__7000.0__>statistics>JohnDoe__401.0__get__gateway__statistics-service":"2","in__7000.0__>statistics>JohnDoe__500.0__put__account-service__statistics-service":"54","in__7000.0__>statistics>LolUser__500.0__put__account-service__statistics-service":"38","in__7000.0__>statistics>TestUser1__500.0__put__account-service__statistics-service":"8","in__7000.0__>statistics>Test__500.0__put__account-service__statistics-service":"6","in__7000.0__>statistics>__401.0__get__gateway__statistics-service":"2","in__7000.0__>statistics>current__401.0__get__gateway__statistics-service":"4","in__7000.0__>statistics__302.0__get__gateway__statistics-service":"2","out__5000.0__>uaa>users>current__200.0__get__statistics-service__auth-service":"858","out__8761.0__>eureka>apps>STATISTICS-SERVICE>statistics-service-c7f5b5b8-lhwd2-statistics-service-7000__200.0__put__statistics-service__registry":"2231","out__8761.0__>eureka>apps>STATISTICS-SERVICE__204.0__post__statistics-service__registry":"3","out__8761.0__>eureka>apps>__200.0__get__statistics-service__registry":"3","out__8761.0__>eureka>apps>delta__200.0__get__statistics-service__registry":"2230","out__8888.0__>statistics-service>default__200.0__get__statistics-service__config-server":"15"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

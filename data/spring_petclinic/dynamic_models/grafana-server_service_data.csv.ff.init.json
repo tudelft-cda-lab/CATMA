@@ -1,0 +1,28 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"in__3000.0__>api>health__200.0__get__user__grafana-server",
+"in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:906 , ",
+			"size" : 906,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":906},"symbol_counts":null,"total_final":0,"total_paths":906,"trans_counts":{"in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server":"2","in__3000.0__>api>health__200.0__get__user__grafana-server":"904"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

@@ -1,0 +1,35 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #16
+fin: 
+ path: 0:16 , 
+16 0
+[16,]" , style=filled, fillcolor="firebrick1", width=1.3437, height=1.3437, penwidth=2.83321];
+		0 -> 1 [label="8000.0__>notifications>recipients>current__200.0__put__gateway__notification-service
+16 " , penwidth=2.83321 ];
+	1 [ label="1 #104
+fin: 0:14 , 
+ path: 0:90 , 
+90 14
+[84,6,]" , style=filled, fillcolor="firebrick1", width=1.73236, height=1.73236, penwidth=4.65396];
+		1 -> 1 [label="8000.0__>notifications>recipients>current__200.0__put__gateway__notification-service
+84 " , penwidth=4.65396 ];
+		1 -> 2 [label="8000.0__>notifications>settings>current__401.0__get__gateway__notification-service
+6 " , penwidth=4.65396 ];
+	2 [ label="2 #6
+fin: 0:1 , 
+ path: 0:5 , 
+5 1
+[0,5,]" , style=filled, fillcolor="firebrick1", width=1.08042, height=1.08042, penwidth=1.94591];
+		2 -> 3 [label="8000.0__>notifications>settings>current__401.0__get__gateway__notification-service
+5 " , penwidth=1.94591 ];
+	3 [ label="3 #5
+fin: 0:1 , 
+ path: 0:4 , 
+4 1
+[4,]" , style=filled, fillcolor="firebrick1", width=1.02667, height=1.02667, penwidth=1.79176];
+		3 -> 1 [label="8000.0__>notifications>recipients>current__200.0__put__gateway__notification-service
+4 " , penwidth=1.79176 ];
+}

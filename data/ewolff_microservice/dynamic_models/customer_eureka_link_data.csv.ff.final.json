@@ -1,0 +1,288 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:124 , ",
+			"size" : 124,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":124},"symbol_counts":null,"total_final":0,"total_paths":124,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"57","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"67"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:15 ,  path: 0:226 , ",
+			"size" : 241,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"data" :  {"final_counts":{"0":15},"path_counts":{"0":226},"symbol_counts":null,"total_final":15,"total_paths":226,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"179","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"47"}}
+		},
+		{
+			"id" : 2,
+			"source" :  0,
+			"label" : "fin: 0:21 ,  path: 0:266 , ",
+			"size" : 287,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"data" :  {"final_counts":{"0":21},"path_counts":{"0":266},"symbol_counts":null,"total_final":21,"total_paths":266,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"92","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"174"}}
+		},
+		{
+			"id" : 3,
+			"source" :  1,
+			"label" : "fin: 0:13 ,  path: 0:120 , ",
+			"size" : 133,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"data" :  {"final_counts":{"0":13},"path_counts":{"0":120},"symbol_counts":null,"total_final":13,"total_paths":120,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"120","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"0"}}
+		},
+		{
+			"id" : 4,
+			"source" :  2,
+			"label" : "fin: 0:15 ,  path: 0:126 , ",
+			"size" : 141,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"data" :  {"final_counts":{"0":15},"path_counts":{"0":126},"symbol_counts":null,"total_final":15,"total_paths":126,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"0","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"126"}}
+		},
+		{
+			"id" : 5,
+			"source" :  3,
+			"label" : "fin: 0:15 ,  path: 0:105 , ",
+			"size" : 120,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"data" :  {"final_counts":{"0":15},"path_counts":{"0":105},"symbol_counts":null,"total_final":15,"total_paths":105,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"42","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"63"}}
+		},
+		{
+			"id" : 6,
+			"source" :  4,
+			"label" : "fin: 0:17 ,  path: 0:109 , ",
+			"size" : 126,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"data" :  {"final_counts":{"0":17},"path_counts":{"0":109},"symbol_counts":null,"total_final":17,"total_paths":109,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"49","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"60"}}
+		},
+		{
+			"id" : 7,
+			"source" :  5,
+			"label" : "fin: 0:11 ,  path: 0:38 , ",
+			"size" : 49,
+			"level" : 6,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"data" :  {"final_counts":{"0":11},"path_counts":{"0":38},"symbol_counts":null,"total_final":11,"total_paths":38,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"0","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"38"}}
+		},
+		{
+			"id" : 8,
+			"source" :  6,
+			"label" : "fin: 0:9 ,  path: 0:51 , ",
+			"size" : 60,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"data" :  {"final_counts":{"0":9},"path_counts":{"0":51},"symbol_counts":null,"total_final":9,"total_paths":51,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"51"}}
+		},
+		{
+			"id" : 9,
+			"source" :  7,
+			"label" : "fin: 0:8 ,  path: 0:30 , ",
+			"size" : 38,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 5 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka 8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"data" :  {"final_counts":{"0":8},"path_counts":{"0":30},"symbol_counts":null,"total_final":8,"total_paths":30,"trans_counts":{"8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka":"7","8761.0__>eureka>apps>delta__200.0__get__customer__eureka":"23"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_3",
+			"source" : "1",
+			"target" : "3",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_2",
+			"source" : "1",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_1",
+			"source" : "2",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_4",
+			"source" : "2",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_5",
+			"source" : "3",
+			"target" : "5",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "4_6",
+			"source" : "4",
+			"target" : "6",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_3",
+			"source" : "5",
+			"target" : "3",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_7",
+			"source" : "5",
+			"target" : "7",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_8",
+			"source" : "6",
+			"target" : "8",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_4",
+			"source" : "6",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "7_9",
+			"source" : "7",
+			"target" : "9",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "8_2",
+			"source" : "8",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "9_3",
+			"source" : "9",
+			"target" : "3",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "9_7",
+			"source" : "9",
+			"target" : "7",
+			"name": "8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-dl52w-customer-8080__200.0__put__customer__eureka",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

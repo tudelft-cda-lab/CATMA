@@ -1,0 +1,70 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8888.0__>gateway>default__200.0__get__gateway__config-server"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:2 , ",
+			"size" : 2,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":2},"symbol_counts":null,"total_final":0,"total_paths":2,"trans_counts":{"8888.0__>gateway>default__200.0__get__gateway__config-server":"2"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:1 ,  path: 0:1 , ",
+			"size" : 2,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8888.0__>gateway>default__200.0__get__gateway__config-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1},"symbol_counts":null,"total_final":1,"total_paths":1,"trans_counts":{"8888.0__>gateway>default__200.0__get__gateway__config-server":"1"}}
+		},
+		{
+			"id" : 2,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: ",
+			"size" : 1,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8888.0__>gateway>default__200.0__get__gateway__config-server 8888.0__>gateway>default__200.0__get__gateway__config-server",
+			"data" :  {"final_counts":{"0":1},"symbol_counts":null,"total_final":1,"total_paths":0}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8888.0__>gateway>default__200.0__get__gateway__config-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_2",
+			"source" : "1",
+			"target" : "2",
+			"name": "8888.0__>gateway>default__200.0__get__gateway__config-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

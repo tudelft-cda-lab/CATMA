@@ -1,0 +1,53 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"out__8888.0__>registry>default__200.0__get__registry__config-server",
+"in__8761.0__>eureka>apps>__200.0__get__gateway__registry",
+"in__8761.0__>eureka>apps>GATEWAY__204.0__post__gateway__registry",
+"in__8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry",
+"out__8761.0__>eureka>peerreplication>batch>__200.0__post__registry__registry",
+"in__8761.0__>eureka>apps>GATEWAY>gateway-575966578-28bxx-gateway-4000__200.0__put__gateway__registry",
+"in__8761.0__>eureka>apps>delta__200.0__get__gateway__registry",
+"in__8761.0__>eureka>apps>__200.0__get__auth-service__registry",
+"in__8761.0__>eureka>apps>AUTH-SERVICE__204.0__post__auth-service__registry",
+"in__8761.0__>eureka>apps>delta__200.0__get__auth-service__registry",
+"in__8761.0__>eureka>apps>AUTH-SERVICE>auth-service-65b964b6c-84h87-auth-service-5000__200.0__put__auth-service__registry",
+"in__8761.0__>eureka>apps>ACCOUNT-SERVICE__204.0__post__account-service__registry",
+"in__8761.0__>eureka>apps>__200.0__get__account-service__registry",
+"in__8761.0__>eureka>apps>delta__200.0__get__account-service__registry",
+"in__8761.0__>eureka>apps>ACCOUNT-SERVICE>account-service-7786958fd5-2mcf5-account-service-6000__200.0__put__account-service__registry",
+"in__8761.0__>eureka>apps>__200.0__get__statistics-service__registry",
+"in__8761.0__>eureka>apps>STATISTICS-SERVICE__204.0__post__statistics-service__registry",
+"in__8761.0__>eureka>apps>STATISTICS-SERVICE>statistics-service-c7f5b5b8-lhwd2-statistics-service-7000__200.0__put__statistics-service__registry",
+"in__8761.0__>eureka>apps>delta__200.0__get__statistics-service__registry",
+"in__8761.0__>eureka>apps>__200.0__get__notification-service__registry",
+"in__8761.0__>eureka>apps>NOTIFICATION-SERVICE__204.0__post__notification-service__registry",
+"in__8761.0__>eureka>apps>delta__200.0__get__notification-service__registry",
+"in__8761.0__>eureka>apps>NOTIFICATION-SERVICE>notification-service-77885bf66f-dqtcx-notification-service-8000__200.0__put__notification-service__registry",
+"in__8761.0__>eureka>apps>TURBINE-STREAM-SERVICE__204.0__post__turbine-stream__registry",
+"in__8761.0__>eureka>apps>__200.0__get__turbine-stream__registry",
+"in__8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry",
+"in__8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:31360 , ",
+			"size" : 31360,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":31360},"symbol_counts":null,"total_final":0,"total_paths":31360,"trans_counts":{"in__8761.0__>eureka>apps>ACCOUNT-SERVICE>account-service-7786958fd5-2mcf5-account-service-6000__200.0__put__account-service__registry":"1496","in__8761.0__>eureka>apps>ACCOUNT-SERVICE__204.0__post__account-service__registry":"2","in__8761.0__>eureka>apps>AUTH-SERVICE>auth-service-65b964b6c-84h87-auth-service-5000__200.0__put__auth-service__registry":"1500","in__8761.0__>eureka>apps>AUTH-SERVICE__204.0__post__auth-service__registry":"2","in__8761.0__>eureka>apps>GATEWAY>gateway-575966578-28bxx-gateway-4000__200.0__put__gateway__registry":"1508","in__8761.0__>eureka>apps>GATEWAY__204.0__post__gateway__registry":"2","in__8761.0__>eureka>apps>NOTIFICATION-SERVICE>notification-service-77885bf66f-dqtcx-notification-service-8000__200.0__put__notification-service__registry":"2223","in__8761.0__>eureka>apps>NOTIFICATION-SERVICE__204.0__post__notification-service__registry":"3","in__8761.0__>eureka>apps>STATISTICS-SERVICE>statistics-service-c7f5b5b8-lhwd2-statistics-service-7000__200.0__put__statistics-service__registry":"2232","in__8761.0__>eureka>apps>STATISTICS-SERVICE__204.0__post__statistics-service__registry":"3","in__8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry":"2216","in__8761.0__>eureka>apps>TURBINE-STREAM-SERVICE__204.0__post__turbine-stream__registry":"3","in__8761.0__>eureka>apps>__200.0__get__account-service__registry":"2","in__8761.0__>eureka>apps>__200.0__get__auth-service__registry":"2","in__8761.0__>eureka>apps>__200.0__get__gateway__registry":"4","in__8761.0__>eureka>apps>__200.0__get__notification-service__registry":"3","in__8761.0__>eureka>apps>__200.0__get__statistics-service__registry":"3","in__8761.0__>eureka>apps>__200.0__get__turbine-stream__registry":"3","in__8761.0__>eureka>apps>delta__200.0__get__account-service__registry":"1494","in__8761.0__>eureka>apps>delta__200.0__get__auth-service__registry":"1500","in__8761.0__>eureka>apps>delta__200.0__get__gateway__registry":"1506","in__8761.0__>eureka>apps>delta__200.0__get__notification-service__registry":"2223","in__8761.0__>eureka>apps>delta__200.0__get__statistics-service__registry":"2232","in__8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry":"2216","in__8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry":"4486","out__8761.0__>eureka>peerreplication>batch>__200.0__post__registry__registry":"4485","out__8888.0__>registry>default__200.0__get__registry__config-server":"11"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

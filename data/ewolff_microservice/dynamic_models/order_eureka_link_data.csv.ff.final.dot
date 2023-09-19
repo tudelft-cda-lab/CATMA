@@ -1,0 +1,62 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #124
+fin: 
+ path: 0:124 , 
+124 0
+[67,57,]" , style=filled, fillcolor="firebrick1", width=1.76273, height=1.76273, penwidth=4.82831];
+		0 -> 1 [label="8761.0__>eureka>apps>ORDER>order-69d76bbbfc-wxmsw-order-8080__200.0__put__order__eureka
+67 " , penwidth=4.82831 ];
+		0 -> 2 [label="8761.0__>eureka>apps>delta__200.0__get__order__eureka
+57 " , penwidth=4.82831 ];
+	1 [ label="1 #413
+fin: 0:35 , 
+ path: 0:378 , 
+378 35
+[112,266,]" , style=filled, fillcolor="firebrick1", width=1.9496, height=1.9496, penwidth=6.02587];
+		1 -> 3 [label="8761.0__>eureka>apps>ORDER>order-69d76bbbfc-wxmsw-order-8080__200.0__put__order__eureka
+112 " , penwidth=6.02587 ];
+		1 -> 2 [label="8761.0__>eureka>apps>delta__200.0__get__order__eureka
+266 " , penwidth=6.02587 ];
+	2 [ label="2 #323
+fin: 0:23 , 
+ path: 0:300 , 
+300 23
+[242,58,]" , style=filled, fillcolor="firebrick1", width=1.91409, height=1.91409, penwidth=5.78074];
+		2 -> 1 [label="8761.0__>eureka>apps>ORDER>order-69d76bbbfc-wxmsw-order-8080__200.0__put__order__eureka
+242 " , penwidth=5.78074 ];
+		2 -> 4 [label="8761.0__>eureka>apps>delta__200.0__get__order__eureka
+58 " , penwidth=5.78074 ];
+	3 [ label="3 #184
+fin: 0:27 , 
+ path: 0:157 , 
+157 27
+[0,157,]" , style=filled, fillcolor="firebrick1", width=1.82783, height=1.82783, penwidth=5.22036];
+		3 -> 5 [label="8761.0__>eureka>apps>delta__200.0__get__order__eureka
+157 " , penwidth=5.22036 ];
+	4 [ label="4 #58
+fin: 0:3 , 
+ path: 0:55 , 
+55 3
+[55,]" , style=filled, fillcolor="firebrick1", width=1.62483, height=1.62483, penwidth=4.07754];
+		4 -> 1 [label="8761.0__>eureka>apps>ORDER>order-69d76bbbfc-wxmsw-order-8080__200.0__put__order__eureka
+55 " , penwidth=4.07754 ];
+	5 [ label="5 #157
+fin: 0:25 , 
+ path: 0:132 , 
+132 25
+[72,60,]" , style=filled, fillcolor="firebrick1", width=1.80214, height=1.80214, penwidth=5.0626];
+		5 -> 3 [label="8761.0__>eureka>apps>ORDER>order-69d76bbbfc-wxmsw-order-8080__200.0__put__order__eureka
+72 " , penwidth=5.0626 ];
+		5 -> 6 [label="8761.0__>eureka>apps>delta__200.0__get__order__eureka
+60 " , penwidth=5.0626 ];
+	6 [ label="6 #60
+fin: 0:11 , 
+ path: 0:49 , 
+49 11
+[49,]" , style=filled, fillcolor="firebrick1", width=1.63137, height=1.63137, penwidth=4.11087];
+		6 -> 1 [label="8761.0__>eureka>apps>ORDER>order-69d76bbbfc-wxmsw-order-8080__200.0__put__order__eureka
+49 " , penwidth=4.11087 ];
+}

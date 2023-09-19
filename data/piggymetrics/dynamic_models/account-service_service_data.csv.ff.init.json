@@ -1,0 +1,49 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"out__8888.0__>account-service>default__200.0__get__account-service__config-server",
+"out__8761.0__>eureka>apps>ACCOUNT-SERVICE__204.0__post__account-service__registry",
+"out__8761.0__>eureka>apps>__200.0__get__account-service__registry",
+"out__8761.0__>eureka>apps>delta__200.0__get__account-service__registry",
+"out__8761.0__>eureka>apps>ACCOUNT-SERVICE>account-service-7786958fd5-2mcf5-account-service-6000__200.0__put__account-service__registry",
+"in__6000.0__>accounts>current__401.0__get__gateway__account-service",
+"out__5000.0__>uaa>users>current__401.0__get__account-service__auth-service",
+"in__6000.0__>accounts>demo__200.0__get__gateway__account-service",
+"in__6000.0__>accounts>__200.0__post__gateway__account-service",
+"out__5000.0__>uaa>oauth>token__200.0__post__account-service__auth-service",
+"out__5000.0__>uaa>users__200.0__post__account-service__auth-service",
+"in__6000.0__>accounts>current__200.0__get__gateway__account-service",
+"out__5000.0__>uaa>users>current__200.0__get__account-service__auth-service",
+"in__6000.0__>accounts>current__200.0__put__gateway__account-service",
+"out__7000.0__>statistics>JohnDoe__500.0__put__account-service__statistics-service",
+"in__6000.0__>accounts>current__400.0__put__gateway__account-service",
+"out__7000.0__>statistics>JaneDoe__500.0__put__account-service__statistics-service",
+"out__7000.0__>statistics>ChrisDoe__500.0__put__account-service__statistics-service",
+"out__7000.0__>statistics>JamieDoe__500.0__put__account-service__statistics-service",
+"out__7000.0__>statistics>Test__500.0__put__account-service__statistics-service",
+"out__7000.0__>statistics>TestUser1__500.0__put__account-service__statistics-service",
+"out__7000.0__>statistics>LolUser__500.0__put__account-service__statistics-service",
+"out__7000.0__>statistics>JimDoe__500.0__put__account-service__statistics-service"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:4018 , ",
+			"size" : 4018,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":4018},"symbol_counts":null,"total_final":0,"total_paths":4018,"trans_counts":{"in__6000.0__>accounts>__200.0__post__gateway__account-service":"8","in__6000.0__>accounts>current__200.0__get__gateway__account-service":"71","in__6000.0__>accounts>current__200.0__put__gateway__account-service":"143","in__6000.0__>accounts>current__400.0__put__gateway__account-service":"13","in__6000.0__>accounts>current__401.0__get__gateway__account-service":"2","in__6000.0__>accounts>demo__200.0__get__gateway__account-service":"5","out__5000.0__>uaa>oauth>token__200.0__post__account-service__auth-service":"2","out__5000.0__>uaa>users>current__200.0__get__account-service__auth-service":"480","out__5000.0__>uaa>users>current__401.0__get__account-service__auth-service":"2","out__5000.0__>uaa>users__200.0__post__account-service__auth-service":"8","out__7000.0__>statistics>ChrisDoe__500.0__put__account-service__statistics-service":"22","out__7000.0__>statistics>JamieDoe__500.0__put__account-service__statistics-service":"26","out__7000.0__>statistics>JaneDoe__500.0__put__account-service__statistics-service":"118","out__7000.0__>statistics>JimDoe__500.0__put__account-service__statistics-service":"14","out__7000.0__>statistics>JohnDoe__500.0__put__account-service__statistics-service":"54","out__7000.0__>statistics>LolUser__500.0__put__account-service__statistics-service":"38","out__7000.0__>statistics>TestUser1__500.0__put__account-service__statistics-service":"8","out__7000.0__>statistics>Test__500.0__put__account-service__statistics-service":"6","out__8761.0__>eureka>apps>ACCOUNT-SERVICE>account-service-7786958fd5-2mcf5-account-service-6000__200.0__put__account-service__registry":"1491","out__8761.0__>eureka>apps>ACCOUNT-SERVICE__204.0__post__account-service__registry":"2","out__8761.0__>eureka>apps>__200.0__get__account-service__registry":"2","out__8761.0__>eureka>apps>delta__200.0__get__account-service__registry":"1490","out__8888.0__>account-service>default__200.0__get__account-service__config-server":"13"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

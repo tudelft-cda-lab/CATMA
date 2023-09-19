@@ -1,0 +1,277 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #324
+fin: 
+ path: 0:324 , 
+324 0
+[12,4,2,62,28,41,20,51,28,74,2,]" , style=filled, fillcolor="firebrick1", width=1.91454, height=1.91454, penwidth=5.78383];
+		0 -> 1 [label="out__9191.0__>departments>__200.0__post__user__gateway
+12 " , penwidth=5.78383 ];
+		0 -> 4 [label="out__9191.0__>users>1__200.0__get__user__gateway
+62 " , penwidth=5.78383 ];
+		0 -> 5 [label="out__9191.0__>users>3__200.0__get__user__gateway
+28 " , penwidth=5.78383 ];
+		0 -> 6 [label="out__9191.0__>users>2__200.0__get__user__gateway
+41 " , penwidth=5.78383 ];
+		0 -> 7 [label="out__9191.0__>departments>1__200.0__get__user__gateway
+20 " , penwidth=5.78383 ];
+		0 -> 8 [label="out__9191.0__>departments>2__200.0__get__user__gateway
+51 " , penwidth=5.78383 ];
+		0 -> 9 [label="out__9191.0__>departments>3__200.0__get__user__gateway
+28 " , penwidth=5.78383 ];
+		0 -> 10 [label="out__9191.0__>users>4__200.0__get__user__gateway
+74 " , penwidth=5.78383 ];
+	1 [ label="1 #12
+fin: 0:1 , 
+ path: 0:11 , 
+11 1
+[10,1,]" , style=filled, fillcolor="firebrick1", width=1.27115, height=1.27115, penwidth=2.56495];
+		1 -> 12 [label="out__9191.0__>departments>__200.0__post__user__gateway
+10 " , penwidth=2.56495 ];
+	4 [ label="4 #299
+fin: 0:11 , 
+ path: 0:288 , 
+288 11
+[237,1,28,3,19,]" , style=filled, fillcolor="firebrick1", width=1.90267, height=1.90267, penwidth=5.70378];
+		4 -> 4 [label="out__9191.0__>users>1__200.0__get__user__gateway
+237 " , penwidth=5.70378 ];
+		4 -> 6 [label="out__9191.0__>users>2__200.0__get__user__gateway
+28 " , penwidth=5.70378 ];
+		4 -> 22 [label="out__9191.0__>users>4__200.0__get__user__gateway
+19 " , penwidth=5.70378 ];
+	5 [ label="5 #63
+fin: 0:2 , 
+ path: 0:61 , 
+61 2
+[10,39,3,4,1,3,1,]" , style=filled, fillcolor="firebrick1", width=1.64072, height=1.64072, penwidth=4.15888];
+		5 -> 23 [label="out__9191.0__>users>1__200.0__get__user__gateway
+10 " , penwidth=4.15888 ];
+		5 -> 24 [label="out__9191.0__>users>3__200.0__get__user__gateway
+39 " , penwidth=4.15888 ];
+	6 [ label="6 #216
+fin: 0:11 , 
+ path: 0:205 , 
+205 11
+[4,5,35,147,8,6,]" , style=filled, fillcolor="firebrick1", width=1.85315, height=1.85315, penwidth=5.3799];
+		6 -> 5 [label="out__9191.0__>users>3__200.0__get__user__gateway
+35 " , penwidth=5.3799 ];
+		6 -> 6 [label="out__9191.0__>users>2__200.0__get__user__gateway
+147 " , penwidth=5.3799 ];
+		6 -> 32 [label="out__9191.0__>departments>2__200.0__get__user__gateway
+8 " , penwidth=5.3799 ];
+	7 [ label="7 #90
+fin: 0:3 , 
+ path: 0:87 , 
+87 3
+[1,70,7,9,]" , style=filled, fillcolor="firebrick1", width=1.70672, height=1.70672, penwidth=4.51086];
+		7 -> 7 [label="out__9191.0__>departments>1__200.0__get__user__gateway
+70 " , penwidth=4.51086 ];
+		7 -> 9 [label="out__9191.0__>departments>3__200.0__get__user__gateway
+9 " , penwidth=4.51086 ];
+	8 [ label="8 #298
+fin: 0:18 , 
+ path: 0:280 , 
+280 18
+[1,2,12,3,247,6,9,]" , style=filled, fillcolor="firebrick1", width=1.90217, height=1.90217, penwidth=5.70044];
+		8 -> 38 [label="out__9191.0__>users>2__200.0__get__user__gateway
+12 " , penwidth=5.70044 ];
+		8 -> 8 [label="out__9191.0__>departments>2__200.0__get__user__gateway
+247 " , penwidth=5.70044 ];
+		8 -> 41 [label="out__9191.0__>users>4__200.0__get__user__gateway
+9 " , penwidth=5.70044 ];
+	9 [ label="9 #183
+fin: 0:13 , 
+ path: 0:170 , 
+170 13
+[17,6,1,146,]" , style=filled, fillcolor="firebrick1", width=1.82696, height=1.82696, penwidth=5.21494];
+		9 -> 42 [label="out__9191.0__>users>3__200.0__get__user__gateway
+17 " , penwidth=5.21494 ];
+		9 -> 9 [label="out__9191.0__>departments>3__200.0__get__user__gateway
+146 " , penwidth=5.21494 ];
+	10 [ label="10 #558
+fin: 0:45 , 
+ path: 0:513 , 
+513 45
+[12,2,14,484,1,]" , style=filled, fillcolor="firebrick1", width=1.99145, height=1.99145, penwidth=6.32615];
+		10 -> 45 [label="out__9191.0__>users>1__200.0__get__user__gateway
+12 " , penwidth=6.32615 ];
+		10 -> 47 [label="out__9191.0__>users>2__200.0__get__user__gateway
+14 " , penwidth=6.32615 ];
+		10 -> 10 [label="out__9191.0__>users>4__200.0__get__user__gateway
+484 " , penwidth=6.32615 ];
+	12 [ label="12 #10
+fin: 0:1 , 
+ path: 0:9 , 
+9 1
+[8,1,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		12 -> 51 [label="out__9191.0__>departments>__200.0__post__user__gateway
+8 " , penwidth=2.3979 ];
+	22 [ label="22 #41
+fin: 0:7 , 
+ path: 0:34 , 
+34 7
+[0,0,34,]" , style=filled, fillcolor="firebrick1", width=1.55555, height=1.55555, penwidth=3.73767];
+		22 -> 63 [label="out__9191.0__>users>4__200.0__get__user__gateway
+34 " , penwidth=3.73767 ];
+	23 [ label="23 #10
+fin: 
+ path: 0:10 , 
+10 0
+[10,0,0,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		23 -> 64 [label="out__9191.0__>users>1__200.0__get__user__gateway
+10 " , penwidth=2.3979 ];
+	24 [ label="24 #39
+fin: 0:2 , 
+ path: 0:37 , 
+37 2
+[5,30,0,1,1,]" , style=filled, fillcolor="firebrick1", width=1.54519, height=1.54519, penwidth=3.68888];
+		24 -> 66 [label="out__9191.0__>users>3__200.0__get__user__gateway
+30 " , penwidth=3.68888 ];
+	32 [ label="32 #45
+fin: 0:6 , 
+ path: 0:39 , 
+39 6
+[2,37,]" , style=filled, fillcolor="firebrick1", width=1.57457, height=1.57457, penwidth=3.82864];
+		32 -> 32 [label="out__9191.0__>departments>2__200.0__get__user__gateway
+37 " , penwidth=3.82864 ];
+	38 [ label="38 #12
+fin: 0:1 , 
+ path: 0:11 , 
+11 1
+[0,3,8,]" , style=filled, fillcolor="firebrick1", width=1.27115, height=1.27115, penwidth=2.56495];
+		38 -> 89 [label="out__9191.0__>users>2__200.0__get__user__gateway
+8 " , penwidth=2.56495 ];
+	41 [ label="41 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[8,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+		41 -> 93 [label="out__9191.0__>users>3__200.0__get__user__gateway
+8 " , penwidth=2.30259 ];
+	42 [ label="42 #17
+fin: 0:1 , 
+ path: 0:16 , 
+16 1
+[8,8,]" , style=filled, fillcolor="firebrick1", width=1.3585, height=1.3585, penwidth=2.89037];
+		42 -> 94 [label="out__9191.0__>users>1__200.0__get__user__gateway
+8 " , penwidth=2.89037 ];
+		42 -> 95 [label="out__9191.0__>users>2__200.0__get__user__gateway
+8 " , penwidth=2.89037 ];
+	45 [ label="45 #12
+fin: 0:1 , 
+ path: 0:11 , 
+11 1
+[10,1,0,0,]" , style=filled, fillcolor="firebrick1", width=1.27115, height=1.27115, penwidth=2.56495];
+		45 -> 99 [label="out__9191.0__>users>1__200.0__get__user__gateway
+10 " , penwidth=2.56495 ];
+	47 [ label="47 #14
+fin: 0:1 , 
+ path: 0:13 , 
+13 1
+[0,1,12,0,0,]" , style=filled, fillcolor="firebrick1", width=1.31051, height=1.31051, penwidth=2.70805];
+		47 -> 104 [label="out__9191.0__>users>2__200.0__get__user__gateway
+12 " , penwidth=2.70805 ];
+	51 [ label="51 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+	63 [ label="63 #34
+fin: 0:6 , 
+ path: 0:28 , 
+28 6
+[2,4,22,]" , style=filled, fillcolor="firebrick1", width=1.5163, height=1.5163, penwidth=3.55535];
+		63 -> 22 [label="out__9191.0__>users>4__200.0__get__user__gateway
+22 " , penwidth=3.55535 ];
+	64 [ label="64 #10
+fin: 
+ path: 0:10 , 
+10 0
+[9,0,1,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		64 -> 122 [label="out__9191.0__>users>1__200.0__get__user__gateway
+9 " , penwidth=2.3979 ];
+	66 [ label="66 #30
+fin: 0:2 , 
+ path: 0:28 , 
+28 2
+[1,25,1,1,]" , style=filled, fillcolor="firebrick1", width=1.4893, height=1.4893, penwidth=3.43399];
+		66 -> 126 [label="out__9191.0__>users>3__200.0__get__user__gateway
+25 " , penwidth=3.43399 ];
+	89 [ label="89 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+	93 [ label="93 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+	94 [ label="94 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+	95 [ label="95 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+	99 [ label="99 #10
+fin: 0:1 , 
+ path: 0:9 , 
+9 1
+[2,0,7,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+	104 [ label="104 #12
+fin: 0:1 , 
+ path: 0:11 , 
+11 1
+[0,11,0,0,]" , style=filled, fillcolor="firebrick1", width=1.27115, height=1.27115, penwidth=2.56495];
+		104 -> 169 [label="out__9191.0__>users>2__200.0__get__user__gateway
+11 " , penwidth=2.56495 ];
+	122 [ label="122 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[8,0,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+		122 -> 187 [label="out__9191.0__>users>1__200.0__get__user__gateway
+8 " , penwidth=2.30259 ];
+	126 [ label="126 #25
+fin: 0:3 , 
+ path: 0:22 , 
+22 3
+[1,14,6,1,]" , style=filled, fillcolor="firebrick1", width=1.44882, height=1.44882, penwidth=3.2581];
+		126 -> 193 [label="out__9191.0__>users>3__200.0__get__user__gateway
+14 " , penwidth=3.2581 ];
+	169 [ label="169 #11
+fin: 0:1 , 
+ path: 0:10 , 
+10 1
+[0,10,0,0,]" , style=filled, fillcolor="firebrick1", width=1.24844, height=1.24844, penwidth=2.48491];
+		169 -> 240 [label="out__9191.0__>users>2__200.0__get__user__gateway
+10 " , penwidth=2.48491 ];
+	187 [ label="187 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[6,1,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+	193 [ label="193 #14
+fin: 0:2 , 
+ path: 0:12 , 
+12 2
+[5,6,1,]" , style=filled, fillcolor="firebrick1", width=1.31051, height=1.31051, penwidth=2.70805];
+	240 [ label="240 #10
+fin: 0:1 , 
+ path: 0:9 , 
+9 1
+[0,9,0,0,]" , style=filled, fillcolor="firebrick1", width=1.22316, height=1.22316, penwidth=2.3979];
+		240 -> 314 [label="out__9191.0__>users>2__200.0__get__user__gateway
+9 " , penwidth=2.3979 ];
+	314 [ label="314 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[4,4,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+}

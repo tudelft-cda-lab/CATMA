@@ -1,0 +1,57 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:4487 , ",
+			"size" : 4487,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":4487},"symbol_counts":null,"total_final":0,"total_paths":4487,"trans_counts":{"8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry":"4487"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:4487 ,  path: 0:40338 , ",
+			"size" : 44825,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry",
+			"data" :  {"final_counts":{"0":4487},"path_counts":{"0":40338},"symbol_counts":null,"total_final":4487,"total_paths":40338,"trans_counts":{"8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry":"40338"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_1",
+			"source" : "1",
+			"target" : "1",
+			"name": "8761.0__>eureka>peerreplication>batch>__200.0__post__user__registry",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

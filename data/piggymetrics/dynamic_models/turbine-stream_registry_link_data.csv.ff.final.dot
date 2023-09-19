@@ -1,0 +1,387 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #4438
+fin: 
+ path: 0:4438 , 
+4438 0
+[12,3,2210,2213,]" , style=filled, fillcolor="firebrick1", width=2.24052, height=2.24052, penwidth=8.39818];
+		0 -> 1 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE__204.0__post__turbine-stream__registry
+12 " , penwidth=8.39818 ];
+		0 -> 5 [label="8761.0__>eureka>apps>__200.0__get__turbine-stream__registry
+3 " , penwidth=8.39818 ];
+		0 -> 2 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+2210 " , penwidth=8.39818 ];
+		0 -> 3 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+2213 " , penwidth=8.39818 ];
+	1 [ label="1 #12
+fin: 0:1 , 
+ path: 0:11 , 
+11 1
+[1,10,]" , style=filled, fillcolor="firebrick1", width=1.27115, height=1.27115, penwidth=2.56495];
+		1 -> 4 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE__204.0__post__turbine-stream__registry
+1 " , penwidth=2.56495 ];
+		1 -> 5 [label="8761.0__>eureka>apps>__200.0__get__turbine-stream__registry
+10 " , penwidth=2.56495 ];
+	2 [ label="2 #11173
+fin: 0:1007 , 
+ path: 0:10166 , 
+10166 1007
+[4253,5913,]" , style=filled, fillcolor="firebrick1", width=2.33421, height=2.33421, penwidth=9.32134];
+		2 -> 6 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+4253 " , penwidth=9.32134 ];
+		2 -> 3 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+5913 " , penwidth=9.32134 ];
+	3 [ label="3 #10367
+fin: 0:903 , 
+ path: 0:9464 , 
+9464 903
+[5273,4191,]" , style=filled, fillcolor="firebrick1", width=2.32693, height=2.32693, penwidth=9.24648];
+		3 -> 2 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+5273 " , penwidth=9.24648 ];
+		3 -> 7 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+4191 " , penwidth=9.24648 ];
+	4 [ label="4 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		4 -> 8 [label="8761.0__>eureka>apps>__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	5 [ label="5 #13
+fin: 0:1 , 
+ path: 0:12 , 
+12 1
+[9,2,1,]" , style=filled, fillcolor="firebrick1", width=1.29172, height=1.29172, penwidth=2.63906];
+		5 -> 9 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE__204.0__post__turbine-stream__registry
+9 " , penwidth=2.63906 ];
+		5 -> 10 [label="8761.0__>eureka>apps>__200.0__get__turbine-stream__registry
+2 " , penwidth=2.63906 ];
+		5 -> 11 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=2.63906 ];
+	11 [ label="11 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		11 -> 19 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	6 [ label="6 #4445
+fin: 0:407 , 
+ path: 0:4038 , 
+4038 407
+[1051,2987,]" , style=filled, fillcolor="firebrick1", width=2.24068, height=2.24068, penwidth=8.39976];
+		6 -> 12 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1051 " , penwidth=8.39976 ];
+		6 -> 13 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+2987 " , penwidth=8.39976 ];
+	7 [ label="7 #5802
+fin: 0:654 , 
+ path: 0:5148 , 
+5148 654
+[3627,1521,]" , style=filled, fillcolor="firebrick1", width=2.26863, height=2.26863, penwidth=8.66613];
+		7 -> 14 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+3627 " , penwidth=8.66613 ];
+		7 -> 15 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1521 " , penwidth=8.66613 ];
+	8 [ label="8 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		8 -> 16 [label="8761.0__>eureka>apps>__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	9 [ label="9 #9
+fin: 0:1 , 
+ path: 0:8 , 
+8 1
+[8,0,]" , style=filled, fillcolor="firebrick1", width=1.19471, height=1.19471, penwidth=2.30259];
+		9 -> 17 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE__204.0__post__turbine-stream__registry
+8 " , penwidth=2.30259 ];
+	10 [ label="10 #2
+fin: 
+ path: 0:2 , 
+2 0
+[0,2,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		10 -> 18 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+2 " , penwidth=1.09861 ];
+	19 [ label="19 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		19 -> 26 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	12 [ label="12 #1051
+fin: 0:97 , 
+ path: 0:954 , 
+954 97
+[177,777,]" , style=filled, fillcolor="firebrick1", width=2.07423, height=2.07423, penwidth=6.95845];
+		12 -> 20 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+177 " , penwidth=6.95845 ];
+		12 -> 21 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+777 " , penwidth=6.95845 ];
+	13 [ label="13 #2987
+fin: 0:318 , 
+ path: 0:2669 , 
+2669 318
+[1050,1619,]" , style=filled, fillcolor="firebrick1", width=2.19749, height=2.19749, penwidth=8.00236];
+		13 -> 2 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1050 " , penwidth=8.00236 ];
+		13 -> 3 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1619 " , penwidth=8.00236 ];
+	14 [ label="14 #4900
+fin: 0:649 , 
+ path: 0:4251 , 
+4251 649
+[2640,1611,]" , style=filled, fillcolor="firebrick1", width=2.251, height=2.251, penwidth=8.49719];
+		14 -> 2 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+2640 " , penwidth=8.49719 ];
+		14 -> 7 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1611 " , penwidth=8.49719 ];
+	15 [ label="15 #1521
+fin: 0:176 , 
+ path: 0:1345 , 
+1345 176
+[1059,286,]" , style=filled, fillcolor="firebrick1", width=2.1196, height=2.1196, penwidth=7.32778];
+		15 -> 14 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1059 " , penwidth=7.32778 ];
+		15 -> 22 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+286 " , penwidth=7.32778 ];
+	16 [ label="16 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		16 -> 23 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	17 [ label="17 #8
+fin: 0:1 , 
+ path: 0:7 , 
+7 1
+[7,]" , style=filled, fillcolor="firebrick1", width=1.16228, height=1.16228, penwidth=2.19722];
+		17 -> 24 [label="8761.0__>eureka>apps>__200.0__get__turbine-stream__registry
+7 " , penwidth=2.19722 ];
+	18 [ label="18 #2
+fin: 
+ path: 0:2 , 
+2 0
+[2,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		18 -> 25 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+2 " , penwidth=1.09861 ];
+	26 [ label="26 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		26 -> 33 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	20 [ label="20 #211
+fin: 0:11 , 
+ path: 0:200 , 
+200 11
+[34,166,]" , style=filled, fillcolor="firebrick1", width=1.84949, height=1.84949, penwidth=5.35659];
+		20 -> 20 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+34 " , penwidth=5.35659 ];
+		20 -> 27 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+166 " , penwidth=5.35659 ];
+	21 [ label="21 #884
+fin: 0:109 , 
+ path: 0:775 , 
+775 109
+[187,588,]" , style=filled, fillcolor="firebrick1", width=2.05227, height=2.05227, penwidth=6.78559];
+		21 -> 6 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+187 " , penwidth=6.78559 ];
+		21 -> 3 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+588 " , penwidth=6.78559 ];
+	22 [ label="22 #286
+fin: 0:31 , 
+ path: 0:255 , 
+255 31
+[217,38,]" , style=filled, fillcolor="firebrick1", width=1.89604, height=1.89604, penwidth=5.65948];
+		22 -> 28 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+217 " , penwidth=5.65948 ];
+		22 -> 29 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+38 " , penwidth=5.65948 ];
+	23 [ label="23 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		23 -> 30 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	24 [ label="24 #7
+fin: 0:1 , 
+ path: 0:6 , 
+6 1
+[6,0,]" , style=filled, fillcolor="firebrick1", width=1.12475, height=1.12475, penwidth=2.07944];
+		24 -> 31 [label="8761.0__>eureka>apps>__200.0__get__turbine-stream__registry
+6 " , penwidth=2.07944 ];
+	25 [ label="25 #2
+fin: 
+ path: 0:2 , 
+2 0
+[2,0,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		25 -> 32 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+2 " , penwidth=1.09861 ];
+	33 [ label="33 #1
+fin: 
+ path: 0:1 , 
+1 0
+[0,1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		33 -> 37 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	27 [ label="27 #166
+fin: 0:11 , 
+ path: 0:155 , 
+155 11
+[48,107,]" , style=filled, fillcolor="firebrick1", width=1.81123, height=1.81123, penwidth=5.11799];
+		27 -> 34 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+48 " , penwidth=5.11799 ];
+		27 -> 21 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+107 " , penwidth=5.11799 ];
+	28 [ label="28 #287
+fin: 0:36 , 
+ path: 0:251 , 
+251 36
+[214,37,]" , style=filled, fillcolor="firebrick1", width=1.89656, height=1.89656, penwidth=5.66296];
+		28 -> 14 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+214 " , penwidth=5.66296 ];
+		28 -> 29 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+37 " , penwidth=5.66296 ];
+	29 [ label="29 #75
+fin: 0:5 , 
+ path: 0:70 , 
+70 5
+[70,0,]" , style=filled, fillcolor="firebrick1", width=1.67349, height=1.67349, penwidth=4.33073];
+		29 -> 28 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+70 " , penwidth=4.33073 ];
+	30 [ label="30 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,0,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		30 -> 35 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	31 [ label="31 #6
+fin: 0:1 , 
+ path: 0:5 , 
+5 1
+[5,]" , style=filled, fillcolor="firebrick1", width=1.08042, height=1.08042, penwidth=1.94591];
+		31 -> 6 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+5 " , penwidth=1.94591 ];
+	32 [ label="32 #2
+fin: 
+ path: 0:2 , 
+2 0
+[2,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		32 -> 36 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+2 " , penwidth=1.09861 ];
+	37 [ label="37 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		37 -> 41 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	34 [ label="34 #48
+fin: 0:6 , 
+ path: 0:42 , 
+42 6
+[0,42,]" , style=filled, fillcolor="firebrick1", width=1.58756, height=1.58756, penwidth=3.89182];
+		34 -> 38 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+42 " , penwidth=3.89182 ];
+	35 [ label="35 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		35 -> 39 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	36 [ label="36 #2
+fin: 
+ path: 0:2 , 
+2 0
+[0,2,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		36 -> 40 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+2 " , penwidth=1.09861 ];
+	41 [ label="41 #1
+fin: 
+ path: 0:1 , 
+1 0
+[0,1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		41 -> 44 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	38 [ label="38 #42
+fin: 0:8 , 
+ path: 0:34 , 
+34 8
+[0,34,]" , style=filled, fillcolor="firebrick1", width=1.5605, height=1.5605, penwidth=3.7612];
+		38 -> 3 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+34 " , penwidth=3.7612 ];
+	39 [ label="39 #1
+fin: 
+ path: 0:1 , 
+1 0
+[0,1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		39 -> 42 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	40 [ label="40 #2
+fin: 
+ path: 0:2 , 
+2 0
+[2,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		40 -> 43 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+2 " , penwidth=1.09861 ];
+	44 [ label="44 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		44 -> 47 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	42 [ label="42 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		42 -> 45 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	43 [ label="43 #2
+fin: 
+ path: 0:2 , 
+2 0
+[2,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		43 -> 46 [label="8761.0__>eureka>apps>TURBINE-STREAM-SERVICE>turbine-stream-service-85db9bb559-tjp94-turbine-stream-service__200.0__put__turbine-stream__registry
+2 " , penwidth=1.09861 ];
+	47 [ label="47 #1
+fin: 
+ path: 0:1 , 
+1 0
+[1,]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+		47 -> 49 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=0.693147 ];
+	45 [ label="45 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	46 [ label="46 #2
+fin: 0:1 , 
+ path: 0:1 , 
+1 1
+[1,]" , style=filled, fillcolor="firebrick1", width=0.741276, height=0.741276, penwidth=1.09861];
+		46 -> 48 [label="8761.0__>eureka>apps>delta__200.0__get__turbine-stream__registry
+1 " , penwidth=1.09861 ];
+	48 [ label="48 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+	49 [ label="49 #1
+fin: 0:1 , 
+ path: 
+0 1
+[]" , style=filled, fillcolor="firebrick1", width=0.526589, height=0.526589, penwidth=0.693147];
+}

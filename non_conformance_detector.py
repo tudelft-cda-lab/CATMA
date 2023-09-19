@@ -1,0 +1,63 @@
+from utils import extract_link_from_transtion_label
+from tqdm import tqdm
+
+def extract_occurred_links_from_dynamic_model(dynamic_model, services):
+    """
+    This function is used to extract occurred links from the dynamic model.
+    It basically goes through all the transitions in the dynamic model and 
+    generated a dictionary of the occurred links. 
+
+    :param dynamic_model: The dynamic model extracted from run-time logs. This model is pydot graph.
+    :param services: The list of services in the microservice application
+    """
+    occurred_links = set()
+    for transition in dynamic_model.get_edges():
+        if transition.get_label() is None:
+            continue
+        link = extract_link_from_transtion_label(transition.get_label())
+        splitted = link.split('-')
+        if splitted[0] not in services or splitted[1] not in services:
+            continue
+        occurred_links.add(link)
+    
+    return occurred_links
+
+def find_non_conformance_in_linkset(this_linkset, that_linkset):
+    """
+    This function is used to find non-conformance between two sets of links.
+    It basically goes through all the links in the first set and checks whether
+    the links occur in the second set.
+
+    :param this_linkset: The first set of links
+    :param that_linkset: The second set of links
+    """
+    non_conformances = set()
+    for link in tqdm(this_linkset, desc='Finding non-conformances'):
+        splitted = link.split('-')
+        reverse_link = splitted[1] + '-' + splitted[0]
+        if link in that_linkset or reverse_link in that_linkset:
+            continue
+        else:
+            non_conformances.add(link)
+    
+    return non_conformances
+
+        
+def find_non_conformances(static_model, dynamic_model, services):
+    """
+    This function is used to find differences (non-conformances)
+    between the static and dynamic model extracted for a microservice
+    applications. It basically goes through all the link evidences in
+    the static model and checks whether the links occur in the dynamic model
+
+    :param static_model: The static model extracted from the source code of the microservice application
+    :param dynamic_model: The dynamic model extracted from run-time logs. This model is pydot graph.
+    :param services: The list of services in the microservice application
+    """ 
+    static_links = static_model['links']
+    dynamic_links = extract_occurred_links_from_dynamic_model(dynamic_model, services)
+    static_non_conformances = find_non_conformance_in_linkset(dynamic_links, static_links)
+    dynamic_non_conformances = find_non_conformance_in_linkset(static_links, dynamic_links)
+    return static_non_conformances, dynamic_non_conformances
+
+

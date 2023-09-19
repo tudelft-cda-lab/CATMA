@@ -1,0 +1,52 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"out__8761.0__>eureka>apps>__200.0__get__gateway__service-registry-eureka-0",
+"out__8761.0__>eureka>apps>API-GATEWAY__204.0__post__gateway__service-registry-eureka-0",
+"out__8761.0__>eureka>apps>API-GATEWAY>cloud-gateway-app-75d45c98bc-mjlxt-API-GATEWAY-9191__200.0__put__gateway__service-registry-eureka-0",
+"out__8761.0__>eureka>apps>delta__200.0__get__gateway__service-registry-eureka-0",
+"in__9191.0__>departments>__200.0__post__user__gateway",
+"out__9001.0__>departments>__200.0__post__gateway__department-service-app-7488fb859-xhkx5",
+"out__9002.0__>users>__200.0__post__gateway__user-service-app-686f9cf445-z24rf",
+"in__9191.0__>users>__200.0__post__user__gateway",
+"out__9002.0__>users>__400.0__post__gateway__user-service-app-686f9cf445-z24rf",
+"in__9191.0__>users>__400.0__post__user__gateway",
+"out__9002.0__>users>1__200.0__get__gateway__user-service-app-686f9cf445-z24rf",
+"in__9191.0__>users>1__200.0__get__user__gateway",
+"out__9002.0__>users>3__200.0__get__gateway__user-service-app-686f9cf445-z24rf",
+"in__9191.0__>users>3__200.0__get__user__gateway",
+"out__9002.0__>users>2__200.0__get__gateway__user-service-app-686f9cf445-z24rf",
+"in__9191.0__>users>2__200.0__get__user__gateway",
+"out__9001.0__>departments>1__200.0__get__gateway__department-service-app-7488fb859-xhkx5",
+"in__9191.0__>departments>1__200.0__get__user__gateway",
+"in__9191.0__>departments>2__200.0__get__user__gateway",
+"out__9001.0__>departments>2__200.0__get__gateway__department-service-app-7488fb859-xhkx5",
+"in__9191.0__>departments>3__200.0__get__user__gateway",
+"out__9001.0__>departments>3__200.0__get__gateway__department-service-app-7488fb859-xhkx5",
+"out__9002.0__>users>4__200.0__get__gateway__user-service-app-686f9cf445-z24rf",
+"in__9191.0__>users>4__200.0__get__user__gateway",
+"in__9191.0__>users>5__500.0__get__user__gateway",
+"out__9002.0__>users>5__500.0__get__gateway__user-service-app-686f9cf445-z24rf"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:886 , ",
+			"size" : 886,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":886},"symbol_counts":null,"total_final":0,"total_paths":886,"trans_counts":{"in__9191.0__>departments>1__200.0__get__user__gateway":"20","in__9191.0__>departments>2__200.0__get__user__gateway":"51","in__9191.0__>departments>3__200.0__get__user__gateway":"28","in__9191.0__>departments>__200.0__post__user__gateway":"3","in__9191.0__>users>1__200.0__get__user__gateway":"63","in__9191.0__>users>2__200.0__get__user__gateway":"43","in__9191.0__>users>3__200.0__get__user__gateway":"30","in__9191.0__>users>4__200.0__get__user__gateway":"78","in__9191.0__>users>5__500.0__get__user__gateway":"2","in__9191.0__>users>__200.0__post__user__gateway":"4","in__9191.0__>users>__400.0__post__user__gateway":"2","out__8761.0__>eureka>apps>API-GATEWAY>cloud-gateway-app-75d45c98bc-mjlxt-API-GATEWAY-9191__200.0__put__gateway__service-registry-eureka-0":"114","out__8761.0__>eureka>apps>API-GATEWAY__204.0__post__gateway__service-registry-eureka-0":"1","out__8761.0__>eureka>apps>__200.0__get__gateway__service-registry-eureka-0":"11","out__8761.0__>eureka>apps>delta__200.0__get__gateway__service-registry-eureka-0":"112","out__9001.0__>departments>1__200.0__get__gateway__department-service-app-7488fb859-xhkx5":"20","out__9001.0__>departments>2__200.0__get__gateway__department-service-app-7488fb859-xhkx5":"51","out__9001.0__>departments>3__200.0__get__gateway__department-service-app-7488fb859-xhkx5":"28","out__9001.0__>departments>__200.0__post__gateway__department-service-app-7488fb859-xhkx5":"3","out__9002.0__>users>1__200.0__get__gateway__user-service-app-686f9cf445-z24rf":"63","out__9002.0__>users>2__200.0__get__gateway__user-service-app-686f9cf445-z24rf":"43","out__9002.0__>users>3__200.0__get__gateway__user-service-app-686f9cf445-z24rf":"30","out__9002.0__>users>4__200.0__get__gateway__user-service-app-686f9cf445-z24rf":"78","out__9002.0__>users>5__500.0__get__gateway__user-service-app-686f9cf445-z24rf":"2","out__9002.0__>users>__200.0__post__gateway__user-service-app-686f9cf445-z24rf":"4","out__9002.0__>users>__400.0__post__gateway__user-service-app-686f9cf445-z24rf":"2"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

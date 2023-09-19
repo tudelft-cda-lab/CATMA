@@ -1,0 +1,36 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"in__8080.0__>__200.0__get__user__admin-server",
+"in__8080.0__>applications__200.0__get__user__admin-server",
+"in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server",
+"in__8080.0__>assets>css>chunk-common.a3a93490.css__304.0__get__user__admin-server",
+"in__8080.0__>assets>css>sba-core.87bc3301.css__304.0__get__user__admin-server",
+"in__8080.0__>assets>js>sba-core.18e2842c.js__304.0__get__user__admin-server",
+"in__8080.0__>assets>js>chunk-vendors.a6feb878.js__304.0__get__user__admin-server",
+"in__8080.0__>sba-settings.js__200.0__get__user__admin-server",
+"in__8080.0__>assets>img>icon-spring-boot-admin.svg__304.0__get__user__admin-server",
+"in__8080.0__>instances>events__200.0__get__user__admin-server"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:24 , ",
+			"size" : 24,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":24},"symbol_counts":null,"total_final":0,"total_paths":24,"trans_counts":{"in__8080.0__>__200.0__get__user__admin-server":"12","in__8080.0__>applications__200.0__get__user__admin-server":"4","in__8080.0__>assets>css>chunk-common.a3a93490.css__304.0__get__user__admin-server":"1","in__8080.0__>assets>css>sba-core.87bc3301.css__304.0__get__user__admin-server":"1","in__8080.0__>assets>img>icon-spring-boot-admin.svg__304.0__get__user__admin-server":"1","in__8080.0__>assets>js>chunk-common.530a46a5.js__304.0__get__user__admin-server":"1","in__8080.0__>assets>js>chunk-vendors.a6feb878.js__304.0__get__user__admin-server":"1","in__8080.0__>assets>js>sba-core.18e2842c.js__304.0__get__user__admin-server":"1","in__8080.0__>sba-settings.js__200.0__get__user__admin-server":"2"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

@@ -1,0 +1,111 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"in__3000.0__>api>health__200.0__get__user__grafana-server",
+"in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:906 , ",
+			"size" : 906,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":906},"symbol_counts":null,"total_final":0,"total_paths":906,"trans_counts":{"in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server":"2","in__3000.0__>api>health__200.0__get__user__grafana-server":"904"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:895 ,  path: 0:8055 , ",
+			"size" : 8950,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 in__3000.0__>api>health__200.0__get__user__grafana-server",
+			"data" :  {"final_counts":{"0":895},"path_counts":{"0":8055},"symbol_counts":null,"total_final":895,"total_paths":8055,"trans_counts":{"in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server":"9","in__3000.0__>api>health__200.0__get__user__grafana-server":"8046"}}
+		},
+		{
+			"id" : 3,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: 0:8 , ",
+			"size" : 9,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 in__3000.0__>api>health__200.0__get__user__grafana-server in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":8},"symbol_counts":null,"total_final":1,"total_paths":8,"trans_counts":{"in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server":"8","in__3000.0__>api>health__200.0__get__user__grafana-server":"0"}}
+		},
+		{
+			"id" : 6,
+			"source" :  3,
+			"label" : "fin: 0:1 ,  path: 0:7 , ",
+			"size" : 8,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 in__3000.0__>api>health__200.0__get__user__grafana-server in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":7},"symbol_counts":null,"total_final":1,"total_paths":7,"trans_counts":{"in__3000.0__>api>health__200.0__get__user__grafana-server":"7"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "in__3000.0__>api>health__200.0__get__user__grafana-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_2",
+			"source" : "0",
+			"target" : "2",
+			"name": "in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_1",
+			"source" : "1",
+			"target" : "1",
+			"name": "in__3000.0__>api>health__200.0__get__user__grafana-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_3",
+			"source" : "1",
+			"target" : "3",
+			"name": "in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_6",
+			"source" : "3",
+			"target" : "6",
+			"name": "in__3000.0__>api>health__200.0__get__kube-proxy-pbcvl__grafana-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

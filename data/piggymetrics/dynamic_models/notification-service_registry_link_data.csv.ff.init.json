@@ -1,0 +1,30 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>apps>__200.0__get__notification-service__registry",
+"8761.0__>eureka>apps>NOTIFICATION-SERVICE__204.0__post__notification-service__registry",
+"8761.0__>eureka>apps>delta__200.0__get__notification-service__registry",
+"8761.0__>eureka>apps>NOTIFICATION-SERVICE>notification-service-77885bf66f-dqtcx-notification-service-8000__200.0__put__notification-service__registry"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:4452 , ",
+			"size" : 4452,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":4452},"symbol_counts":null,"total_final":0,"total_paths":4452,"trans_counts":{"8761.0__>eureka>apps>NOTIFICATION-SERVICE>notification-service-77885bf66f-dqtcx-notification-service-8000__200.0__put__notification-service__registry":"2218","8761.0__>eureka>apps>NOTIFICATION-SERVICE__204.0__post__notification-service__registry":"3","8761.0__>eureka>apps>__200.0__get__notification-service__registry":"12","8761.0__>eureka>apps>delta__200.0__get__notification-service__registry":"2219"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

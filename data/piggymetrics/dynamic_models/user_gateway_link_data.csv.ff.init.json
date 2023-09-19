@@ -1,0 +1,67 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"4000.0__>accounts>current__401.0__get__user__gateway",
+"4000.0__>accounts>demo__200.0__get__user__gateway",
+"4000.0__>fonts>museo-100>museo-100.woff__200.0__get__user__gateway",
+"4000.0__>__304.0__get__user__gateway",
+"4000.0__>accounts>__200.0__post__user__gateway",
+"4000.0__>uaa>oauth>token__200.0__post__user__gateway",
+"4000.0__>accounts>current__200.0__get__user__gateway",
+"4000.0__>notifications>recipients>current__200.0__put__user__gateway",
+"4000.0__>accounts>current__200.0__put__user__gateway",
+"4000.0__>accounts>current__400.0__put__user__gateway",
+"4000.0__>__200.0__get__user__gateway",
+"4000.0__>css>launch.css__200.0__get__user__gateway",
+"4000.0__>css>animation.css__200.0__get__user__gateway",
+"4000.0__>js>lib>jquery.min.js__200.0__get__user__gateway",
+"4000.0__>js>dashboard.js__200.0__get__user__gateway",
+"4000.0__>css>style.css__200.0__get__user__gateway",
+"4000.0__>js>lib>touchscreens.js__200.0__get__user__gateway",
+"4000.0__>js>login.js__200.0__get__user__gateway",
+"4000.0__>js>lib>extrascripts.js__200.0__get__user__gateway",
+"4000.0__>js>main.js__200.0__get__user__gateway",
+"4000.0__>fonts>museo-300>museo-300.woff__200.0__get__user__gateway",
+"4000.0__>js>launch.js__200.0__get__user__gateway",
+"4000.0__>images>piggy_large@2x.gif__200.0__get__user__gateway",
+"4000.0__>images>logotext_large@2x.gif__200.0__get__user__gateway",
+"4000.0__>images>userpic.jpg__200.0__get__user__gateway",
+"4000.0__>favicon.ico__200.0__get__user__gateway",
+"4000.0__>images>1pagesprites@2x.png__200.0__get__user__gateway",
+"4000.0__>images>preloader.gif__200.0__get__user__gateway",
+"4000.0__>fonts>museo-500>museo-500.woff__200.0__get__user__gateway",
+"4000.0__>images>logo_large@2x.gif__200.0__get__user__gateway",
+"4000.0__>images>icons@2x.png__200.0__get__user__gateway",
+"4000.0__>images>sprites@2x.png__200.0__get__user__gateway",
+"4000.0__>notifications>settings>current__401.0__get__user__gateway",
+"4000.0__>statistics>current__401.0__get__user__gateway",
+"4000.0__>statistics__302.0__get__user__gateway",
+"4000.0__>users__404.0__get__user__gateway",
+"4000.0__>statistics>__401.0__get__user__gateway",
+"4000.0__>statistics>JohnDoe__401.0__get__user__gateway",
+"4000.0__>robots.txt__404.0__get__user__gateway",
+"4000.0__>images>linesbackground.png__200.0__get__user__gateway",
+"4000.0__>uaa>oauth>token__400.0__post__user__gateway"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:474 , ",
+			"size" : 474,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":474},"symbol_counts":null,"total_final":0,"total_paths":474,"trans_counts":{"4000.0__>__200.0__get__user__gateway":"5","4000.0__>__304.0__get__user__gateway":"59","4000.0__>accounts>__200.0__post__user__gateway":"8","4000.0__>accounts>current__200.0__get__user__gateway":"70","4000.0__>accounts>current__200.0__put__user__gateway":"136","4000.0__>accounts>current__400.0__put__user__gateway":"13","4000.0__>accounts>current__401.0__get__user__gateway":"11","4000.0__>accounts>demo__200.0__get__user__gateway":"5","4000.0__>css>animation.css__200.0__get__user__gateway":"5","4000.0__>css>launch.css__200.0__get__user__gateway":"5","4000.0__>css>style.css__200.0__get__user__gateway":"5","4000.0__>favicon.ico__200.0__get__user__gateway":"5","4000.0__>fonts>museo-100>museo-100.woff__200.0__get__user__gateway":"4","4000.0__>fonts>museo-300>museo-300.woff__200.0__get__user__gateway":"4","4000.0__>fonts>museo-500>museo-500.woff__200.0__get__user__gateway":"3","4000.0__>images>1pagesprites@2x.png__200.0__get__user__gateway":"5","4000.0__>images>icons@2x.png__200.0__get__user__gateway":"3","4000.0__>images>linesbackground.png__200.0__get__user__gateway":"2","4000.0__>images>logo_large@2x.gif__200.0__get__user__gateway":"5","4000.0__>images>logotext_large@2x.gif__200.0__get__user__gateway":"4","4000.0__>images>piggy_large@2x.gif__200.0__get__user__gateway":"4","4000.0__>images>preloader.gif__200.0__get__user__gateway":"5","4000.0__>images>sprites@2x.png__200.0__get__user__gateway":"4","4000.0__>images>userpic.jpg__200.0__get__user__gateway":"4","4000.0__>js>dashboard.js__200.0__get__user__gateway":"5","4000.0__>js>launch.js__200.0__get__user__gateway":"5","4000.0__>js>lib>extrascripts.js__200.0__get__user__gateway":"5","4000.0__>js>lib>jquery.min.js__200.0__get__user__gateway":"5","4000.0__>js>lib>touchscreens.js__200.0__get__user__gateway":"5","4000.0__>js>login.js__200.0__get__user__gateway":"5","4000.0__>js>main.js__200.0__get__user__gateway":"5","4000.0__>notifications>recipients>current__200.0__put__user__gateway":"7","4000.0__>notifications>settings>current__401.0__get__user__gateway":"1","4000.0__>robots.txt__404.0__get__user__gateway":"1","4000.0__>statistics>JohnDoe__401.0__get__user__gateway":"1","4000.0__>statistics>__401.0__get__user__gateway":"1","4000.0__>statistics>current__401.0__get__user__gateway":"2","4000.0__>statistics__302.0__get__user__gateway":"1","4000.0__>uaa>oauth>token__200.0__post__user__gateway":"49","4000.0__>uaa>oauth>token__400.0__post__user__gateway":"1","4000.0__>users__404.0__get__user__gateway":"1"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

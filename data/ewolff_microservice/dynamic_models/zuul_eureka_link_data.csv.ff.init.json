@@ -1,0 +1,28 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>apps>ZUUL>zuul-b677555-zqhcw-zuul-8080__200.0__put__zuul__eureka",
+"8761.0__>eureka>apps>delta__200.0__get__zuul__eureka"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:250 , ",
+			"size" : 250,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":250},"symbol_counts":null,"total_final":0,"total_paths":250,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-zqhcw-zuul-8080__200.0__put__zuul__eureka":"189","8761.0__>eureka>apps>delta__200.0__get__zuul__eureka":"61"}}
+		}
+	],
+	"edges" : [
+
+	]
+}

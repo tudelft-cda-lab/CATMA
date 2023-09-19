@@ -1,0 +1,7 @@
+_source_@timestamp,_source_source_ip,_source_destination_ip,_source_source_port,symb:_source_destination_port,_source_event_duration,_source_network_bytes,_source_query,symb:_source_url_path,_source_url_port,symb:_source_http_response_status_code,symb:_source_http_request_method,symb:source_host_mapping,symb:destination_host_mapping
+1042810566,192.168.84.133,192.168.247.4,45948.0,8888.0,43497,1171,GET /turbine-stream-service/default,>turbine-stream-service>default,8888.0,200.0,get,turbine-stream,config-server
+1042810567,192.168.84.133,10.98.245.48,45948.0,8888.0,43931,1171,GET /turbine-stream-service/default,>turbine-stream-service>default,8888.0,200.0,get,turbine-stream,config-server
+1042810567,192.168.84.133,192.168.247.4,45948.0,8888.0,43910,1171,GET /turbine-stream-service/default,>turbine-stream-service>default,8888.0,200.0,get,turbine-stream,config-server
+1042810572,192.168.84.133,192.168.247.4,48980.0,8888.0,45817,1171,GET /turbine-stream-service/default,>turbine-stream-service>default,8888.0,200.0,get,turbine-stream,config-server
+1042810573,192.168.84.133,192.168.247.4,48980.0,8888.0,46205,1171,GET /turbine-stream-service/default,>turbine-stream-service>default,8888.0,200.0,get,turbine-stream,config-server
+1042810573,192.168.84.133,10.98.245.48,48980.0,8888.0,46237,1171,GET /turbine-stream-service/default,>turbine-stream-service>default,8888.0,200.0,get,turbine-stream,config-server

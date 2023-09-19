@@ -1,0 +1,57 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8888.0__>turbine-stream-service>default__200.0__get__turbine-stream__config-server"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:6 , ",
+			"size" : 6,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":6},"symbol_counts":null,"total_final":0,"total_paths":6,"trans_counts":{"8888.0__>turbine-stream-service>default__200.0__get__turbine-stream__config-server":"6"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:6 ,  path: 0:15 , ",
+			"size" : 21,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8888.0__>turbine-stream-service>default__200.0__get__turbine-stream__config-server",
+			"data" :  {"final_counts":{"0":6},"path_counts":{"0":15},"symbol_counts":null,"total_final":6,"total_paths":15,"trans_counts":{"8888.0__>turbine-stream-service>default__200.0__get__turbine-stream__config-server":"15"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8888.0__>turbine-stream-service>default__200.0__get__turbine-stream__config-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_1",
+			"source" : "1",
+			"target" : "1",
+			"name": "8888.0__>turbine-stream-service>default__200.0__get__turbine-stream__config-server",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}

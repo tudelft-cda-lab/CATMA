@@ -1,0 +1,27 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8888.0__>notification-service>default__200.0__get__notification-service__config-server"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:6 , ",
+			"size" : 6,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":6},"symbol_counts":null,"total_final":0,"total_paths":6,"trans_counts":{"8888.0__>notification-service>default__200.0__get__notification-service__config-server":"6"}}
+		}
+	],
+	"edges" : [
+
+	]
+}
