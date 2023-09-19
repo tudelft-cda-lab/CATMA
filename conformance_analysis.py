@@ -54,8 +54,6 @@ def main():
     dynamic_models_path = args.dynamic_models_path
 
     print('Finding non-conformances')
-    # for i in range(10):
-    #     start_time = time.time()
     static_non_conformances, dynamic_non_conformances = find_non_conformances(processed_static_model_evidences, general_dynamic_model, config['services'])
     if len(static_non_conformances) + len(dynamic_non_conformances) > 0:
         print('Detected ' + str(len(static_non_conformances)) + ' static non-conformances and ' + str(len(dynamic_non_conformances)) + ' dynamic non-confromances between implementation and deployment of system!')
@@ -86,9 +84,6 @@ def main():
 
     else:
         print('No non-conformances detected between implementation and deployment of system, everything looks good :)')
-        
-        # stop_time = time.time()
-        # print(str(stop_time - start_time))
 
 
 if __name__ == '__main__':
