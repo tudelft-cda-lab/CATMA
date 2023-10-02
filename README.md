@@ -1,5 +1,5 @@
-# CATMA: Conformance Analysis Tool for Microserivce Applications [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+# CATMA: Conformance Analysis Tool for Microserivce Applications 
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## About
 This tool for performing automtated conformance analysis between implementation and deployement of microservice applications. The tool takes as input a model derived by doing static analysis on the microservice application and models derived by doing dynamic analysis on the log traces collected from the microservice application. Currently, the tool accepts Dataflow diagrams (DFD) as the input static model and State Machines as the input dynamic models. The tool performs conformance analysis by means of computing differences between the DFD and the State Machine models. We define the differeces as non-conformances between implementation and deploymenent of the microservice application. The tool generates outputs that would provide the following insights on the deteted non-conformances:
@@ -48,4 +48,4 @@ If you use this tool in your research, please cite the following paper:
 ```
 
 ## Acknowledgements
-This tool is developed within the context of the AssureMOSS project[!AssureMOSS project](https://assuremoss.eu), which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 952647.
+This tool is developed within the context of the [AssureMOSS project](https://assuremoss.eu), which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 952647.
