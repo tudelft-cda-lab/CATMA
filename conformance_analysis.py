@@ -41,7 +41,16 @@ def main():
     config = read_json_file('./config/config.json')
     interpretation_texts = read_json_file('./interpretation_texts/interpretation_texts.json')
     static_model_evidences_path = args.static_model_path
+    if not static_model_evidences_path:
+        print("\nNo path to static models provided, please run again.\n")
+        return
+    dynamic_models_path = args.dynamic_models_path
+    if not dynamic_models_path:
+        print("\nNo path to dynamic models provided, please run again.\n")
+        return
     output_folder = args.output_path
+    if not output_folder: output_folder = "./"  # use current directory if no output folder specified
+
 
     # Create the subfolders in the output folder
     create_output_folders(output_folder)
@@ -50,7 +59,7 @@ def main():
     static_model_evidences = read_static_model_evidences(static_model_evidences_path)
     processed_static_model_evidences = process_static_model_evidences(static_model_evidences)
     general_dynamic_model = clean_dynamic_model(collect_dynamic_model(args.dynamic_models_path + config['general_dynamic_model']  + '.csv.ff.final.dot'))
-    dynamic_models_path = args.dynamic_models_path
+    
 
     print('Finding non-conformances')
     static_non_conformances, dynamic_non_conformances = find_non_conformances(processed_static_model_evidences, general_dynamic_model, config['services'])
