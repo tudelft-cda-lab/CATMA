@@ -1,5 +1,6 @@
 from static_model_parser import *
-from utils import clean_dynamic_model, extract_link_from_transtion_label
+from utils import clean_dynamic_model, extract_link_from_transition_label
+import os
 
 def add_links_to_code(output_folder_path, file_name, dynamic_model, static_model_evidences):
     """
@@ -21,14 +22,13 @@ def add_links_to_code(output_folder_path, file_name, dynamic_model, static_model
         label = e.get_label()
         if label is None:
             continue
-        link = extract_link_from_transtion_label(label)
+        link = extract_link_from_transition_label(label)
         if link in static_model_evidences['links']:
             url = static_model_evidences['links'][link][0][1]
             # add href to the edge
             e.set_href(url)
         else:
             continue
-
 
     dynamic_model.write(output_folder_path + file_name + '.svg', format='svg')
 

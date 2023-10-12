@@ -66,7 +66,7 @@ def extract_state_to_edges_mapping_from_dynamic_model(dynamic_model):
 	return state_to_edges_mapping
 
 
-def extract_link_from_transtion_label(transition_label):
+def extract_link_from_transition_label(transition_label):
 	'''
 	Extract the communication linke between two microservice from a transition label. 
 	The transition label is the text that is extracted from the correspnding transition 
@@ -75,7 +75,7 @@ def extract_link_from_transtion_label(transition_label):
 	:param transition_label: label(text) extracted from a transition in the dynamic model
 	'''
 	splitted = transition_label.split('__')
-	return splitted[-2] + '-' + splitted[-1].split('\n')[0]
+	return splitted[-2].replace('-', '_') + '-' + splitted[-1].split('\n')[0].replace('-', '_')
 	
 # Testing purposes
 # if __name__ == '__main__':

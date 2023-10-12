@@ -1,4 +1,4 @@
-from utils import extract_link_from_transtion_label
+from utils import extract_link_from_transition_label
 from tqdm import tqdm
 
 def extract_occurred_links_from_dynamic_model(dynamic_model, services):
@@ -14,12 +14,12 @@ def extract_occurred_links_from_dynamic_model(dynamic_model, services):
     for transition in dynamic_model.get_edges():
         if transition.get_label() is None:
             continue
-        link = extract_link_from_transtion_label(transition.get_label())
+        link = extract_link_from_transition_label(transition.get_label())
         splitted = link.split('-')
         if splitted[0] not in services or splitted[1] not in services:
             continue
         occurred_links.add(link)
-    
+
     return occurred_links
 
 def find_non_conformance_in_linkset(this_linkset, that_linkset):
@@ -55,7 +55,8 @@ def find_non_conformances(static_model, dynamic_model, services):
     :param services: The list of services in the microservice application
     """ 
     static_links = static_model['links']
-    dynamic_links = extract_occurred_links_from_dynamic_model(dynamic_model, services)
+    processed_services = [x.replace('-', '_') for x in services]
+    dynamic_links = extract_occurred_links_from_dynamic_model(dynamic_model, processed_services)
     static_non_conformances = find_non_conformance_in_linkset(dynamic_links, static_links)
     dynamic_non_conformances = find_non_conformance_in_linkset(static_links, dynamic_links)
     return static_non_conformances, dynamic_non_conformances
