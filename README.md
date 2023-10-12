@@ -2,8 +2,8 @@
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## About
-This tool for performing automtated conformance analysis between implementation and deployement of microservice applications. The tool takes as input a model derived by doing static analysis on the microservice application and models derived by doing dynamic analysis on the log traces collected from the microservice application. Currently, the tool accepts Dataflow diagrams (DFD) as the input static model and State Machines as the input dynamic models. The tool performs conformance analysis by means of computing differences between the DFD and the State Machine models. We define the differeces as non-conformances between implementation and deploymenent of the microservice application. The tool generates outputs that would provide the following insights on the deteted non-conformances:
-- A high-level visualization showing how many, which type and where non-conformances are detected in the microservice application.
+This is a tool for performing automated conformance analysis between implementation and deployement of microservice applications. The tool takes as input a model derived by performing static analysis on the microservice application and models derived by performing dynamic analysis on the log traces collected from the microservice application. Currently, the tool accepts Dataflow Diagrams (DFD) as the input static model and State Machines as the input dynamic models. The tool performs conformance analysis by means of computing differences between the DFD and the State Machine models. We define the differeces as non-conformances between implementation and deploymenent of the microservice application. The tool generates outputs that would provide the following insights on the deteted non-conformances:
+- A high-level visualization showing how many, which type, and where non-conformances are detected in the microservice application.
 - Potential interpretations, presented in a human-readable format, aiding the user with the understanding what are the potential underlying causes of the detected non-conformances. 
 
 ## Requirements and Installation
@@ -16,20 +16,20 @@ The tool is completely written in Python and thus a Python installation is requi
 - dominate (version 2.7.0 or higher)
 - pydot (version 1.4.2 or higher)
 
-All above python packages can be easily installed using the `requirements.txt` file provided in this repository. To install the required packages, run the following command from the root directory of this repository:
+All above Python packages can be easily installed using the `requirements.txt` file provided in this repository. To install the required packages, run the following command from the root directory of this repository:
 ```
 pip install -r requirements.txt
 ```
 
 After installing the required packages, one should already be able to run the tool. 
 
-Besides the above Python packages, the tool requires a internet browser to be installed on the system. The browser is handy for viewing the interpretations generated for the detected non-conformanes. The tool was tested with Google Chrome browser, but should work with any other browser as well.
+Besides the above Python packages, the tool requires an internet browser to be installed on the system. The browser is handy for viewing the interpretations generated for the detected non-conformanes. The tool was tested with Google Chrome browser, but should work with any other browser as well.
 
 ## Example Usage
-Currently, the tool can only be run via the command line. The main python script that should be run is `conformane_analysis.py`. This script takes only three arguments, namely:
-- `static_model_path`: used for providing the path to the DFD model extracted from doing static analysis on the microservice application.
-- `dynamic_models_path`: used for providing the path to the State Machine models extracted from doing dynamic analysis on the microservice application.
-- `output_path`: used for providing the path to the directory where the outputs of the tool should be written.
+The tool can be run via the command line. The main Python script that should be run is `conformane_analysis.py`. This script takes only three arguments, namely:
+- `static_model_path`: used for providing the path to the DFD model extracted from performing static analysis on the microservice application.
+- `dynamic_models_path`: used for providing the path to the State Machine models extracted from performing dynamic analysis on the microservice application.
+- `output_path`: used for providing the path to the directory where the outputs of the tool should be stored.
 
 One can run the tool by executing the following command from the root directory of this repository:
 ```

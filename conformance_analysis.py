@@ -77,7 +77,7 @@ def main():
     static_model_evidences = read_static_model_evidences(static_model_evidences_path)
     processed_static_model_evidences = process_static_model_evidences(static_model_evidences)
     general_dynamic_model = clean_dynamic_model(collect_dynamic_model(args.dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX))
-
+    
     print('Finding non-conformances')
     static_non_conformances, dynamic_non_conformances = find_non_conformances(processed_static_model_evidences, general_dynamic_model, config['services'])
     if len(static_non_conformances) + len(dynamic_non_conformances) > 0:
