@@ -1,3 +1,0 @@
-_source_@timestamp,_source_source_ip,_source_destination_ip,_source_source_port,symb:_source_destination_port,_source_event_duration,_source_network_bytes,_source_query,symb:_source_url_path,_source_url_port,symb:_source_http_response_status_code,symb:_source_http_request_method,symb:source_host_mapping,symb:destination_host_mapping
-1042810133,192.168.247.6,10.98.245.48,43820.0,8888.0,114741,2315,GET /gateway/default,>gateway>default,8888.0,200.0,get,gateway,config-server
-1042810133,192.168.247.6,192.168.247.4,43820.0,8888.0,114712,2315,GET /gateway/default,>gateway>default,8888.0,200.0,get,gateway,config-server

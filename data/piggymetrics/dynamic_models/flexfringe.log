@@ -1,0 +1,32 @@
+
+
+
+
+
+arguments: /Users/clintoncao/Documents/Git/FlexFringe//flexfringe --ini ../../../../catma_personal/ini/aic_ms_component.ini registry_service_data.csv
+Current dir: /Users/clintoncao/Documents/Git/CATMA/data/piggymetrics/dynamic_models
+File verbosity level: 9
+date       time         ( uptime  ) [ thread name/id ]                   file:line     v| 
+2023-10-11 14:07:48.847 (   0.005s) [main thread     ]             loguru.cpp:841   INFO| Logging to 'flexfringe.log', mode: 'a', verbosity: 9
+2023-10-11 14:07:48.848 (   0.005s) [main thread     ]               main.cpp:242   INFO| Starting flexfringe run
+2023-10-11 14:07:48.851 (   0.008s) [main thread     ]               main.cpp:71    INFO| Using heuristic aic
+2023-10-11 14:07:48.851 (   0.008s) [main thread     ]               apta.cpp:34    INFO| Creating APTA data structure
+2023-10-11 14:07:50.478 (   1.635s) [main thread     ]               main.cpp:125   INFO| Greedy mode selected, starting run
+2023-10-11 14:07:51.056 (   2.213s) [main thread     ]               main.cpp:394   INFO| Ending flexfringe run normally
+2023-10-11 14:07:51.056 (   2.213s) [main thread     ]             loguru.cpp:538   INFO| atexit
+
+
+
+
+
+arguments: /Users/clintoncao/Documents/Git/FlexFringe//flexfringe --ini ../../../../catma_personal/ini/aic_ms_component.ini registry_service_data.csv
+Current dir: /Users/clintoncao/Documents/Git/CATMA/data/piggymetrics/dynamic_models
+File verbosity level: 9
+date       time         ( uptime  ) [ thread name/id ]                   file:line     v| 
+2023-10-11 14:08:51.982 (   0.001s) [main thread     ]             loguru.cpp:841   INFO| Logging to 'flexfringe.log', mode: 'a', verbosity: 9
+2023-10-11 14:08:51.984 (   0.001s) [main thread     ]               main.cpp:242   INFO| Starting flexfringe run
+2023-10-11 14:08:51.985 (   0.003s) [main thread     ]               main.cpp:71    INFO| Using heuristic aic
+2023-10-11 14:08:51.985 (   0.003s) [main thread     ]               apta.cpp:34    INFO| Creating APTA data structure
+2023-10-11 14:08:53.377 (   1.395s) [main thread     ]               main.cpp:125   INFO| Greedy mode selected, starting run
+2023-10-11 14:08:54.346 (   2.364s) [main thread     ]               main.cpp:394   INFO| Ending flexfringe run normally
+2023-10-11 14:08:54.346 (   2.364s) [main thread     ]             loguru.cpp:538   INFO| atexit
