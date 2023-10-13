@@ -37,7 +37,7 @@ def find_previous_sequences_for_link_static_model(static_model_links, starting_p
     For a given link that is part of a non-conformance of type static, find the previous sequences of links
     that could occur in the static model. To do so, we start from the destination component of the link and we
     go backwards in the static model to find previous sequences. Currently, we only consider sequences that have 
-    a length of 3
+    a length between 1 and 5.
 
     :param static_model_links: A dictionary that contains the links between the components
     :param starting_point: The componenent from which we start to walk backwards in the static model
@@ -60,7 +60,6 @@ def find_previous_sequences_for_link_static_model(static_model_links, starting_p
             path.insert(0, next_target_node)
             current_node = next_target_node
 
-        
         if str(path) in potential_previous_sequences_set:
             continue
         
@@ -73,6 +72,7 @@ def find_previous_sequences_for_link_static_model(static_model_links, starting_p
     # Transform the paths into sequences of links
     potential_previous_link_sequences = []
     for path in potential_previous_sequences:
+        path.append(starting_point) # include the starting point to show this in the interpretation
         sequence = []
         for i in range(len(path)):
             if i+1 >= len(path):
@@ -83,7 +83,7 @@ def find_previous_sequences_for_link_static_model(static_model_links, starting_p
     return potential_previous_link_sequences
 
 
-def do_random_walk_dynamic_model(dynamic_model, required_component, number_of_walks, walk_length):
+def do_random_walk_dynamic_model(dynamic_model, required_component, missing_component, number_of_walks, walk_length):
     '''
     Do random walks over the dynamic model to sample paths that were used to learn the dynamic
     model. The paths that are traversed through this model must contain the component that is
@@ -98,11 +98,9 @@ def do_random_walk_dynamic_model(dynamic_model, required_component, number_of_wa
 
     random_walk_paths = []
     random_walk_paths_set = set()
-    path_to_state_sequences_mapping = dict()
     for i in range(number_of_walks):
         current_node = '0'
         path = []
-        state_sequence = []
         for j in range(walk_length):
             if current_node not in states_to_edges_mapping:
                 break
@@ -111,22 +109,15 @@ def do_random_walk_dynamic_model(dynamic_model, required_component, number_of_wa
             next_target_node = selected_edge.get_destination()
             splitted = selected_edge.get_label().split('\n')[0].split('__')
             path.append(splitted[-2] + '__' + splitted[-1])
-            state_sequence.append(current_node + '__' + next_target_node)
             current_node = next_target_node
-    
 
-        if str(path) in random_walk_paths_set:
-            path_to_state_sequences_mapping[str(path)].add(str(state_sequence))
-            continue
-        
+        path.append(required_component + '__' + missing_component) # include the missing link in the path (will be shown in the interpretation).
         if required_component in str(path):
             random_walk_paths.append(path)
             random_walk_paths_set.add(str(path))
-            if str(path) not in path_to_state_sequences_mapping:
-                path_to_state_sequences_mapping[str(path)] = set()
-            path_to_state_sequences_mapping[str(path)].add(str(state_sequence))
+        
     
-    return random_walk_paths, path_to_state_sequences_mapping
+    return random_walk_paths
             
 def find_occurred_sequences_in_paths(potential_previous_sequences, dynamic_model_walk_paths):
     '''
@@ -184,6 +175,10 @@ def find_sequence_of_call_details(call_sequence, dynamic_model):
     state_to_edges_mapping = extract_state_to_edges_mapping_from_dynamic_model(dynamic_model)
     start_call = call_sequence[0]
     starting_points = find_starting_points_for_sequence(start_call, dynamic_model)
+    # We redefine the length of the sequence as the last item in the sequence is the missing link
+    # and we do not have any call details for this link, hence we have len(call_sequence) - 1. It
+    # could be the case that the call sequence only contains one call, in this case we set the length to 1.
+    len_call_sequence = len(call_sequence) - 1 if len(call_sequence) > 1 else 1
     
     # now we traverse the model using the found starting points and we try to find the
     # sequence of call details for the given sequence.
@@ -191,7 +186,7 @@ def find_sequence_of_call_details(call_sequence, dynamic_model):
         sequence_of_details = []
         matching_path = True
         current_node = p
-        for i in range(len(call_sequence)):
+        for i in range(len_call_sequence):
             if current_node not in state_to_edges_mapping:
                 matching_path = False
                 break

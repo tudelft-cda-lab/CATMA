@@ -44,32 +44,6 @@ def process_line_evidence(file_path, src_code_folder):
     processed_file_path = file_path.split(splitting_point)[1].split('#')[0]
     return src_code_folder + '/' + processed_file_path
 
-def process_service_evidences(services):
-    """
-    This function is used to process the evidences collected from the services in the DFD model.
-    We basically parse the evidences and store them in a dictionary. The key is the service and
-    the value is a list of tuples containing the file path (URL) and the line number.
-
-    :param services: Dictionary containing the evidences collected for the services in the DFD model.
-    """
-    service_evidences = {}
-    
-    for s in services:
-        s = s.lower()
-        service_evidences[s] = []
-        file = services[s]['file'].replace('blob/master/master', 'blob/master')
-        line = services[s]['line']
-
-        service_evidences[s].append(('Service', file, line))
-        if 'sub_items' in services[s]:
-            other_evidences = services[s]['sub_items']
-            for evidence in other_evidences:
-                file = other_evidences[evidence]['file']
-                line = other_evidences[evidence]['line']
-                service_evidences[s].append((evidence, file, line))
-
-    return service_evidences
-
 def process_link_evidences(links):
     """
     This function is used to process the evidences collected for the links in the DFD model.
@@ -80,7 +54,8 @@ def process_link_evidences(links):
     """
     link_evidences = {}
     for l in links:
-        link_name = '-'.join(l.split(' -> ')).lower()
+        services = [x.replace('-','_') for x in l.split(' -> ')]
+        link_name = '-'.join(services).lower()
         link_evidences[link_name] = []
         file = links[l]['file'].replace('blob/master/master', 'blob/master')
         line = links[l]['line']
@@ -98,7 +73,6 @@ def process_static_model_evidences(evidences):
     :param evidences: Dictionary containing the evidences extracted by the static model. This is the JSON by TUHH's tool
     
     """
-    # service_evidences = process_service_evidences(evidences['nodes'])
     link_evidences = process_link_evidences(evidences['edges'])
     return {'links' : link_evidences}
 

@@ -117,13 +117,13 @@ def generate_static_non_conformance_interpretation(doc, interpretation_data, int
             run_time_model_div.add(
                 generate_div_with_svg_model(
                     interpretation_data['link_dyn_model'],  
-                    'Dynamic model learned for link between ' + interpretation_data['components'][0] + ' and ' + interpretation_data['components'][1] + ':',
-                    'static_nf_svg'
+                    'Dynamic model learned for the communication behavior between ' + interpretation_data['components'][0] + ' and ' + interpretation_data['components'][1] + ':',
+                    'static_ncf_svg'
                     )
                 )
             
-        with div(id = 'static_nf_dynamic_model_calls'):
-            h3('Frequently occurring call endpoints extracted from the dynamic model learned for the link between ' + interpretation_data['components'][0] + ' and ' + interpretation_data['components'][1] + ':')
+        with div(id = 'static_ncf_dynamic_model_calls'):
+            h3('Frequently occurring endpoint calls extracted from the dynamic model learned for the communication behavior between ' + interpretation_data['components'][0] + ' and ' + interpretation_data['components'][1] + ':')
             doc = generate_html_list_for_top_N_transitions(doc, interpretation_data['top_transitions_from_link_dyn_model'])
 
     return doc
@@ -222,21 +222,24 @@ def generate_dynamic_non_conformance_interpretation(doc, interpretation_data, in
     with div(id = 'interpretation_basis'):
         h2('The folowing information could help with understanding of the detected non-conformance:')
 
-        with div(id = 'dynamic_nf_code_evidences'):
+        with div(id = 'dynamic_ncf_code_evidences'):
             h3('The following line of code should produce a call between ' + interpretation_data['components'][0] + ' and ' + interpretation_data['components'][1] + ' but no such call was seen during run-time. ')
             doc = generate_html_table_of_code_evidences(doc, interpretation_data['link_code_evidences'])
         
         if 'missing_dynamic_model' in interpretation_data:
-            with div(id = 'dynamic_nf_missing_dynamic_model'):
-                p('No data run-time data was found for ' + interpretation_data['missing_dynamic_model'] + '. Are these perhaps external components?')
+            with div(id = 'dynamic_ncf_missing_dynamic_model'):
+                if len(interpretation_data['missing_dynamic_model']) > 1:
+                    p('No data run-time data was found for ' + interpretation_data['missing_dynamic_model'][0] + ' and ' + interpretation_data['missing_dynamic_model'][1] + '. Are these perhaps external components?')
+                else:
+                    p('No data run-time data was found for ' + interpretation_data['missing_dynamic_model'][0] + '. Is this perhaps an external component?')
         else:
-            with div(id = 'dynamic_nf_possible_sequences'):
+            with div(id = 'dynamic_ncf_possible_sequences'):
                 h3('Sequences extracted from the static model that should produce run-time behaviour for link between ' + interpretation_data['components'][0] + ' and ' + interpretation_data['components'][1])
                 static_call_sequences = interpretation_data['potential_call_sequences']
                 code_call_sequences = interpretation_data['code_call_sequences']
                 doc = generate_html_for_call_sequences_leading_to_missing_link(doc, static_call_sequences, code_call_sequences)
 
-            with div(id = 'dynamic_nf_occurred_sequences'):
+            with div(id = 'dynamic_ncf_occurred_sequences'):
                 h3('Sequences that occurred in the dynamic model that should produce run-time behaviour for link between ' + interpretation_data['components'][0] + ' and ' + interpretation_data['components'][1])
                 runtime_call_sequences = interpretation_data['occurred_call_sequences']
                 doc = generate_html_for_call_sequences_leading_to_missing_link(doc, runtime_call_sequences, code_call_sequences)
@@ -274,7 +277,7 @@ def generate_dynamic_non_conformance_interpretation(doc, interpretation_data, in
                     generate_div_with_svg_model(
                         interpretation_data['src_dyn_model'], 
                         'Dynamic model learned for component ' + interpretation_data['components'][0] + ':',
-                        'dynamic_nf_svg'
+                        'dynamic_ncf_svg'
                         )
                     )
                 
@@ -283,7 +286,7 @@ def generate_dynamic_non_conformance_interpretation(doc, interpretation_data, in
                     generate_div_with_svg_model(
                         interpretation_data['dst_dyn_model'], 
                         'Dynamic model learned for component ' + interpretation_data['components'][1]+ ':',
-                        'dynamic_nf_svg'
+                        'dynamic_ncf_svg'
                         )
                     )
         
@@ -310,7 +313,7 @@ def generate_style_sheet(file_path):
                 margin: 20px;
             }
 
-            #dynamic_nf_code_evidences, #dynamic_nf_possible_sequences, #dynamic_nf_occurred_sequences, #static_nf_dynamic_model_calls, #call_details_occurred_sequences, #model {
+            #dynamic_ncf_code_evidences, #dynamic_ncf_possible_sequences, #dynamic_ncf_occurred_sequences, #static_ncf_dynamic_model_calls, #call_details_occurred_sequences, #model {
                 background-color: #ffffff;
                 padding: 20px;
                 margin: 20px;
@@ -331,7 +334,7 @@ def generate_style_sheet(file_path):
                 position: relative;
             }
 
-            #static_nf_svg {
+            #static_ncf_svg {
                 width: 70%;
                 height: 800px;
                 display: inline-block;
@@ -371,7 +374,7 @@ def generate_html_for_interpretation(output_path, interpretation_data, interpret
             doc = generate_dynamic_non_conformance_interpretation(doc, interpretation_data, interpretation_texts)
         
 
-    file_name = '-'.join(interpretation_data['components']) + '-' + non_conformance_type + '-non_conformance.html'
+    file_name = '_'.join(interpretation_data['components']) + '_' + non_conformance_type + '-non_conformance.html'
     with open(output_path + file_name, 'w') as f:
         f.write(doc.render())
 
