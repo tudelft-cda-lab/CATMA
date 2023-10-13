@@ -1,4 +1,4 @@
 {
-    "services" : ["github-repository", "config-server", "discovery-server", "admin-server", "vets-service", "api-gateway", "customers-service", "visits-service", "tracing-server", "user-service", "prometheus-kube", "grafana-server"],
+    "services" : ["catalog", "order", "customer", "turbine", "zuul", "eureka", "user"],
     "general_dynamic_model" : "ms_http_data"
 }

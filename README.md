@@ -26,7 +26,7 @@ After installing the required packages, one should already be able to run the to
 Besides the above Python packages, the tool requires an internet browser to be installed on the system. The browser is handy for viewing the interpretations generated for the detected non-conformanes. The tool was tested with Google Chrome browser, but should work with any other browser as well.
 
 ## Example Usage
-The tool can be run via the command line. The main Python script that should be run is `conformane_analysis.py`. This script takes only three arguments, namely:
+The tool can be run via the command line. The main Python script that should be run is `conformance_analysis.py`. This script takes only three arguments, namely:
 - `static_model_path`: used for providing the path to the DFD model extracted from performing static analysis on the microservice application.
 - `dynamic_models_path`: used for providing the path to the State Machine models extracted from performing dynamic analysis on the microservice application.
 - `output_path`: used for providing the path to the directory where the outputs of the tool should be stored.

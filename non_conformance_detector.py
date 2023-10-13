@@ -59,6 +59,7 @@ def find_non_conformances(static_model, dynamic_model, services):
     dynamic_links = extract_occurred_links_from_dynamic_model(dynamic_model, processed_services)
     static_non_conformances = find_non_conformance_in_linkset(dynamic_links, static_links)
     dynamic_non_conformances = find_non_conformance_in_linkset(static_links, dynamic_links)
+    # TODO check whether the detection is the right way around. I think, static and dynamic non-conformances are switched
     return static_non_conformances, dynamic_non_conformances
 
 
