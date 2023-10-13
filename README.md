@@ -33,7 +33,12 @@ The tool can be run via the command line. The main Python script that should be 
 
 One can run the tool by executing the following command from the root directory of this repository:
 ```
-python conformane_analysis.py --static_model_path <PATH_TO_STATIC_MODEL> --dynamic_models_path <PATH_TO_DYNAMIC_MODELS> --output_path <PATH_TO_OUTPUT_DIRECTORY>
+python conformance_analysis.py --static_model_path <PATH_TO_STATIC_MODEL> --dynamic_models_path <PATH_TO_DYNAMIC_MODELS> --output_path <PATH_TO_OUTPUT_DIRECTORY>
+```
+
+For example, you can run the tool on the application ewolff/microservice with the following command:
+```
+python conformance_analysis.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models/ --output_path ./output/
 ```
 
 ## Citing this work
