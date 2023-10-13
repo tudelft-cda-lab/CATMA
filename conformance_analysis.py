@@ -48,7 +48,7 @@ def create_output_folders(output_folder):
     os.makedirs(output_folder, exist_ok=True)
     os.makedirs(output_folder + 'interpretations/', exist_ok=True)
     os.makedirs(output_folder + 'code_linked_models/', exist_ok=True)
-    # os.makedirs(output_folder + 'non_conformance_visualization/', exist_ok=True)
+    os.makedirs(output_folder + 'visualization/', exist_ok=True)
 
 def main():
     arg_parser = ap.ArgumentParser(description='CATMA: Conformance Analysis Tool for Microservice Applications')

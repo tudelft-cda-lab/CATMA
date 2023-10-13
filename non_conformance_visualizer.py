@@ -1,4 +1,4 @@
-
+import plantuml
 
 
 
@@ -46,6 +46,8 @@ def visualize_non_conformances(static_non_conformances: set, dynamic_non_conform
 
     plantuml_str = add_footer(plantuml_str)
 
+    write_output(plantuml_str, output_folder)
+
     return 0
 
 
@@ -79,3 +81,21 @@ def add_footer(plantuml_str: str) -> str:
 """
     return plantuml_str
 
+def write_output(plantuml_str, output_folder: str):
+    """Writes PlantUML to file and calls PlantUML server to generate PNG.
+    """ 
+
+    output_file_path = f"{output_folder}visualization/plantuml.txt"
+
+    # write to file
+    with open(output_file_path, 'w+') as output_file:
+        output_file.write(plantuml_str)
+
+    # generate PNG
+    generator = plantuml.PlantUML(url = "http://www.plantuml.com/plantuml/img/")
+    try:
+        png = generator.processes_file(filename = output_file_path)
+    except Exception:
+        print("No connection to the PlantUML server possible or malformed input to the server.")
+        
+    return 0
