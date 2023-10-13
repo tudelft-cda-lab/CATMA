@@ -8,6 +8,7 @@ from interpretation_visualizer import *
 from model_walker import *
 import argparse as ap
 from non_conformance_detector import *
+from non_conformance_visualizer import *
 
 FF_SUFFIX = '.csv.ff.final.dot'
 
@@ -85,6 +86,7 @@ def main():
         print('Generating visualization and interpretation for the static non-conformances')
         process_non_conformances('static', static_non_conformances, output_folder, processed_static_model_evidences, general_dynamic_model, interpretation_texts['static_interpretations'], dynamic_models_path)
         process_non_conformances('dynamic', dynamic_non_conformances, output_folder, processed_static_model_evidences, general_dynamic_model, interpretation_texts['dynamic_interpretations'], dynamic_models_path)
+        visualize_non_conformances(static_non_conformances, dynamic_non_conformances, output_folder, processed_static_model_evidences)
     else:
         print('No non-conformances detected between implementation and deployment of system, everything looks good :)')
 
