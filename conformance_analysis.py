@@ -80,6 +80,7 @@ def main():
     general_dynamic_model = clean_dynamic_model(collect_dynamic_model(args.dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX))
     
     print('Finding non-conformances')
+    runtime = []
     for i in range(10):
         start_time = time.time()
         static_non_conformances, dynamic_non_conformances = find_non_conformances(processed_static_model_evidences, general_dynamic_model, config['services'])
@@ -92,7 +93,9 @@ def main():
             print('No non-conformances detected between implementation and deployment of system, everything looks good :)')
         
         stop_time = time.time()
-        print(str(stop_time - start_time))
+        runtime.append(stop_time - start_time)
+    
+    print('Average runtime: ' + str(sum(runtime) / len(runtime)))
 
 
 if __name__ == '__main__':
