@@ -74,19 +74,20 @@ def main():
     # Create the subfolders in the output folder
     create_output_folders(output_folder)
 
-    print('Parsing evidences from static model')
+    print('Parsing static model')
     static_model_evidences = read_static_model_evidences(static_model_evidences_path)
-    processed_static_model_evidences = process_static_model_evidences(static_model_evidences)
+    #processed_static_model_evidences = process_static_model_evidences(static_model_evidences)
+    print('Parsing dynamic model')
     general_dynamic_model = clean_dynamic_model(collect_dynamic_model(args.dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX))
     
-    print('Finding non-conformances')
-    static_non_conformances, dynamic_non_conformances = find_non_conformances(processed_static_model_evidences, general_dynamic_model, config['services'])
+    print('Detecting non-conformances')
+    static_non_conformances, dynamic_non_conformances = find_non_conformances(static_model_evidences, general_dynamic_model, config['services'])
     if len(static_non_conformances) + len(dynamic_non_conformances) > 0:
         print('Detected ' + str(len(static_non_conformances)) + ' static non-conformances and ' + str(len(dynamic_non_conformances)) + ' dynamic non-conformances between implementation and deployment of system!')
-        print('Generating visualization and interpretation for the static non-conformances')
-        process_non_conformances('static', static_non_conformances, output_folder, processed_static_model_evidences, general_dynamic_model, interpretation_texts['static_interpretations'], dynamic_models_path)
-        process_non_conformances('dynamic', dynamic_non_conformances, output_folder, processed_static_model_evidences, general_dynamic_model, interpretation_texts['dynamic_interpretations'], dynamic_models_path)
-        visualize_non_conformances(static_non_conformances, dynamic_non_conformances, output_folder, processed_static_model_evidences)
+        print('Generating visualization and interpretation for the non-conformances')
+        process_non_conformances('static', static_non_conformances, output_folder, static_model_evidences, general_dynamic_model, interpretation_texts['static_interpretations'], dynamic_models_path)
+        process_non_conformances('dynamic', dynamic_non_conformances, output_folder, static_model_evidences, general_dynamic_model, interpretation_texts['dynamic_interpretations'], dynamic_models_path)
+        visualize_non_conformances(static_non_conformances, dynamic_non_conformances, output_folder, static_model_evidences)
     else:
         print('No non-conformances detected between implementation and deployment of system, everything looks good :)')
 

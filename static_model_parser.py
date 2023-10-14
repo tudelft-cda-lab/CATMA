@@ -4,12 +4,20 @@ import json
 def read_static_model_evidences(evidence_file_path):
     """
     This function is used to read evidences that are collected by the static model.
-    It basically load the JSON file and return it as a dictionary.
+    It first loads the JSON file. Then, it processes the evidences extraced by the static model (DFD model from TUHH).
+    Evidences are parsed and stored in the corresponding dictionary; evidences collected from services
+    are store in the service_evidence dictionary and evidences collected from links are stored in the
+    link_evidences dictionary.
 
     :param evidence_file: The path to the JSON file containing the evidences.
+    
     """
+
     with open(evidence_file_path, 'r') as f:
-        return json.load(f)
+        evidences = json.load(f)
+    
+    link_evidences = process_link_evidences(evidences['edges'])
+    return {'links' : link_evidences}
 
 
 def extract_code_line(file, line):
@@ -63,18 +71,18 @@ def process_link_evidences(links):
 
     return link_evidences
 
-def process_static_model_evidences(evidences):
-    """
-    This function is used to process the evidences extraced by the static model (DFD model from TUHH).
-    Evidences are parsed and stored in the corresponding dictionary; evidences collected from services
-    are store in the service_evidence dictionary and evidences collected from links are stored in the
-    link_evidences dictionary.
+# def process_static_model_evidences(evidences):
+#     """
+#     This function is used to process the evidences extraced by the static model (DFD model from TUHH).
+#     Evidences are parsed and stored in the corresponding dictionary; evidences collected from services
+#     are store in the service_evidence dictionary and evidences collected from links are stored in the
+#     link_evidences dictionary.
 
-    :param evidences: Dictionary containing the evidences extracted by the static model. This is the JSON by TUHH's tool
+#     :param evidences: Dictionary containing the evidences extracted by the static model. This is the JSON by TUHH's tool
     
-    """
-    link_evidences = process_link_evidences(evidences['edges'])
-    return {'links' : link_evidences}
+#     """
+#     link_evidences = process_link_evidences(evidences['edges'])
+#     return {'links' : link_evidences}
 
 # Testing purposes
 # if __name__ == '__main__':
