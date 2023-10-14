@@ -5,7 +5,7 @@ from dynamic_model_code_linking import *
 from static_model_parser import *
 from interpretation_generator import *
 from interpretation_visualizer import *
-from model_walker import *
+from model_processor import *
 import argparse as ap
 from non_conformance_detector import *
 from non_conformance_visualizer import *
