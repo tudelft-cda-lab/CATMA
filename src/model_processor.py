@@ -1,7 +1,34 @@
 import random
 from src.utils import extract_state_to_edges_mapping_from_dynamic_model
 import json
-# import argparse
+
+
+def read_static_model(evidence_file_path):
+    """
+    This function is used to read evidences that are collected by the static model.
+    It first loads the JSON file. Then, it processes the evidences extraced by the static model (DFD model from TUHH).
+    Evidences are parsed and stored in the corresponding dictionary; evidences collected from services
+    are store in the service_evidence dictionary and evidences collected from links are stored in the
+    link_evidences dictionary.
+
+    :param evidence_file: The path to the JSON file containing the evidences.
+    """
+
+    with open(evidence_file_path, 'r') as f:
+        static_model = json.load(f)
+
+    link_evidences = dict()
+    links = static_model['edges']
+    for l in links:
+        services = [x.replace('-','_') for x in l.split(' -> ')]
+        link_name = '-'.join(services).lower()
+        link_evidences[link_name] = []
+        file = links[l]['file'].replace('blob/master/master', 'blob/master')
+        line = links[l]['line']
+        link_evidences[link_name].append(('Link', file, line))
+
+    return {'links' : link_evidences}
+
 
 def transform_static_model_links(static_model_links):
     '''
@@ -219,80 +246,6 @@ def find_sequence_of_call_details(call_sequence, dynamic_model):
         processed_call_details.append(sequence)
     
     return processed_call_details
-
-            
-
-# Old static_model_parser.py from here on
-
-def read_static_model(evidence_file_path):
-    """
-    This function is used to read evidences that are collected by the static model.
-    It first loads the JSON file. Then, it processes the evidences extraced by the static model (DFD model from TUHH).
-    Evidences are parsed and stored in the corresponding dictionary; evidences collected from services
-    are store in the service_evidence dictionary and evidences collected from links are stored in the
-    link_evidences dictionary.
-
-    :param evidence_file: The path to the JSON file containing the evidences.
-    
-    """
-
-    with open(evidence_file_path, 'r') as f:
-        evidences = json.load(f)
-    
-    link_evidences = process_link_evidences(evidences['edges'])
-    return {'links' : link_evidences}
-
-
-# def extract_code_line(file, line):
-#     """
-#     This function is used to extract a specific (source code) line from a file.
-#     :param file: The file from which the line will be extracted.
-#     :param line: The line number that will be extracted.
-#     """
-#     with open(file, 'r') as f:
-#         lines = f.readlines()
-#         if isinstance(line, str):
-#             return lines[int(line) - 1].strip()
-#         elif isinstance(line, int):
-#             return lines[line - 1].strip()
-#         else:
-#             raise Exception('Invalid line number')
-    
-
-# def process_line_evidence(file_path, src_code_folder):
-#     """
-#     This function is used to parse and transform the URL into a file path, which will be used
-#     to parse the specific line from the file. Currently, this is not used.
-
-#     :param file_path: The URL of the file.
-#     :param src_code_folder: The path to the folder containing the source code.
-
-#     """
-#     if 'heuristic' in file_path or 'implicit' in file_path:
-#         return file_path
-    
-#     splitting_point = src_code_folder.split('/')[-1] + '/'
-#     processed_file_path = file_path.split(splitting_point)[1].split('#')[0]
-#     return src_code_folder + '/' + processed_file_path
-
-def process_link_evidences(links):
-    """
-    This function is used to process the evidences collected for the links in the DFD model.
-    The structure of this dictionary is the similar as the one used for the services, except 
-    for this one we use the link as the key.
-
-    :param links: Dictionary containing the evidences collected for the links
-    """
-    link_evidences = {}
-    for l in links:
-        services = [x.replace('-','_') for x in l.split(' -> ')]
-        link_name = '-'.join(services).lower()
-        link_evidences[link_name] = []
-        file = links[l]['file'].replace('blob/master/master', 'blob/master')
-        line = links[l]['line']
-        link_evidences[link_name].append(('Link', file, line))
-
-    return link_evidences
 
 
 # Testing purposes
