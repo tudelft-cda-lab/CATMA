@@ -79,23 +79,23 @@ def collect_code_call_sequences_from_sequences(sequences, link_evidences):
     
     return code_call_sequences
 
-def collect_and_process_model_for_static_non_conformance(link_dyn_model_path, interpretation, output_folder, output_file_name, static_model_evidences):
+def collect_and_process_model_for_static_non_conformance(link_dyn_model_path, interpretation, output_folder, output_file_name, static_model):
         link_dynamic_model = collect_dynamic_model(link_dyn_model_path)
         top_transitions_from_link_dyn_model = compute_top_n_transitions_from_model(link_dynamic_model, 10)
         interpretation['top_transitions_from_link_dyn_model'] = top_transitions_from_link_dyn_model
-        add_links_to_code(output_folder + 'code_linked_models/', output_file_name, link_dynamic_model, static_model_evidences)
+        add_links_to_code(output_folder + 'code_linked_models/', output_file_name, link_dynamic_model, static_model)
         interpretation['link_dyn_model'] = output_folder + 'code_linked_models/' + output_file_name + '.svg'
 
-def collect_and_process_model_for_dynamic_non_conformance(serv_dyn_model_path, interpretation, output_folder, output_file_name, static_model_evidences, direction):
+def collect_and_process_model_for_dynamic_non_conformance(serv_dyn_model_path, interpretation, output_folder, output_file_name, static_model, direction):
     if not os.path.exists(serv_dyn_model_path):
            return None
     else:
         src_component_dynamic_model = collect_dynamic_model(serv_dyn_model_path)
-        add_links_to_code(output_folder + 'code_linked_models/', output_file_name, src_component_dynamic_model, static_model_evidences)
+        add_links_to_code(output_folder + 'code_linked_models/', output_file_name, src_component_dynamic_model, static_model)
         interpretation[direction + '_dyn_model'] = output_folder + 'code_linked_models/' + output_file_name + '.svg'
         return src_component_dynamic_model
 
-def generate_interpretation(non_conformance_type, components, dynamic_models_folder, output_folder, static_model_evidences, general_dynamic_model):
+def generate_interpretation(non_conformance_type, components, dynamic_models_folder, output_folder, static_model, dynamic_model):
     '''
     This function is used to generate the interpretation of the non-conformance between the static
     and dynamic models. We have two definitions for non-conformances that we detect: static and dynamic.
@@ -105,14 +105,14 @@ def generate_interpretation(non_conformance_type, components, dynamic_models_fol
     :param diff_type: type of difference between the static and dynamic models
     :param components: list of two components that are involved in the non-conformance. Order follows the direction of the link
     :param dynamic_models_folder: path to the folder containing the dynamic models
-    :param static_model_evidences: dictionary containing the evidences extracted from the static model
-    :param general_dynamic_model: The model that is learned from all HTTP event logs.
+    :param static_model: dictionary containing the evidences extracted from the static model
+    :param dynamic_model: The model that is learned from all HTTP event logs.
     '''
     interpretation = {}
     interpretation['non_conformance_type'] = non_conformance_type
     processed_components = [x.replace('_', '-') for x in components] # change it back to original name
     interpretation['components'] = processed_components
-    link_code_evidences = collect_link_code(components[0] + '-' + components[1], static_model_evidences['links'])
+    link_code_evidences = collect_link_code(components[0] + '-' + components[1], static_model['links'])
     interpretation['link_code_evidences'] = link_code_evidences
 
     # For if we find non-conformance in the static model; link occurring in the dynamic model
@@ -120,7 +120,7 @@ def generate_interpretation(non_conformance_type, components, dynamic_models_fol
     if non_conformance_type == 'static':
         link_dyn_model_path = dynamic_models_folder + processed_components[0] + '_' + processed_components[1] + FF_LINK_MODEL_SUFFIX
         out_file_name = components[0] + '_' + components[1] + '_link_model'
-        collect_and_process_model_for_static_non_conformance(link_dyn_model_path, interpretation, output_folder, out_file_name, static_model_evidences)
+        collect_and_process_model_for_static_non_conformance(link_dyn_model_path, interpretation, output_folder, out_file_name, static_model)
 
 
     # For if we find non-conformance in the dynamic model; link occurring in the static model
@@ -132,7 +132,7 @@ def generate_interpretation(non_conformance_type, components, dynamic_models_fol
             interpretation, 
             output_folder, 
             processed_components[0] + '_service_model', 
-            static_model_evidences,
+            static_model,
             'src'
         )
         
@@ -142,21 +142,21 @@ def generate_interpretation(non_conformance_type, components, dynamic_models_fol
             interpretation, 
             output_folder, 
             processed_components[1] + '_service_model', 
-            static_model_evidences,
+            static_model,
             'dst'
         )
 
         if src_component_dynamic_model is not None and dst_component_dynamic_model is not None:
-            static_call_sequences = find_previous_sequences_for_link_static_model(static_model_evidences['links'], components[1], components[0], 1000)
-            dynamic_paths = do_random_walk_dynamic_model(general_dynamic_model, components[0], components[1], 1000, 20)
+            static_call_sequences = find_previous_sequences_for_link_static_model(static_model['links'], components[1], components[0], 1000)
+            dynamic_paths = do_random_walk_dynamic_model(dynamic_model, components[0], components[1], 1000, 20)
             occurred_call_sequences = find_occurred_sequences_in_paths(static_call_sequences, dynamic_paths)
-            code_call_sequences = collect_code_call_sequences_from_sequences(static_call_sequences, static_model_evidences['links'])
+            code_call_sequences = collect_code_call_sequences_from_sequences(static_call_sequences, static_model['links'])
             interpretation['potential_call_sequences'] = static_call_sequences
             interpretation['occurred_call_sequences'] = occurred_call_sequences
             interpretation['code_call_sequences'] = code_call_sequences
             sequences_call_details = dict()
             for call_sequence in occurred_call_sequences:
-                sequences_call_details[str(call_sequence)] = find_sequence_of_call_details(call_sequence, general_dynamic_model)
+                sequences_call_details[str(call_sequence)] = find_sequence_of_call_details(call_sequence, dynamic_model)
             
             interpretation['call_details_sequences'] = sequences_call_details
         elif src_component_dynamic_model is None and dst_component_dynamic_model is not None:

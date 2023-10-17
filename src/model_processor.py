@@ -224,7 +224,7 @@ def find_sequence_of_call_details(call_sequence, dynamic_model):
 
 # Old static_model_parser.py from here on
 
-def read_static_model_evidences(evidence_file_path):
+def read_static_model(evidence_file_path):
     """
     This function is used to read evidences that are collected by the static model.
     It first loads the JSON file. Then, it processes the evidences extraced by the static model (DFD model from TUHH).
