@@ -369,9 +369,9 @@ def generate_html_for_interpretation(output_path, interpretation_data, interpret
                     li(component)
 
         if non_conformance_type == 'static':
-            doc = generate_static_non_conformance_interpretation(doc, interpretation_data, interpretation_texts)
+            doc = generate_static_non_conformance_interpretation(doc, interpretation_data, interpretation_texts['static_interpretations'])
         else:
-            doc = generate_dynamic_non_conformance_interpretation(doc, interpretation_data, interpretation_texts)
+            doc = generate_dynamic_non_conformance_interpretation(doc, interpretation_data, interpretation_texts['dynamic_interpretations'])
         
 
     file_name = '_'.join(interpretation_data['components']) + '_' + non_conformance_type + '-non_conformance.html'

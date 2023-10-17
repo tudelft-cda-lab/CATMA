@@ -1,8 +1,6 @@
 from tqdm import tqdm
 import os
 from src.utils import *
-#from dynamic_model_code_linking import *
-#from static_model_parser import *
 from src.interpretation_generator import *
 from src.interpretation_visualizer import *
 from src.model_processor import *
@@ -13,36 +11,6 @@ from src.non_conformance_visualizer import *
 
 FF_SUFFIX = '.csv.ff.final.dot'
 
-def generate_visualization_for_non_conformance(type, components, output_folder, static_model_evidences, dynamic_model, interpretation_texts, dynamic_models_path):
-    """
-    Generate the model-based visualization and HTML page with the interpretations for the given non-conformance.
-    :param type: type of non-conformance. Either static or dynamic.
-    :param components: list of two components that are involved in the non-conformance.
-    :param output_folder: path to the output folder where the visualization and interpretation will be stored.
-    :param static_model_evidences: dictionary containing the evidences extracted from the static model.
-    :param dynamic_model: dynamic model loaded using the pydot library.
-    :param interpretation_texts: dictionary containing the interpretation texts for the non-conformance.
-    :param dynamic_models_path: path to the folder containing the dynamic models.
-    """
-    ncf_interpretation = generate_interpretation(type, components, dynamic_models_path, output_folder, static_model_evidences, dynamic_model)
-    generate_html_for_interpretation(output_folder + 'interpretations/', ncf_interpretation, interpretation_texts)
-
-
-def process_non_conformances(type, non_conformances, output_folder, processed_static_model_evidences, general_dynamic_model, interpretation_texts, dynamic_models_path):
-    """
-    Process the non-conformances and generate the corresponding visualization and interpretation for them.
-
-    :param type: type of non-conformance. Either static or dynamic.
-    :param non_conformances: list of non-conformances that should be processed
-    :param output_folder: path to the output folder where the visualization and interpretation will be stored.
-    :param processed_static_model_evidences: dictionary containing the evidences extracted from the static model.
-    :param general_dynamic_model: dynamic model loaded using the pydot library.
-    :param interpretation_texts: dictionary containing the interpretation texts for the non-conformance.
-    :param dynamic_models_path: path to the folder containing the dynamic models.
-    """
-    for ncf in non_conformances:
-        components = ncf.split('-')
-        generate_visualization_for_non_conformance(type, components, output_folder, processed_static_model_evidences, general_dynamic_model, interpretation_texts, dynamic_models_path)
 
 
 def create_output_folders(output_folder):
@@ -51,16 +19,14 @@ def create_output_folders(output_folder):
     os.makedirs(output_folder + 'code_linked_models/', exist_ok=True)
     os.makedirs(output_folder + 'visualization/', exist_ok=True)
 
-def main():
+
+def read_arguments():
     arg_parser = ap.ArgumentParser(description='CATMA: Conformance Analysis Tool for Microservice Applications')
     arg_parser.add_argument('--static_model_path', type=str, help='Path to static model.')
     arg_parser.add_argument('--dynamic_models_path', type=str, help='Path to the runtime models.')
     arg_parser.add_argument('--output_path', type=str, help='Path to the output folder.')
     args = arg_parser.parse_args()
 
-    print('Reading configuration file for tool')
-    config = read_json_file('./config/config.json')
-    interpretation_texts = read_json_file('./interpretation_texts/interpretation_texts.json')
     static_model_evidences_path = args.static_model_path
     if not static_model_evidences_path:
         print("\nNo path to static models provided, please run again.\n")
@@ -72,24 +38,59 @@ def main():
     output_folder = args.output_path
     if not output_folder: output_folder = "./"  # use current directory if no output folder specified
 
+    return static_model_evidences_path, dynamic_models_path, output_folder
+
+
+def main():
+
+    static_model_evidences_path, dynamic_models_path, output_folder = read_arguments()
+    if (not static_model_evidences_path) or (not dynamic_models_path):
+        return
+    
+    # Read config information
+    print('Reading configuration file...')
+    config = read_json_file('./config/config.json')
+    interpretation_texts = read_json_file('./interpretation_texts/interpretation_texts.json')
+    
     # Create the subfolders in the output folder
     create_output_folders(output_folder)
 
-    print('Process static model')
+    # Workflow step 1: read models 
+    print('Processing static model...')
     static_model_evidences = read_static_model_evidences(static_model_evidences_path)
-    print('Process dynamic model')
-    general_dynamic_model = clean_dynamic_model(collect_dynamic_model(args.dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX))
+    print('Processing dynamic model...')
+    general_dynamic_model = clean_dynamic_model(collect_dynamic_model(dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX))
     
-    print('Detecting non-conformances')
+    # Workflow step 2: detect non-conformances
+    print('Detecting non-conformances...')
     static_non_conformances, dynamic_non_conformances = find_non_conformances(static_model_evidences, general_dynamic_model, config['services'])
-    if len(static_non_conformances) + len(dynamic_non_conformances) > 0:
-        print('Detected ' + str(len(static_non_conformances)) + ' static non-conformances and ' + str(len(dynamic_non_conformances)) + ' dynamic non-conformances between implementation and deployment of system!')
-        print('Generating visualization and interpretation for the non-conformances')
-        process_non_conformances('static', static_non_conformances, output_folder, static_model_evidences, general_dynamic_model, interpretation_texts['static_interpretations'], dynamic_models_path)
-        process_non_conformances('dynamic', dynamic_non_conformances, output_folder, static_model_evidences, general_dynamic_model, interpretation_texts['dynamic_interpretations'], dynamic_models_path)
-        visualize_non_conformances(static_non_conformances, dynamic_non_conformances, output_folder, static_model_evidences)
-    else:
+
+    if len(static_non_conformances) + len(dynamic_non_conformances) == 0:
         print('No non-conformances detected between implementation and deployment of system, everything looks good :)')
+        return
+
+    print('Detected ' + str(len(static_non_conformances)) + ' static non-conformances and ' + str(len(dynamic_non_conformances)) + ' dynamic non-conformances between implementation and deployment of system!')
+
+    # Workflow step 3: generate interpretations
+    print('Generating non-conformance interpretations...')
+
+    ncf_interpretations = list()
+    for sncf in static_non_conformances:
+        components = sncf.split('-')
+        ncf_interpretations.append(generate_interpretation('static', components, dynamic_models_path, output_folder, static_model_evidences, general_dynamic_model))
+
+    for dncf in dynamic_non_conformances:
+        components = dncf.split('-')
+        ncf_interpretations.append(generate_interpretation('dynamic', components, dynamic_models_path, output_folder, static_model_evidences, general_dynamic_model))
+    
+    # Workflow step 5: generate visualization for non-conformances
+    print('Generating interpretation visualizations...')
+    for ncf_interpretation in ncf_interpretations:
+        generate_html_for_interpretation(output_folder + 'interpretations/', ncf_interpretation, interpretation_texts)
+    
+    # Workflow step 4: visualize non-conformances
+    print('Generating non-conformance visualizations...')
+    visualize_non_conformances(static_non_conformances, dynamic_non_conformances, output_folder, static_model_evidences)
 
 
 if __name__ == '__main__':
