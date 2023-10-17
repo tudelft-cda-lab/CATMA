@@ -1,6 +1,4 @@
-from static_model_parser import *
-from utils import clean_dynamic_model, extract_link_from_transition_label
-import os
+from src.utils import clean_dynamic_model, extract_link_from_transition_label
 
 def add_links_to_code(output_folder_path, file_name, dynamic_model, static_model_evidences):
     """

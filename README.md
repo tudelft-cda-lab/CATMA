@@ -33,19 +33,19 @@ Non-conformance Detector (2), which checks whether there are any discrepancies b
 
 
 ## Example Usage
-The tool can be run via the command line. The main Python script that should be run is `conformance_analysis.py`. This script takes only three arguments, namely:
+The tool can be run via the command line. The main Python script that should be run is `CATMA.py`. This script takes only three arguments, namely:
 - `static_model_path`: used for providing the path to the DFD model extracted from performing static analysis on the microservice application.
 - `dynamic_models_path`: used for providing the path to the State Machine models extracted from performing dynamic analysis on the microservice application.
 - `output_path`: used for providing the path to the directory where the outputs of the tool should be stored.
 
 One can run the tool by executing the following command from the root directory of this repository:
 ```
-python conformance_analysis.py --static_model_path <PATH_TO_STATIC_MODEL> --dynamic_models_path <PATH_TO_DYNAMIC_MODELS> --output_path <PATH_TO_OUTPUT_DIRECTORY>
+python CATMA.py --static_model_path <PATH_TO_STATIC_MODEL> --dynamic_models_path <PATH_TO_DYNAMIC_MODELS> --output_path <PATH_TO_OUTPUT_DIRECTORY>
 ```
 
 For example, you can run the tool on the application ewolff/microservice with the following command:
 ```
-python conformance_analysis.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models/ --output_path ./output/
+python CATMA.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models/ --output_path ./output/
 ```
 
 ## Citing this work

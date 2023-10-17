@@ -1,14 +1,15 @@
 from tqdm import tqdm
 import os
-from utils import *
-from dynamic_model_code_linking import *
-from static_model_parser import *
-from interpretation_generator import *
-from interpretation_visualizer import *
-from model_processor import *
+from src.utils import *
+#from dynamic_model_code_linking import *
+#from static_model_parser import *
+from src.interpretation_generator import *
+from src.interpretation_visualizer import *
+from src.model_processor import *
 import argparse as ap
-from non_conformance_detector import *
-from non_conformance_visualizer import *
+from src.non_conformance_detector import *
+from src.non_conformance_visualizer import *
+from src.non_conformance_visualizer import *
 
 FF_SUFFIX = '.csv.ff.final.dot'
 
@@ -74,10 +75,9 @@ def main():
     # Create the subfolders in the output folder
     create_output_folders(output_folder)
 
-    print('Parsing static model')
+    print('Process static model')
     static_model_evidences = read_static_model_evidences(static_model_evidences_path)
-    #processed_static_model_evidences = process_static_model_evidences(static_model_evidences)
-    print('Parsing dynamic model')
+    print('Process dynamic model')
     general_dynamic_model = clean_dynamic_model(collect_dynamic_model(args.dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX))
     
     print('Detecting non-conformances')

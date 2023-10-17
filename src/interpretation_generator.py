@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
-from dynamic_model_code_linking import *
-from utils import collect_dynamic_model
-from model_processor import *
+from src.dynamic_model_code_linking import *
+from src.utils import collect_dynamic_model
+from src.model_processor import *
 import os
 
 FF_LINK_MODEL_SUFFIX = '_link_data.csv.ff.final.dot'
