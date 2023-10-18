@@ -15,6 +15,7 @@ The tool is completely written in Python and thus a Python installation is requi
 - graphviz (version 0.16 or higher)
 - dominate (version 2.7.0 or higher)
 - pydot (version 1.4.2 or higher)
+- plantuml (version 0.3.0 or higher)
 
 All above Python packages can be easily installed using the `requirements.txt` file provided in this repository. To install the required packages, run the following command from the root directory of this repository:
 ```
@@ -25,20 +26,26 @@ After installing the required packages, one should already be able to run the to
 
 Besides the above Python packages, the tool requires an internet browser to be installed on the system. The browser is handy for viewing the interpretations generated for the detected non-conformanes. The tool was tested with Google Chrome browser, but should work with any other browser as well.
 
+
+## Architecture 
+CATMA consists of 5 components: the Model-processor (1) parses the input models (static and dynamic) to extract architectural components. The obtained data is passed on to the
+Non-conformance Detector (2), which checks whether there are any discrepancies between the two input models. If a non-conformance is detected, it is forwarded to both the Interpretation Generator (3) and the Non-conformance Visualizer (4). The latter (3) collects all detected non-conformances and generates a model-based visualization, showing the non-conformances in the system’s architecture. The former (3) generates a set of possible interpretations for each detected non-conformance, which describe potential causes. These interpretations are forwarded to the Interpretation Visualizer (5), which generates HTML pages that visualize the interpretations. CATMA is designed to be modular, meaning that each component presented in the workflow can be replaced or expanded to fit its user’s needs.
+
+
 ## Example Usage
-The tool can be run via the command line. The main Python script that should be run is `conformance_analysis.py`. This script takes only three arguments, namely:
+The tool can be run via the command line. The main Python script that should be run is `CATMA.py`. This script takes only three arguments, namely:
 - `static_model_path`: used for providing the path to the DFD model extracted from performing static analysis on the microservice application.
 - `dynamic_models_path`: used for providing the path to the State Machine models extracted from performing dynamic analysis on the microservice application.
 - `output_path`: used for providing the path to the directory where the outputs of the tool should be stored.
 
 One can run the tool by executing the following command from the root directory of this repository:
 ```
-python conformance_analysis.py --static_model_path <PATH_TO_STATIC_MODEL> --dynamic_models_path <PATH_TO_DYNAMIC_MODELS> --output_path <PATH_TO_OUTPUT_DIRECTORY>
+python CATMA.py --static_model_path <PATH_TO_STATIC_MODEL> --dynamic_models_path <PATH_TO_DYNAMIC_MODELS> --output_path <PATH_TO_OUTPUT_DIRECTORY>
 ```
 
 For example, you can run the tool on the application ewolff/microservice with the following command:
 ```
-python conformance_analysis.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models/ --output_path ./output/
+python CATMA.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models/ --output_path ./output/
 ```
 
 ## Citing this work

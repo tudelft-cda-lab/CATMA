@@ -1,4 +1,4 @@
-from utils import extract_link_from_transition_label
+from src.utils import extract_link_from_transition_label
 from tqdm import tqdm
 
 def extract_occurred_links_from_dynamic_model(dynamic_model, services):
