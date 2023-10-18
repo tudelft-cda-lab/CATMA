@@ -1,0 +1,126 @@
+// produced with flexfringe // 
+digraph DFA {
+	0 [label="root" shape=box];
+		I -> 0;
+	0 [ label="0 #1852
+fin: 
+ path: 0:1852 , 
+1852 0
+[665,551,6,6,2,2,1,131,70,10,2,3,3,2,154,85,79,77,1,1,1,]" , style=filled, fillcolor="firebrick1", width=2.14295, height=2.14295, penwidth=7.52456];
+		0 -> 1 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+665 " , penwidth=7.52456 ];
+		0 -> 2 [label="out__8761.0__>eureka>apps>delta__200.0__get__customer__eureka
+551 " , penwidth=7.52456 ];
+		0 -> 8 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-w45r5-customer-8080__200.0__put__customer__eureka
+131 " , penwidth=7.52456 ];
+		0 -> 9 [label="in__8080.0__>customer>__200.0__get__order__customer
+70 " , penwidth=7.52456 ];
+		0 -> 15 [label="in__8080.0__>customer>1__200.0__get__order__customer
+154 " , penwidth=7.52456 ];
+		0 -> 16 [label="in__8080.0__>customer>2__200.0__get__order__customer
+85 " , penwidth=7.52456 ];
+		0 -> 17 [label="in__8080.0__>customer>3__200.0__get__order__customer
+79 " , penwidth=7.52456 ];
+		0 -> 18 [label="in__8080.0__>customer>4__200.0__get__order__customer
+77 " , penwidth=7.52456 ];
+	1 [ label="1 #665
+fin: 0:1 , 
+ path: 0:664 , 
+664 1
+[225,427,6,6,]" , style=filled, fillcolor="firebrick1", width=2.01507, height=2.01507, penwidth=6.50129];
+		1 -> 106 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+225 " , penwidth=6.50129 ];
+		1 -> 2 [label="out__8761.0__>eureka>apps>delta__200.0__get__customer__eureka
+427 " , penwidth=6.50129 ];
+	2 [ label="2 #978
+fin: 0:1 , 
+ path: 0:977 , 
+977 1
+[843,1,2,112,5,3,1,2,2,2,2,1,1,]" , style=filled, fillcolor="firebrick1", width=2.06516, height=2.06516, penwidth=6.88653];
+		2 -> 24 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+843 " , penwidth=6.88653 ];
+		2 -> 8 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-w45r5-customer-8080__200.0__put__customer__eureka
+112 " , penwidth=6.88653 ];
+	8 [ label="8 #945
+fin: 0:77 , 
+ path: 0:868 , 
+868 77
+[820,19,12,7,2,2,6,]" , style=filled, fillcolor="firebrick1", width=2.0608, height=2.0608, penwidth=6.85224];
+		8 -> 43 [label="out__8761.0__>eureka>apps>delta__200.0__get__customer__eureka
+820 " , penwidth=6.85224 ];
+	9 [ label="9 #70
+fin: 
+ path: 0:70 , 
+70 0
+[7,4,8,32,7,7,5,]" , style=filled, fillcolor="firebrick1", width=1.66064, height=1.66064, penwidth=4.26268];
+	15 [ label="15 #228
+fin: 
+ path: 0:228 , 
+228 0
+[2,5,46,74,42,25,34,]" , style=filled, fillcolor="firebrick1", width=1.86155, height=1.86155, penwidth=5.43372];
+		15 -> 15 [label="in__8080.0__>customer>1__200.0__get__order__customer
+74 " , penwidth=5.43372 ];
+	16 [ label="16 #85
+fin: 
+ path: 0:85 , 
+85 0
+[1,1,13,26,26,16,2,]" , style=filled, fillcolor="firebrick1", width=1.69641, height=1.69641, penwidth=4.45435];
+	17 [ label="17 #79
+fin: 
+ path: 0:79 , 
+79 0
+[2,3,6,1,8,14,24,21,]" , style=filled, fillcolor="firebrick1", width=1.68307, height=1.68307, penwidth=4.38203];
+	18 [ label="18 #77
+fin: 
+ path: 0:77 , 
+77 0
+[2,1,7,17,9,13,28,]" , style=filled, fillcolor="firebrick1", width=1.67835, height=1.67835, penwidth=4.35671];
+	24 [ label="24 #2267
+fin: 0:121 , 
+ path: 0:2146 , 
+2146 121
+[540,1552,20,34,]" , style=filled, fillcolor="firebrick1", width=2.16638, height=2.16638, penwidth=7.72665];
+		24 -> 106 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+540 " , penwidth=7.72665 ];
+		24 -> 107 [label="out__8761.0__>eureka>apps>delta__200.0__get__customer__eureka
+1552 " , penwidth=7.72665 ];
+	43 [ label="43 #820
+fin: 0:77 , 
+ path: 0:743 , 
+743 77
+[1,702,11,7,2,8,8,1,3,]" , style=filled, fillcolor="firebrick1", width=2.04259, height=2.04259, penwidth=6.71052];
+		43 -> 8 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-w45r5-customer-8080__200.0__put__customer__eureka
+702 " , penwidth=6.71052 ];
+	106 [ label="106 #2126
+fin: 0:296 , 
+ path: 0:1830 , 
+1830 296
+[726,1084,15,5,]" , style=filled, fillcolor="firebrick1", width=2.159, height=2.159, penwidth=7.66247];
+		106 -> 311 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+726 " , penwidth=7.66247 ];
+		106 -> 312 [label="out__8761.0__>eureka>apps>delta__200.0__get__customer__eureka
+1084 " , penwidth=7.66247 ];
+	107 [ label="107 #1552
+fin: 0:121 , 
+ path: 0:1431 , 
+1431 121
+[1424,7,]" , style=filled, fillcolor="firebrick1", width=2.12202, height=2.12202, penwidth=7.34794];
+		107 -> 24 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+1424 " , penwidth=7.34794 ];
+	311 [ label="311 #1208
+fin: 0:186 , 
+ path: 0:1022 , 
+1022 186
+[482,539,1,]" , style=filled, fillcolor="firebrick1", width=2.09156, height=2.09156, penwidth=7.09755];
+		311 -> 311 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+482 " , penwidth=7.09755 ];
+		311 -> 312 [label="out__8761.0__>eureka>apps>delta__200.0__get__customer__eureka
+539 " , penwidth=7.09755 ];
+	312 [ label="312 #1623
+fin: 0:262 , 
+ path: 0:1361 , 
+1361 262
+[1361,0,0,0,0,0,0,0,0,0,]" , style=filled, fillcolor="firebrick1", width=2.12736, height=2.12736, penwidth=7.39265];
+		312 -> 106 [label="out__8761.0__>eureka>apps>CUSTOMER>customer-577d8c6647-86s8j-customer-8080__200.0__put__customer__eureka
+1361 " , penwidth=7.39265 ];
+}

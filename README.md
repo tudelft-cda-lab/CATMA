@@ -37,14 +37,34 @@ The tool can be run via the command line. The main Python script that should be 
 - `dynamic_models_path`: used for providing the path to the State Machine models extracted from performing dynamic analysis on the microservice application.
 - `output_path`: used for providing the path to the directory where the outputs of the tool should be stored.
 
-One can run the tool by executing the following command from the root directory of this repository:
+
+**Before running the tool**, make sure that you have specified the names of the services and the name of the general dynamic model for the target microservice application in the `config.json` file (located in `config` folder). The general dynamic model is the model that was inferred from all network communication log data collected for the microservice application. The name of the services and the general dynamic model should be specified using the `services` and `general_dynamic_model` field respectively in the JSON file. As an example, the `config.json` file for `ewolff/microservice` is shown below:
+
+```
+{
+    "services" : ["catalog", "order", "customer", "turbine", "zuul", "eureka", "user"],
+    "general_dynamic_model" : "ms_http_data"
+}
+```
+
+Once configuration is set for the MSA, one can run the tool by executing the following command from the root directory of this repository:
 ```
 python CATMA.py --static_model_path <PATH_TO_STATIC_MODEL> --dynamic_models_path <PATH_TO_DYNAMIC_MODELS> --output_path <PATH_TO_OUTPUT_DIRECTORY>
 ```
 
-For example, you can run the tool on the application ewolff/microservice with the following command:
+Using `ewolff/microservice` as an example, you can run the tool with the following command:
 ```
 python CATMA.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models/ --output_path ./output/
+```
+
+# Example use-case of CATMA
+In the evaluation of CATMA, the tool identified the (dynamic) non-conformance that was mentioned on the README of [`ewolff/microservice`](https://github.com/ewolff/microservice/blob/master/README.md). The author has reported the missing communication behavior between `order` and `turbine`. After running a conformance analysis on the application and inspecting the generated interpretations, we managed to identify the cause for the missing behavior between the too services; a misconfiguration in the [Hystrix](https://github.com/Netflix/Hystrix) monitoring dashboard prevented stream data from being visualized as it was intended in the implementation. We notified the developer and our [fix](https://github.com/ewolff/microservice/pull/30) was accepted.
+
+## Test out fix for `ewolff/microservice`
+To validate that the dynamic non-conformance has been fixed in `ewolff/microservice`, you can run a conformance analysis on the application after the fix using the following command:
+
+```
+python CATMA.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models_after_fix/ --output_path ./output/
 ```
 
 ## Citing this work

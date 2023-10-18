@@ -1,0 +1,460 @@
+{
+	"types" : [
+"0"
+	],
+	"alphabet" : [
+"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+"8761.0__>eureka>apps>delta__200.0__get__eureka__catalog"
+	],
+			"eval" :  null,
+	"nodes" : [
+		{
+			"id" : 0,
+			"source" :  -1,
+			"label" : "fin:  path: 0:2623 , ",
+			"size" : 2623,
+			"level" : 0,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 0",
+			"data" :  {"path_counts":{"0":2623},"symbol_counts":null,"total_final":0,"total_paths":2623,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"1970","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"653"}}
+		},
+		{
+			"id" : 1,
+			"source" :  0,
+			"label" : "fin: 0:1 ,  path: 0:1969 , ",
+			"size" : 1970,
+			"level" : 1,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 1 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1969},"symbol_counts":null,"total_final":1,"total_paths":1969,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"1315","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"654"}}
+		},
+		{
+			"id" : 2,
+			"source" :  1,
+			"label" : "fin: 0:1 ,  path: 0:1314 , ",
+			"size" : 1315,
+			"level" : 2,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 2 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":1},"path_counts":{"0":1314},"symbol_counts":null,"total_final":1,"total_paths":1314,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"653","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"661"}}
+		},
+		{
+			"id" : 3,
+			"source" :  2,
+			"label" : "fin: 0:0 ,  path: 0:653 , ",
+			"size" : 653,
+			"level" : 3,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":0},"path_counts":{"0":653},"symbol_counts":null,"total_final":0,"total_paths":653,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"20","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"633"}}
+		},
+		{
+			"id" : 4,
+			"source" :  2,
+			"label" : "fin: 0:624 ,  path: 0:5686 , ",
+			"size" : 6310,
+			"level" : 4,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 3 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"data" :  {"final_counts":{"0":624},"path_counts":{"0":5686},"symbol_counts":null,"total_final":624,"total_paths":5686,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"5686"}}
+		},
+		{
+			"id" : 5,
+			"source" :  4,
+			"label" : "fin: 0:623 ,  path: 0:5063 , ",
+			"size" : 5686,
+			"level" : 5,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 4 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":623},"path_counts":{"0":5063},"symbol_counts":null,"total_final":623,"total_paths":5063,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"5063","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"0"}}
+		},
+		{
+			"id" : 6,
+			"source" :  5,
+			"label" : "fin: 0:624 ,  path: 0:4439 , ",
+			"size" : 5063,
+			"level" : 6,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 5 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":624},"path_counts":{"0":4439},"symbol_counts":null,"total_final":624,"total_paths":4439,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"4326","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"113"}}
+		},
+		{
+			"id" : 7,
+			"source" :  6,
+			"label" : "fin: 0:604 ,  path: 0:3722 , ",
+			"size" : 4326,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 6 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":604},"path_counts":{"0":3722},"symbol_counts":null,"total_final":604,"total_paths":3722,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"90","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"3632"}}
+		},
+		{
+			"id" : 8,
+			"source" :  6,
+			"label" : "fin: 0:11 ,  path: 0:102 , ",
+			"size" : 113,
+			"level" : 7,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 6 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"data" :  {"final_counts":{"0":11},"path_counts":{"0":102},"symbol_counts":null,"total_final":11,"total_paths":102,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"102"}}
+		},
+		{
+			"id" : 9,
+			"source" :  7,
+			"label" : "fin: 0:21 ,  path: 0:122 , ",
+			"size" : 143,
+			"level" : 9,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 7 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":21},"path_counts":{"0":122},"symbol_counts":null,"total_final":21,"total_paths":122,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"0","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"122"}}
+		},
+		{
+			"id" : 10,
+			"source" :  8,
+			"label" : "fin: 0:11 ,  path: 0:91 , ",
+			"size" : 102,
+			"level" : 8,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 7 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":11},"path_counts":{"0":91},"symbol_counts":null,"total_final":11,"total_paths":91,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"91","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"0"}}
+		},
+		{
+			"id" : 11,
+			"source" :  9,
+			"label" : "fin: 0:21 ,  path: 0:101 , ",
+			"size" : 122,
+			"level" : 10,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 8 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"data" :  {"final_counts":{"0":21},"path_counts":{"0":101},"symbol_counts":null,"total_final":21,"total_paths":101,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"101"}}
+		},
+		{
+			"id" : 12,
+			"source" :  10,
+			"label" : "fin: 0:11 ,  path: 0:80 , ",
+			"size" : 91,
+			"level" : 9,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 8 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":11},"path_counts":{"0":80},"symbol_counts":null,"total_final":11,"total_paths":80,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"80","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"0"}}
+		},
+		{
+			"id" : 13,
+			"source" :  11,
+			"label" : "fin: 0:21 ,  path: 0:80 , ",
+			"size" : 101,
+			"level" : 11,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 9 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":21},"path_counts":{"0":80},"symbol_counts":null,"total_final":21,"total_paths":80,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"80","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"0"}}
+		},
+		{
+			"id" : 14,
+			"source" :  12,
+			"label" : "fin: 0:20 ,  path: 0:60 , ",
+			"size" : 80,
+			"level" : 10,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 9 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":20},"path_counts":{"0":60},"symbol_counts":null,"total_final":20,"total_paths":60,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"30","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"30"}}
+		},
+		{
+			"id" : 15,
+			"source" :  13,
+			"label" : "fin: 0:20 ,  path: 0:60 , ",
+			"size" : 80,
+			"level" : 12,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 10 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":20},"path_counts":{"0":60},"symbol_counts":null,"total_final":20,"total_paths":60,"trans_counts":{"8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog":"33","8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"27"}}
+		},
+		{
+			"id" : 16,
+			"source" :  14,
+			"label" : "fin: 0:10 ,  path: 0:20 , ",
+			"size" : 30,
+			"level" : 11,
+			"style" : "",
+			"isred" :  1,
+			"issink" :  0,
+			"isblue" :  0,
+			"trace" :  "0 10 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>delta__200.0__get__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog 8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"data" :  {"final_counts":{"0":10},"path_counts":{"0":20},"symbol_counts":null,"total_final":10,"total_paths":20,"trans_counts":{"8761.0__>eureka>apps>delta__200.0__get__eureka__catalog":"20"}}
+		}
+	],
+	"edges" : [
+		{
+			"id" : "0_1",
+			"source" : "0",
+			"target" : "1",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "0_4",
+			"source" : "0",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_2",
+			"source" : "1",
+			"target" : "2",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "1_4",
+			"source" : "1",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_3",
+			"source" : "2",
+			"target" : "3",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "2_4",
+			"source" : "2",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_9",
+			"source" : "3",
+			"target" : "9",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "3_4",
+			"source" : "3",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "4_5",
+			"source" : "4",
+			"target" : "5",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "5_6",
+			"source" : "5",
+			"target" : "6",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_7",
+			"source" : "6",
+			"target" : "7",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "6_8",
+			"source" : "6",
+			"target" : "8",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "7_9",
+			"source" : "7",
+			"target" : "9",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "7_4",
+			"source" : "7",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "8_10",
+			"source" : "8",
+			"target" : "10",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "9_11",
+			"source" : "9",
+			"target" : "11",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "10_12",
+			"source" : "10",
+			"target" : "12",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "11_13",
+			"source" : "11",
+			"target" : "13",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "12_14",
+			"source" : "12",
+			"target" : "14",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "13_15",
+			"source" : "13",
+			"target" : "15",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "14_16",
+			"source" : "14",
+			"target" : "16",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "14_4",
+			"source" : "14",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "15_9",
+			"source" : "15",
+			"target" : "9",
+			"name": "8761.0__>eureka>apps>ZUUL>zuul-b677555-dzrgw-zuul-8080__200.0__put__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "15_4",
+			"source" : "15",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+,
+		{
+			"id" : "16_4",
+			"source" : "16",
+			"target" : "4",
+			"name": "8761.0__>eureka>apps>delta__200.0__get__eureka__catalog",
+			"min_vals": [],
+			"max_vals": [],
+			"appearances": ""}
+
+	]
+}
