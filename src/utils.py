@@ -1,33 +1,6 @@
 
-import pandas as pd
-import json
 import pydot
 
-def read_json_file(path_to_json_file):
-	"""
-	Read a JSON object given the path. This function is used for reading configuration files or
-	texts that are should be used in the interpretation.
- 	:param path_to_config_file: Path to the configuration file.
-	"""
-	return json.load(open(path_to_json_file))
-
-def clean_url_path_data_for_flexfringe(url_data):
-    """
-    Clean the URL path data for FlexFringe.
-    :param url_data: List containing the URL path data
-	"""
-    cleaned_data = []
-    for row in url_data:
-        cleaned_data.append(row.replace('/', '>').replace(':', '-'))
-
-    return cleaned_data
-
-def get_path_to_folder(file_path):
-	"""
-	Get the path to the folder containing the file.
-	:param file_path: Path to the file
-	"""
-	return '/'.join(file_path.split('/')[0:-1]) + '/'
 
 def clean_dynamic_model(dynamic_model):
 	'''

@@ -1,8 +1,6 @@
-import pandas as pd
-import numpy as np
 from src.dynamic_model_code_linking import *
 from src.utils import collect_dynamic_model
-from src.model_processor import *
+from src.model_processor import find_previous_sequences_for_link_static_model, do_random_walk_dynamic_model, find_occurred_sequences_in_paths, find_sequence_of_call_details
 import os
 
 FF_LINK_MODEL_SUFFIX = '_link_data.csv.ff.final.dot'

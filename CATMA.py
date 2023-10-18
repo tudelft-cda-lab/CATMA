@@ -1,12 +1,14 @@
-import os
 import argparse as ap
+import json
+import os
 
 from src.utils import *
-from src.interpretation_generator import *
-from src.interpretation_visualizer import *
-from src.model_processor import *
-from src.non_conformance_detector import *
-from src.non_conformance_visualizer import *
+from src.model_processor import read_static_model, read_dynamic_model
+from src.non_conformance_detector import detect_non_conformances
+from src.interpretation_generator import generate_interpretation
+from src.non_conformance_visualizer import visualize_non_conformances
+from src.interpretation_visualizer import generate_html_for_interpretation
+
 
 FF_SUFFIX = '.csv.ff.final.dot'
 
@@ -47,8 +49,8 @@ def main():
     
     # Read config information
     print('Reading configuration file...')
-    config = read_json_file('./config/config.json')
-    interpretation_texts = read_json_file('./interpretation_texts/interpretation_texts.json')
+    config = json.load(open('./config/config.json'))
+    interpretation_texts = json.load(open('./interpretation_texts/interpretation_texts.json'))
     
     # Create the subfolders in the output folder
     create_output_folders(output_folder)
@@ -61,7 +63,7 @@ def main():
     
     # Workflow step 2: detect non-conformances
     print('Detecting non-conformances...')
-    static_non_conformances, dynamic_non_conformances = find_non_conformances(static_model, dynamic_model, config['services'])
+    static_non_conformances, dynamic_non_conformances = detect_non_conformances(static_model, dynamic_model, config['services'])
 
     if len(static_non_conformances) + len(dynamic_non_conformances) == 0:
         print('No non-conformances detected between implementation and deployment of system, everything looks good :)')
@@ -81,15 +83,15 @@ def main():
         components = dncf.split('-')
         ncf_interpretations.append(generate_interpretation('dynamic', components, dynamic_models_path, output_folder, static_model, dynamic_model))
     
-    # Workflow step 5: generate visualization for non-conformances
-    print('Generating interpretation visualizations...')
-    for ncf_interpretation in ncf_interpretations:
-        generate_html_for_interpretation(output_folder + 'interpretations/', ncf_interpretation, interpretation_texts)
-    
     # Workflow step 4: visualize non-conformances
     print('Generating non-conformance visualizations...')
     visualize_non_conformances(static_non_conformances, dynamic_non_conformances, output_folder, static_model)
 
+    # Workflow step 5: generate visualization for non-conformances
+    print('Generating interpretation visualizations...')
+    for ncf_interpretation in ncf_interpretations:
+        generate_html_for_interpretation(output_folder + 'interpretations/', ncf_interpretation, interpretation_texts)
+        
 
 if __name__ == '__main__':
     main()
