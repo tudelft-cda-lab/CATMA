@@ -1,9 +1,9 @@
 import random
-from src.utils import extract_state_to_edges_mapping_from_dynamic_model
+from src.utils import extract_state_to_edges_mapping_from_dynamic_model, collect_dynamic_model, clean_dynamic_model
 import json
 
 
-def read_static_model(evidence_file_path):
+def read_static_model(static_model_path):
     """
     This function is used to read evidences that are collected by the static model.
     It first loads the JSON file. Then, it processes the evidences extraced by the static model (DFD model from TUHH).
@@ -14,7 +14,7 @@ def read_static_model(evidence_file_path):
     :param evidence_file: The path to the JSON file containing the evidences.
     """
 
-    with open(evidence_file_path, 'r') as f:
+    with open(static_model_path, 'r') as f:
         static_model = json.load(f)
 
     link_evidences = dict()
@@ -29,6 +29,9 @@ def read_static_model(evidence_file_path):
 
     return {'links' : link_evidences}
 
+def read_dynamic_model(dynamic_models_path):
+    return clean_dynamic_model(collect_dynamic_model(dynamic_models_path))
+    
 
 def transform_static_model_links(static_model_links):
     '''

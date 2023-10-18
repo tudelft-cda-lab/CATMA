@@ -57,7 +57,7 @@ def main():
     print('Processing static model...')
     static_model = read_static_model(static_model_path)
     print('Processing dynamic model...')
-    dynamic_model = clean_dynamic_model(collect_dynamic_model(dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX))
+    dynamic_model = read_dynamic_model(dynamic_models_path + config['general_dynamic_model']  + FF_SUFFIX)
     
     # Workflow step 2: detect non-conformances
     print('Detecting non-conformances...')
