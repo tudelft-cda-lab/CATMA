@@ -1,11 +1,16 @@
 import plantuml
 
 
-def visualize_non_conformances(static_non_conformances: set, dynamic_non_conformances: set, output_folder: str, processed_static_model: dict):
-    """Visualizes found non-conformances by creating a graph of the architecture where non-conformances are highlighted in color.
+def visualize_non_conformances(static_non_conformances: set, dynamic_non_conformances: set, output_folder: str, processed_static_model: dict) -> int:
     """
+    Visualizes found non-conformances by creating a graph of the architecture where non-conformances are highlighted in color.
 
-    # get complete architecture from `processed_statci_model_evidences``
+    :param static_non_conformances: The set of non-conformances found by comparing the static model with the dynamic model.
+    :param dynamic_non_conformances: The set of non-conformances found by comparing the dynamic model with the static model.
+    :param output_folder: The path to the output folder where the visualization should be stored.
+    :param processed_static_model: The static model that is processed by the model processor.
+    """
+    # get complete architecture from `processed_static_model_evidences``
 
     links_detected_by_both = set()
     nodes = set()
@@ -50,10 +55,11 @@ def visualize_non_conformances(static_non_conformances: set, dynamic_non_conform
     return 0
 
 
-
-
 def add_header(plantuml_str: str) -> str:
-    """Adds the header of the PlantUML file.
+    """
+    Adds the header of the PlantUML file.
+
+    :param plantuml_str: The string that should be extended with the header.
     """
 
     plantuml_str += """
@@ -71,7 +77,10 @@ digraph dfd2{
 
 
 def add_footer(plantuml_str: str) -> str:
-    """Adds the footer of the PlantUML file.
+    """
+    Adds the footer of the PlantUML file.
+
+    :param plantuml_str: The string that should be extended with the footer.
     """
 
     plantuml_str += """
@@ -81,7 +90,11 @@ def add_footer(plantuml_str: str) -> str:
     return plantuml_str
 
 def write_output(plantuml_str, output_folder: str):
-    """Writes PlantUML to file and calls PlantUML server to generate PNG.
+    """
+    Writes PlantUML to file and calls PlantUML server to generate PNG.
+
+    :param plantuml_str: The string that should be written to file and used to generate the PNG.
+    :param output_folder: The path to the output folder where the visualization should be stored.
     """ 
 
     output_file_path = f"{output_folder}visualization/plantuml.txt"

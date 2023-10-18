@@ -6,6 +6,10 @@ This is a tool for performing automated conformance analysis between implementat
 - A high-level visualization showing how many, which type, and where non-conformances are detected in the microservice application.
 - Potential interpretations, presented in a human-readable format, aiding the user with the understanding what are the potential underlying causes of the detected non-conformances. 
 
+## Workflow Architecture 
+CATMA consists of 5 components: the Model-processor (1) parses the input models (static and dynamic) to extract architectural components. The obtained data is passed on to the
+Non-conformance Detector (2), which checks whether there are any discrepancies between the two input models. If a non-conformance is detected, it is forwarded to both the Interpretation Generator (3) and the Non-conformance Visualizer (4). The latter (3) collects all detected non-conformances and generates a model-based visualization, showing the non-conformances in the system’s architecture. The former (3) generates a set of possible interpretations for each detected non-conformance, which describe potential causes. These interpretations are forwarded to the Interpretation Visualizer (5), which generates HTML pages that visualize the interpretations. CATMA is designed to be modular, meaning that each component presented in the workflow can be replaced or expanded to fit its user’s needs.
+
 ## Requirements and Installation
 The tool is completely written in Python and thus a Python installation is required to run the tool. Though the tool is tested with Python 3.9, it should work with any version of Python 3. Besides Python, the tool requires the following Python packages to be installed:
 - pandas (version 1.3.5 or higher)
@@ -25,11 +29,6 @@ pip install -r requirements.txt
 After installing the required packages, one should already be able to run the tool. 
 
 Besides the above Python packages, the tool requires an internet browser to be installed on the system. The browser is handy for viewing the interpretations generated for the detected non-conformanes. The tool was tested with Google Chrome browser, but should work with any other browser as well.
-
-
-## Architecture 
-CATMA consists of 5 components: the Model-processor (1) parses the input models (static and dynamic) to extract architectural components. The obtained data is passed on to the
-Non-conformance Detector (2), which checks whether there are any discrepancies between the two input models. If a non-conformance is detected, it is forwarded to both the Interpretation Generator (3) and the Non-conformance Visualizer (4). The latter (3) collects all detected non-conformances and generates a model-based visualization, showing the non-conformances in the system’s architecture. The former (3) generates a set of possible interpretations for each detected non-conformance, which describe potential causes. These interpretations are forwarded to the Interpretation Visualizer (5), which generates HTML pages that visualize the interpretations. CATMA is designed to be modular, meaning that each component presented in the workflow can be replaced or expanded to fit its user’s needs.
 
 
 ## Example Usage

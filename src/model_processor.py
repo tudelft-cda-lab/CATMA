@@ -2,10 +2,10 @@ from src.utils import collect_dynamic_model, clean_dynamic_model
 import json
 
 
-def read_static_model(static_model_path):
+def read_static_model(static_model_path: str) -> dict:
     """
-    This function is used to read evidences that are collected by the static model.
-    It first loads the JSON file. Then, it processes the evidences extraced by the static model (DFD model from TUHH).
+    This function is used to read evidences that are collected by the static model. It first loads the 
+    JSON file. Then, it processes the evidences extraced by the static model (DFD model from TUHH).
     Evidences are parsed and stored in the corresponding dictionary; evidences collected from services
     are store in the service_evidence dictionary and evidences collected from links are stored in the
     link_evidences dictionary.
@@ -28,12 +28,14 @@ def read_static_model(static_model_path):
 
     return {'links' : link_evidences}
 
-def read_dynamic_model(dynamic_models_path):
+def read_dynamic_model(dynamic_models_path: str):
+    """
+    This function is used to read the dynamic model. The dynamic model is read using the pydot library.
+
+    :param dynamic_models_path: The path to the folder containing the dynamic model.
+    """
     return clean_dynamic_model(collect_dynamic_model(dynamic_models_path))
     
-
-
-
 
 # Testing purposes
 # if __name__ == '__main__':

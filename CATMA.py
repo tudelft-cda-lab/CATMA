@@ -10,10 +10,16 @@ from src.non_conformance_visualizer import visualize_non_conformances
 from src.interpretation_visualizer import generate_html_for_interpretation
 
 
-FF_SUFFIX = '.csv.ff.final.dot'
+FF_SUFFIX = '.csv.ff.final.dot' # Suffix of the dynamic model files created by FlexFringe tool
 
 
-def create_output_folders(output_folder):
+def create_output_folders(output_folder: str):
+    '''
+    Create folders that are used for writing the output files of CATMA.
+    The `exist_ok` parameter is used to avoid errors if the folders already exist.
+
+    :param output_folder: The path where the output folder should be created. 
+    '''
     os.makedirs(output_folder, exist_ok=True)
     os.makedirs(output_folder + 'interpretations/', exist_ok=True)
     os.makedirs(output_folder + 'code_linked_models/', exist_ok=True)
@@ -21,6 +27,9 @@ def create_output_folders(output_folder):
 
 
 def read_arguments():
+    '''
+    Read the command line arguments provided by the user. 
+    '''
     arg_parser = ap.ArgumentParser(description='CATMA: Conformance Analysis Tool for Microservice Applications')
     arg_parser.add_argument('--static_model_path', type=str, help='Path to static model.')
     arg_parser.add_argument('--dynamic_models_path', type=str, help='Path to the runtime models.')
@@ -52,7 +61,7 @@ def main():
     config = json.load(open('./config/config.json'))
     interpretation_texts = json.load(open('./interpretation_texts/interpretation_texts.json'))
     
-    # Create the subfolders in the output folder
+    # Create the output folder and subfolders to store the output files of CATMA
     create_output_folders(output_folder)
 
     # Workflow step 1: read models 
@@ -76,12 +85,12 @@ def main():
 
     ncf_interpretations = list()
     for sncf in static_non_conformances:
-        components = sncf.split('-')
-        ncf_interpretations.append(generate_interpretation('static', components, dynamic_models_path, output_folder, static_model, dynamic_model))
+        services = sncf.split('-')
+        ncf_interpretations.append(generate_interpretation('static', services, dynamic_models_path, output_folder, static_model, dynamic_model))
 
     for dncf in dynamic_non_conformances:
-        components = dncf.split('-')
-        ncf_interpretations.append(generate_interpretation('dynamic', components, dynamic_models_path, output_folder, static_model, dynamic_model))
+        services = dncf.split('-')
+        ncf_interpretations.append(generate_interpretation('dynamic', services, dynamic_models_path, output_folder, static_model, dynamic_model))
     
     # Workflow step 4: visualize non-conformances
     print('Generating non-conformance visualizations...')
