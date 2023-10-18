@@ -1,7 +1,6 @@
 import plantuml
 
 
-
 def visualize_non_conformances(static_non_conformances: set, dynamic_non_conformances: set, output_folder: str, processed_static_model: dict):
     """Visualizes found non-conformances by creating a graph of the architecture where non-conformances are highlighted in color.
     """
@@ -38,11 +37,11 @@ def visualize_non_conformances(static_non_conformances: set, dynamic_non_conform
 
     for link in static_non_conformances:
         plantuml_link = link.replace("-", " -> ")
-        plantuml_str += f"\n        {plantuml_link} [color = \"red\"]"
+        plantuml_str += f"\n        {plantuml_link} [color = \"darkgreen\"]"
 
     for link in dynamic_non_conformances:
         plantuml_link = link.replace("-", " -> ")
-        plantuml_str += f"\n        {plantuml_link} [color = \"darkgreen\"]"
+        plantuml_str += f"\n        {plantuml_link} [color = \"red\"]"
 
     plantuml_str = add_footer(plantuml_str)
 
