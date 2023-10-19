@@ -57,10 +57,13 @@ Using `ewolff/microservice` as an example, you can run the tool with the followi
 python CATMA.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models/ --output_path ./output/
 ```
 
-# Example use-case of CATMA
+Once the command has been run, you should see terminal output similar to what is shown below:
+![](https://github.com/tudelft-cda-lab/CATMA/blob/main/example_terminal_output.gif)
+
+## Example use-case of CATMA
 In the evaluation of CATMA, the tool identified the (dynamic) non-conformance that was mentioned on the README of [`ewolff/microservice`](https://github.com/ewolff/microservice/blob/master/README.md). The author has reported the missing communication behavior between `order` and `turbine`. After running a conformance analysis on the application and inspecting the generated interpretations, we managed to identify the cause for the missing behavior between the too services; a misconfiguration in the [Hystrix](https://github.com/Netflix/Hystrix) monitoring dashboard prevented stream data from being visualized as it was intended in the implementation. We notified the developer and our [fix](https://github.com/ewolff/microservice/pull/30) was accepted.
 
-## Test out fix for `ewolff/microservice`
+### Test out fix for `ewolff/microservice`
 To validate that the dynamic non-conformance has been fixed in `ewolff/microservice`, you can run a conformance analysis on the application after the fix using the following command:
 
 ```
