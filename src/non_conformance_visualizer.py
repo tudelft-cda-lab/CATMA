@@ -42,16 +42,16 @@ def visualize_non_conformances(static_non_conformances: set, dynamic_non_conform
 
     for link in static_non_conformances:
         plantuml_link = link.replace("-", " -> ")
-        plantuml_str += f"\n        {plantuml_link} [color = \"darkgreen\"]"
+        plantuml_str += f"\n        {plantuml_link} [color = \"red\"]"
 
     for link in dynamic_non_conformances:
         plantuml_link = link.replace("-", " -> ")
-        plantuml_str += f"\n        {plantuml_link} [color = \"red\"]"
+        plantuml_str += f"\n        {plantuml_link} [color = \"darkgreen\"]"
 
     plantuml_str = add_footer(plantuml_str)
 
     write_output(plantuml_str, output_folder)
-
+    #print(plantuml_str)
     return 0
 
 
