@@ -179,7 +179,7 @@ def generate_html_for_call_sequences_leading_to_missing_link(doc, call_sequences
     :param interpretation_data: The interpretation data that we generated for the non-conformance
     """
     with div(id = 'call_sequences'):
-        generate_html_list_for_call_sequences(doc, call_sequences, code_call_sequences)
+            generate_html_list_for_call_sequences(doc, call_sequences, code_call_sequences)
 
     return doc
 
@@ -229,23 +229,31 @@ def generate_dynamic_non_conformance_interpretation(doc, interpretation_data: di
         if 'missing_dynamic_model' in interpretation_data:
             with div(id = 'dynamic_ncf_missing_dynamic_model'):
                 if len(interpretation_data['missing_dynamic_model']) > 1:
-                    p('No data dynamic data was found for ' + interpretation_data['missing_dynamic_model'][0] + ' and ' + interpretation_data['missing_dynamic_model'][1] + '. Are these perhaps external services?')
+                    p('No data dynamic data was found for ' + interpretation_data['missing_dynamic_model'][0].replace('_', '-') + ' and ' + interpretation_data['missing_dynamic_model'][1].replace('_', '-') + '. Is one of involved services perhaps an external service?')
                 else:
-                    p('No data dynamic data was found for ' + interpretation_data['missing_dynamic_model'][0] + '. Is this perhaps an external service?')
+                    p('No data dynamic data was found for ' + interpretation_data['missing_dynamic_model'][0].replace('_', '-') + '. Is this perhaps an external service?')
         else:
             with div(id = 'dynamic_ncf_possible_sequences'):
-                h3('Sequences extracted from the static model that should produce dynamic behaviour for link between ' + interpretation_data['services'][0] + ' and ' + interpretation_data['services'][1])
+                h3('Sequences extracted from the static model that should produce dynamic behavior for link between ' + interpretation_data['services'][0] + ' and ' + interpretation_data['services'][1])
                 static_call_sequences = interpretation_data['potential_call_sequences']
-                code_call_sequences = interpretation_data['code_call_sequences']
-                doc = generate_html_for_call_sequences_leading_to_missing_link(doc, static_call_sequences, code_call_sequences)
+                if len(static_call_sequences) == 0:
+                    p('No sequences were found in the static model that could trigger dynamic behavior for the link between ' + interpretation_data['services'][0] + ' and ' + interpretation_data['services'][1])
+                else:
+                    code_call_sequences = interpretation_data['code_call_sequences']
+                    doc = generate_html_for_call_sequences_leading_to_missing_link(doc, static_call_sequences, code_call_sequences)
 
             with div(id = 'dynamic_ncf_occurred_sequences'):
-                h3('Sequences that occurred in the dynamic model that should produce dynamic behaviour for link between ' + interpretation_data['services'][0] + ' and ' + interpretation_data['services'][1])
+                h3('Sequences that occurred in the dynamic model that should produce dynamic behavior for link between ' + interpretation_data['services'][0] + ' and ' + interpretation_data['services'][1])
                 runtime_call_sequences = interpretation_data['occurred_call_sequences']
-                doc = generate_html_for_call_sequences_leading_to_missing_link(doc, runtime_call_sequences, code_call_sequences)
+                if len(runtime_call_sequences) == 0:
+                    p('No sequences were found in the dynamic model that actually produced dynamic behavior for the link between ' + interpretation_data['services'][0] + ' and ' + interpretation_data['services'][1])
+                else:
+                    doc = generate_html_for_call_sequences_leading_to_missing_link(doc, runtime_call_sequences, code_call_sequences)
 
             with div(id = 'call_details_occurred_sequences'):
                 h3('For the occurred sequences, these are the unique sequence of endpoints (parameters) that were used in the sequence')
+                if len(runtime_call_sequences) == 0:
+                    p('No sequences were found in the dynamic model and thus no unique sequences of endpoints could be extracted.')
                 for call_sequence in runtime_call_sequences:
                     call_details_sequences = interpretation_data['call_details_sequences'][str(call_sequence)]
                     readable_call_sequence = transform_extracted_call_sequence_to_readable_format(call_sequence)
@@ -270,8 +278,9 @@ def generate_dynamic_non_conformance_interpretation(doc, interpretation_data: di
                                         list_item.add('Then followed by call with \"' + endpoint + '\". ')
 
 
-            with div(id = 'dynamic_model'):
-                h2('The following models can be used to inspect the (sequential) behavior of each service individually:')
+        with div(id = 'dynamic_model'):
+            h2('The following models can be used to inspect the (sequential) behavior of each service individually:')
+            if 'src_dyn_model' in interpretation_data:
                 model_div_src = div(id = 'model')
                 model_div_src.add(
                     generate_div_with_svg_model(
@@ -280,7 +289,8 @@ def generate_dynamic_non_conformance_interpretation(doc, interpretation_data: di
                         'dynamic_ncf_svg'
                         )
                     )
-                
+            
+            if 'dst_dyn_model' in interpretation_data:
                 model_div_dst = div(id = 'model')
                 model_div_dst.add(
                     generate_div_with_svg_model(
@@ -289,6 +299,9 @@ def generate_dynamic_non_conformance_interpretation(doc, interpretation_data: di
                         'dynamic_ncf_svg'
                         )
                     )
+                
+            if 'src_dyn_model' not in interpretation_data and 'dst_dyn_model' not in interpretation_data:
+                p('No dynamic model was found for either of the services.')
         
 
     return doc
@@ -311,6 +324,7 @@ def generate_style_sheet(file_path: str):
                 background-color: #ffffff;
                 padding: 20px;
                 margin: 20px;
+                text-align: justify;
             }
 
             #dynamic_ncf_code_evidences, #dynamic_ncf_possible_sequences, #dynamic_ncf_occurred_sequences, #static_ncf_dynamic_model_calls, #call_details_occurred_sequences, #model {
@@ -335,11 +349,20 @@ def generate_style_sheet(file_path: str):
             }
 
             #static_ncf_svg {
-                width: 70%;
-                height: 800px;
+                width: 100%;
+                height: 100%;
                 display: inline-block;
             }
 
+            h2, h3 {
+                margin: 5px;
+            }
+
+            #dynamic_ncf_missing_dynamic_model {
+                background-color: #ffffff;
+                padding: 10px;
+                margin: 10px;
+            }
             '''
             
         )
