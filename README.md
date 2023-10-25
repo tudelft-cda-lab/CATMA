@@ -82,5 +82,18 @@ If you use this tool in your research, please cite the following paper:
 }
 ```
 
+## Running Tests and Generating Coverage Report
+To run the tests, first make sure that you have the `coverage` Python package installed if you have not done so already. Then, execute the following command from the root directory to run the tests and compute the coverage:
+```
+coverage run -m unittest
+```
+
+To generate the HTML coverage report, execute the following command from the root directory:
+```
+coverage html
+```
+
+This command generates the `htmlcov` folder in the root directory. To view the coverage report, open the `index.html` file in the `htmlcov` folder using your internet browser.
+
 ## Acknowledgements
 This tool is developed within the context of the [AssureMOSS project](https://assuremoss.eu), which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 952647.
