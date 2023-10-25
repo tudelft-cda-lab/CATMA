@@ -2,13 +2,13 @@
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## About
-This is a tool for performing automated conformance analysis between implementation and deployement of microservice applications. The tool takes as input a model derived by performing static analysis on the microservice application and models derived by performing dynamic analysis on the log traces collected from the microservice application. Currently, the tool accepts Dataflow Diagrams (DFD) as the input static model and State Machines as the input dynamic models. The tool performs conformance analysis by means of computing differences between the DFD and the State Machine models. We define the differeces as non-conformances between implementation and deploymenent of the microservice application. The tool generates outputs that would provide the following insights on the deteted non-conformances:
+This is a tool for performing automated conformance analysis between the implementation and deployment of microservice applications. The tool takes as input a model derived by performing static analysis on the microservice application and models derived by performing dynamic analysis on the log traces collected from the microservice application. Currently, the tool accepts Dataflow Diagrams (DFD) as the input static model and State Machines as the input dynamic models. The tool performs conformance analysis by means of computing differences between the DFD and the State Machine models. We define the differences as non-conformances between the implementation and deployment of the microservice application. The tool generates outputs that would provide the following insights on the detected non-conformances:
 - A high-level visualization showing how many, which type, and where non-conformances are detected in the microservice application.
 - Potential interpretations, presented in a human-readable format, aiding the user with the understanding what are the potential underlying causes of the detected non-conformances. 
 
-## Workflow Architecture 
-CATMA consists of 5 components: the Model-processor (1) parses the input models (static and dynamic) to extract architectural components. The obtained data is passed on to the
-Non-conformance Detector (2), which checks whether there are any discrepancies between the two input models. If a non-conformance is detected, it is forwarded to both the Interpretation Generator (3) and the Non-conformance Visualizer (4). The latter (3) collects all detected non-conformances and generates a model-based visualization, showing the non-conformances in the system’s architecture. The former (3) generates a set of possible interpretations for each detected non-conformance, which describe potential causes. These interpretations are forwarded to the Interpretation Visualizer (5), which generates HTML pages that visualize the interpretations. CATMA is designed to be modular, meaning that each component presented in the workflow can be replaced or expanded to fit its user’s needs.
+### Workflow Architecture 
+CATMA consists of 5 components: the ***Model-processor*** (1) parses the input models (static and dynamic) to extract architectural components. The obtained data is passed on to the
+***Non-conformance Detector*** (2), which checks whether there are any discrepancies between the two input models. If a non-conformance is detected, it is forwarded to both the ***Interpretation Generator*** (3) and the ***Non-conformance Visualizer*** (4). The latter (3) collects all detected non-conformances and generates a model-based visualization, showing the non-conformances in the system’s architecture. The former (3) generates a set of possible interpretations for each detected non-conformance, which describe potential causes. These interpretations are forwarded to the ***Interpretation Visualizer*** (5), which generates HTML pages that visualize the interpretations. CATMA is designed to be modular, meaning that each component presented in the workflow can be replaced or expanded to fit its user’s needs.
 
 ## Requirements and Installation
 The tool is completely written in Python and thus a Python installation is required to run the tool. Though the tool is tested with Python 3.9, it should work with any version of Python 3. Besides Python, the tool requires the following Python packages to be installed:
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 After installing the required packages, one should already be able to run the tool. 
 
-Besides the above Python packages, the tool requires an internet browser to be installed on the system. The browser is handy for viewing the interpretations generated for the detected non-conformanes. The tool was tested with Google Chrome browser, but should work with any other browser as well.
+Besides the above Python packages, the tool requires an internet browser to be installed on the system. The browser is handy for viewing the interpretations generated for the detected non-conformances. The tool was tested with the Google Chrome browser but should work with any other browser as well.
 
 
 ## Example Usage
@@ -38,7 +38,7 @@ The tool can be run via the command line. The main Python script that should be 
 - `output_path`: used for providing the path to the directory where the outputs of the tool should be stored.
 
 
-**Before running the tool**, make sure that you have specified the names of the services and the name of the general dynamic model for the target microservice application in the `config.json` file (located in `config` folder). The general dynamic model is the model that was inferred from all network communication log data collected for the microservice application. The name of the services and the general dynamic model should be specified using the `services` and `general_dynamic_model` field respectively in the JSON file. As an example, the `config.json` file for `ewolff/microservice` is shown below:
+**Before running the tool**, make sure that you have specified the names of the services and the name of the general dynamic model for the target microservice application in the `config.json` file (located in the `config` folder). The general dynamic model is the model that was inferred from all network communication log data collected for the microservice application. The name of the services and the general dynamic model should be specified using the `services` and `general_dynamic_model` fields respectively in the JSON file. As an example, the `config.json` file for `ewolff/microservice` is shown below:
 
 ```
 {
@@ -61,9 +61,9 @@ Once the command has been run, you should see terminal output similar to what is
 ![](https://github.com/tudelft-cda-lab/CATMA/blob/main/example_terminal_output.gif)
 
 ## Example use-case of CATMA
-In the evaluation of CATMA, the tool identified the (dynamic) non-conformance that was mentioned on the README of [`ewolff/microservice`](https://github.com/ewolff/microservice/blob/master/README.md). The author has reported the missing communication behavior between `order` and `turbine`. After running a conformance analysis on the application and inspecting the generated interpretations, we managed to identify the cause for the missing behavior between the too services; a misconfiguration in the [Hystrix](https://github.com/Netflix/Hystrix) monitoring dashboard prevented stream data from being visualized as it was intended in the implementation. We notified the developer and our [fix](https://github.com/ewolff/microservice/pull/30) was accepted.
+In the evaluation of CATMA, the tool identified the (dynamic) non-conformance that was mentioned on the README of [`ewolff/microservice`](https://github.com/ewolff/microservice/blob/master/README.md). The author has reported the missing communication behavior between `order` and `turbine`. After running a conformance analysis on the application and inspecting the generated interpretations, we managed to identify the cause for the missing behavior between the two services; a misconfiguration in the [Hystrix](https://github.com/Netflix/Hystrix) monitoring dashboard prevented stream data from being visualized as it was intended in the implementation. We notified the developer and our [fix](https://github.com/ewolff/microservice/pull/30) was accepted.
 
-### Test out fix for `ewolff/microservice`
+### Test out the fix for `ewolff/microservice`
 To validate that the dynamic non-conformance has been fixed in `ewolff/microservice`, you can run a conformance analysis on the application after the fix using the following command:
 
 ```
