@@ -71,17 +71,6 @@ To validate that the dynamic non-conformance has been fixed in `ewolff/microserv
 python CATMA.py --static_model_path ./data/ewolff_microservice/ewolff_microservice_static_model.json --dynamic_models_path ./data/ewolff_microservice/dynamic_models_after_fix/ --output_path ./output/
 ```
 
-## Citing this work
-If you use this tool in your research, please cite the following paper:
-```
-@inproceedings{cao2023catma,
-  title={CATMA: Conformance Analysis Tool for Microservice Applications},
-  author={Cao, Clinton and Schneider, Simon, and Diaz Ferreyra, Nicolás, and Verwer, Panichella, Annibale and Verwer, Sicco and Scandariato, Riccardo},
-  publisher={ACM},
-  year={2023}
-}
-```
-
 ## Running Tests and Generating Coverage Report
 To run the tests, first make sure that you have the `coverage` Python package installed if you have not done so already. Then, execute the following command from the root directory to run the tests and compute the coverage:
 ```
@@ -94,6 +83,17 @@ coverage html
 ```
 
 This command generates the `htmlcov` folder in the root directory. To view the coverage report, open the `index.html` file in the `htmlcov` folder using your internet browser.
+
+## Citing this work
+If you use this tool in your research, please cite the following paper:
+```
+@inproceedings{cao2023catma,
+  title={CATMA: Conformance Analysis Tool for Microservice Applications},
+  author={Cao, Clinton and Schneider, Simon, and Diaz Ferreyra, Nicolás, and Verwer, Panichella, Annibale and Verwer, Sicco and Scandariato, Riccardo},
+  publisher={ACM},
+  year={2023}
+}
+```
 
 ## Acknowledgements
 This tool is developed within the context of the [AssureMOSS project](https://assuremoss.eu), which has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 952647.
