@@ -15,7 +15,7 @@ def visualize_non_conformances(static_non_conformances: set, dynamic_non_conform
     links_detected_by_both = set()
     nodes = set()
 
-    # parse all inks from the static model as basis for all links detected by both
+    # parse all links from the static model as basis for all links detected by both
     for link in processed_static_model["links"].keys():
         links_detected_by_both.add(link)
         nodes.add(link.split("-")[0])

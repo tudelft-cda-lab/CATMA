@@ -5,4 +5,5 @@ pydot>=1.4.2
 jsonschema>=3.2.0
 dominate>=2.7.0
 graphviz>=0.16
-plantuml>0.3.0
+plantuml>=0.3.0
+coverage>=7.3.2

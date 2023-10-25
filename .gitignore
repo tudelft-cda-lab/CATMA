@@ -229,9 +229,13 @@ pyrightconfig.json
 # Folders to ignore
 output/
 data/
+htmlcov/
 
 
 # FlexFringe log file
 flexfringe.log
+
+# Coverage files
+.coverage
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,python,visualstudiocode

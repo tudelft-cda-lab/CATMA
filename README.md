@@ -20,6 +20,7 @@ The tool is completely written in Python and thus a Python installation is requi
 - dominate (version 2.7.0 or higher)
 - pydot (version 1.4.2 or higher)
 - plantuml (version 0.3.0 or higher)
+- coverage (version 7.3.2 or higher, this is only needed if you would like to run the tests)
 
 All above Python packages can be easily installed using the `requirements.txt` file provided in this repository. To install the required packages, run the following command from the root directory of this repository:
 ```

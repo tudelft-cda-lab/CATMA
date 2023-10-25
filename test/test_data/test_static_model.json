@@ -1,0 +1,9 @@
+{
+    "edges": {
+        "order -> catalog": {
+            "file": "https://github.com/ewolff/microservice/blob/master/microservice-demo/microservice-demo-order/src/main/java/com/ewolff/microservice/order/clients/CatalogClient.java#L86",
+            "line": "86",
+            "span": "(36, 61)"
+        }
+    }
+}
