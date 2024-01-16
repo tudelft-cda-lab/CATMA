@@ -72,13 +72,18 @@ def compute_num_detected_ncf_text(num_static_ncfs: int, num_dynamic_ncfs: int) -
 	:param num_static_ncfs: The number of static non-conformances.
 	:param num_dynamic_ncfs: The number of dynamic non-conformances.
 	'''
+
+	if num_static_ncfs + num_dynamic_ncfs == 0:
+		return ''
+
 	text = 'Detected '
 	if num_static_ncfs > 0:
 		text += str(num_static_ncfs) + ' static '
 		text += SINGLE if num_static_ncfs == 1 else MULTIPLE
 	if num_dynamic_ncfs !=0:
 		text += ' and ' if num_static_ncfs != 0 else ''
-		text += str(num_dynamic_ncfs) + ' dynamic ' + SINGLE if num_dynamic_ncfs == 1 else MULTIPLE
+		text += str(num_dynamic_ncfs) + ' dynamic '
+		text += SINGLE if num_dynamic_ncfs == 1 else MULTIPLE
 
 	text += ' between implementation and deployment of the system!'
 	return text

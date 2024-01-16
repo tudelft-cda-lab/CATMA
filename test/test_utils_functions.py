@@ -34,6 +34,25 @@ class TestUtilsFunctions(unittest.TestCase):
         link = extract_link_from_transition_label(transition_label)
         self.assertEqual(link, 'user-admin_server')
 
+    def test_compute_num_detected_ncf_text(self):
+        text = compute_num_detected_ncf_text(2, 1)
+        self.assertEqual(text, 'Detected 2 static non-conformances and 1 dynamic non-conformance between implementation and deployment of the system!')
+    
+    def test_compute_num_detected_ncf_text_flipped_counts(self):
+        text = compute_num_detected_ncf_text(1, 2)
+        self.assertEqual(text, 'Detected 1 static non-conformance and 2 dynamic non-conformances between implementation and deployment of the system!')
+    
+    def test_compute_num_detected_ncf_text_no_static(self):
+        text = compute_num_detected_ncf_text(0, 2)
+        self.assertEqual(text, 'Detected 2 dynamic non-conformances between implementation and deployment of the system!')
+
+    def test_compute_num_detected_ncf_text_no_dynamic(self):
+        text = compute_num_detected_ncf_text(2, 0)
+        self.assertEqual(text, 'Detected 2 static non-conformances between implementation and deployment of the system!')
+    
+    def test_compute_num_detected_ncf_text_no_ncf(self):
+        text = compute_num_detected_ncf_text(0, 0)
+        self.assertEqual(text, '')
 
 if __name__ == '__main__':
     unittest.main()
