@@ -42,11 +42,11 @@ def visualize_non_conformances(static_non_conformances: set, dynamic_non_conform
 
     for link in static_non_conformances:
         plantuml_link = link.replace("-", " -> ")
-        plantuml_str += f"\n        {plantuml_link} [color = \"red\"]"
+        plantuml_str += f"\n        {plantuml_link} [color = \"#D55E00\", style = \"dashed\"]"
 
     for link in dynamic_non_conformances:
         plantuml_link = link.replace("-", " -> ")
-        plantuml_str += f"\n        {plantuml_link} [color = \"darkgreen\"]"
+        plantuml_str += f"\n        {plantuml_link} [color = \"#0072B2\", style = \"dotted\"]"
 
     plantuml_str = add_footer(plantuml_str)
 

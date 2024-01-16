@@ -1,10 +1,16 @@
 import pydot
 
+SINGLE = 'non-conformance' # text for single non-conformance
+MULTIPLE = SINGLE + 's' # text for multiple non-conformances
+
 def clean_dynamic_model(dynamic_model):
 	'''
-	Hacky code for removing extra new lines added to the DOT file?
-	We basically remove nodes that are created due to the new lines in the DOT file.
-	Maybe this is a bug in the pydot library?
+	Clean up a dynamic model that has been loaded via the pydot library. We first remove nodes that are 
+	created due to the new lines in the DOT file. This part is a hacky as we do not know the cause for 
+	the new lines. Maybe this is a bug in the pydot library?
+
+	Then we the remove unnecessary information and coloring from the nodes (added by FlexFringe by default) 
+	to reduce clutter and confusion when visualizing the dynamic model.
 
 	:param dynamic_model: The dynamic model loaded via the pydot library.
 	'''
@@ -12,6 +18,12 @@ def clean_dynamic_model(dynamic_model):
 	for n in nodes:
 		if n.get_name() == '\"\\n\"':
 			dynamic_model.del_node(n)
+
+	for n in nodes:
+		# clear label text
+		n.set_label('State ' + n.get_name().split('_')[-1] + '\n')
+		# remove color
+		n.set_fillcolor('white')
 	    
 	return dynamic_model
 
@@ -51,6 +63,25 @@ def extract_link_from_transition_label(transition_label: str) -> str:
 	'''
 	splitted = transition_label.split('__')
 	return splitted[-2].replace('-', '_') + '-' + splitted[-1].split('\n')[0].replace('-', '_')
+
+def compute_num_detected_ncf_text(num_static_ncfs: int, num_dynamic_ncfs: int) -> str:
+	'''
+	Compute the text that is printed to the console after the non-conformances are detected. 
+	The text is based on the number of detected non-conformances.
+
+	:param num_static_ncfs: The number of static non-conformances.
+	:param num_dynamic_ncfs: The number of dynamic non-conformances.
+	'''
+	text = 'Detected '
+	if num_static_ncfs > 0:
+		text += str(num_static_ncfs) + ' static '
+		text += SINGLE if num_static_ncfs == 1 else MULTIPLE
+	if num_dynamic_ncfs !=0:
+		text += ' and ' if num_static_ncfs != 0 else ''
+		text += str(num_dynamic_ncfs) + ' dynamic ' + SINGLE if num_dynamic_ncfs == 1 else MULTIPLE
+
+	text += ' between implementation and deployment of the system!'
+	return text
 	
 # Testing purposes
 # if __name__ == '__main__':

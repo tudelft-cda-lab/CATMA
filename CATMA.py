@@ -12,7 +12,6 @@ from src.interpretation_visualizer import generate_html_for_interpretation
 
 FF_SUFFIX = '.csv.ff.final.dot' # Suffix of the dynamic model files created by FlexFringe tool
 
-
 def create_output_folders(output_folder: str):
     '''
     Create folders that are used for writing the output files of CATMA.
@@ -77,8 +76,8 @@ def main():
     if len(static_non_conformances) + len(dynamic_non_conformances) == 0:
         print('No non-conformances detected between implementation and deployment of system, everything looks good :)')
         return
-
-    print('Detected ' + str(len(static_non_conformances)) + ' static non-conformances and ' + str(len(dynamic_non_conformances)) + ' dynamic non-conformances between implementation and deployment of system!')
+    
+    print(compute_num_detected_ncf_text(len(static_non_conformances), len(dynamic_non_conformances)))
 
     # Workflow step 3: generate interpretations
     print('Generating non-conformance interpretations...')
